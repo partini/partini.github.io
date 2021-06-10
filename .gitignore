@@ -130,7 +130,6 @@ dmypy.json
 
 
 #jekyll ignored files
-.jekyll-cache
-_site
+.jekyll-cache 
 Gemfile
 Gemfile.lock
