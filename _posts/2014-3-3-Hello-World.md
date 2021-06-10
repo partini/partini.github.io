@@ -1,6 +1,15 @@
 ---
 published: true
 ---
+---
+layout: post
+title: Personalized Oculus and how inCodeks helped implement it localy.
+excerpt: Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below). 
+footer_type: first  
+footer_type: footer_1_column
+featured_image: assets/img/foto11.png
+---
+
 An h1 header
 ============
 
