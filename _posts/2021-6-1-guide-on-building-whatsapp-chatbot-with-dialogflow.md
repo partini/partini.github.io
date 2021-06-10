@@ -85,5 +85,3 @@ Underneath “Messaging”, take the value for the server URL printed in the con
  
 
 ### Author: Arlind Kerqeli
-
-
