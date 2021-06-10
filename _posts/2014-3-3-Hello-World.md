@@ -1,0 +1,33 @@
+---
+layout: post
+title: Personalized Oculus and how inCodeks helped implement it localy.
+excerpt: Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below). 
+footer_type: first  
+footer_type: footer_1_column
+featured_image: assets/img/foto11.png
+---
+Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below). <br/> <br/>
+The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie ipsum a quam gravida&nbsp;<br>
+iaculis. Vestibulum efficitur, ipsum ut facilisis rutrum, lacus diam cursus est, ut pellentesque leo&nbsp;<br
+>odio id turpis. Sed pharetra faucibus quam, ornare faucibus ipsum congue ut. Sed purus risus,&nbsp;<br>
+fermentum in viverra nec, pulvinar vitae augue. Lorem ipsum dolor sit amet, consectetur&nbsp;<br>
+adipiscing elit. Phasellus non varius elit, ut tempor justo. Phasellus ultrices nunc justo. Sed&nbsp;<br>
+vestibulum lorem nec tempus ultricies. Proin id nisl sed est gravida egestas et quis diam.&nbsp;<br>
+Pellentesque congue magna nec malesuada tempus. Duis semper, quam sed porta fermentum,&nbsp;<br>
+justo elit rutrum nisi, a molestie eros turpis vel sem. In rhoncus convallis odio eget maximus.<br>
+<br>In feugiat ligula in magna sollicitudin condimentum. In iaculis purus in nisi lacinia, id elementum&nbsp;<br>
+magna dictum. Vivamus at eros augue. Aliquam felis sem, aliquet ac pulvinar et, feugiat ac tellus.&nbsp;<br>
+Phasellus suscipit rutrum tortor, et dignissim nisl.&nbsp;<br><br>
+In velit felis, interdum et eros id, ultrices viverra ex. Sed auctor orci convallis, varius enim et, dictum&nbsp;<br>
+orci. Sed nec magna quis mi gravida dignissim eu quis nunc. Nullam a mollis nunc, a tempus elit.&nbsp;<br>
+Duis pharetra dolor sit amet porttitor blandit. Nullam vitae justo urna. Donec finibus quis est et&nbsp;<br>
+eleifend. Curabitur rhoncus eget nisl nec suscipit. Sed venenatis finibus ligula, non pellentesque&nbsp;<br>
+turpis volutpat mattis.<br><br>Sed suscipit vel turpis consectetur ornare. Quisque vehicula aliquam congue. Sed aliquam&nbsp;<br>
+porttitor nisi, at iaculis risus sollicitudin eu. Nullam id ullamcorper lectus, eu tincidunt dolor. Proin&nbsp;<br>
+placerat erat ex, eu ultrices libero tempor a. Suspendisse quis enim quis orci molestie congue&nbsp;<br>
+lobortis sit amet ipsum. Pellentesque tincidunt ipsum nisl, eget sollicitudin neque mattis eget.&nbsp;<br>
+Suspendisse iaculis vitae neque quis sollicitudin. Nulla erat diam, luctus nec dui id, fermentum&nbsp;<br>
+pretium purus. Nunc sit amet nibh laoreet felis mattis fringilla. Nulla facilisi.</p>
+<p class="text-center text-sm-left text-md-left text-lg-center text-xl-center" style="font-weight: bold;font-family: Heebo;font-size: 18px;">Why it is a breakthrough?</p>
+<p class="text-sm-left text-md-left text-lg-center text-xl-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie ipsum a quam gravida&nbsp;<br>iaculis. Vestibulum efficitur, ipsum ut facilisis rutrum, lacus diam cursus est, ut pellentesque leo&nbsp;<br>odio id turpis. Sed pharetra faucibus quam, ornare faucibus ipsum congue ut. Sed purus risus,&nbsp;<br>fermentum in viverra nec, pulvinar vitae augue. Lorem ipsum dolor sit amet, consectetur&nbsp;<br>adipiscing elit. Phasellus non varius elit, ut tempor justo. Phasellus ultrices nunc justo. Sed&nbsp;<br>vestibulum lorem nec tempus ultricies. Proin id nisl sed est gravida egestas et quis diam.&nbsp;<br>Pellentesque congue magna nec malesuada tempus. Duis semper, quam sed porta fermentum,&nbsp;<br>justo elit rutrum nisi, a molestie eros turpis vel sem. In rhoncus convallis odio eget maximus.<br><br>In feugiat ligula in magna sollicitudin condimentum. In iaculis purus in nisi lacinia, id elementum&nbsp;<br>magna dictum. Vivamus at eros augue. Aliquam felis sem, aliquet ac pulvinar et, feugiat ac tellus.&nbsp;<br>Phasellus suscipit rutrum tortor, et dignissim nisl.&nbsp;<br>

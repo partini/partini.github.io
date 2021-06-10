@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+ 
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/FontAwesome.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo">
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body  id="page-top">
+
+   {% include head.html %}
+
+    <section id="jobdetails" style="background: linear-gradient(138deg, white 85%, blue 140%);">
+    <div class="container">
+        <div class="row first-row-jobdetails" style="border-bottom: 0.4px solid rgb(229,232,235) ;">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-12 first-col-jobdetails">
+              <img class="d-inline float-left" src="{{ site.baseurl }}/assets/img/violet.png">
+                <p class="text-left p1-jobdetails">{{page.title}}</p>
+                <p class="p2-jobdetails"> {{page.long_title}} / {{ page.location }}</p>
+            </div>
+        </div>
+        <div class="row" style="opacity: 1;">
+            <div class="col-8 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-12 second-col-jobdetails">
+                <p class="p5">Who are we looking for?&nbsp;<br></p>
+                <p class="p6">{{content}}</p>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 col-12  third-col-jobdetails" style="margin-top: 40px;padding-left: 40px;">
+                <span>Job Title</span>
+                <input class="d-block" type="text" placeholder="{{ page.title }}"> 
+                <span>Location</span>
+                <input class="d-block" type="text" placeholder="{{ page.location }}">
+                <span>Date Posted</span>
+                <input class="d-block" type="text" placeholder="{{ page.date | date: "%B %e, %Y" }} ">
+                <span>Employer</span>
+                <input class="d-block" type="text" placeholder="{{ page.employer }}">
+            </div>
+            <div class="col four-col-jobdetails" style="border-top: 0.4px solid rgb(229,232,235) ;">
+              <button class="btn" type="submit">Apply now</button>
+            </div>
+        </div>
+    </div>
+
+    </section> 
+
+ 
+
+    {% if page.footer_type == "footer_2_columns" %} 
+      {% include footer_2_columns.html %}
+    {% elsif page.footer_type=="footer_1_column" %}
+        {% include footer_1_column.html %} 
+    {% elsif page.footer_type == "consult" %}
+      {% include footer_consult.html %}
+    {% endif %}
+    {% include analytics.html %}
+
+        <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/agency.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/Full-Page-Background.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/Full-Page-Background-1-1.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/Full-Page-Background-3-1.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/jquery.min-2.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+    <script>
+     $(window).on("scroll", function() {
+        if($(window).scrollTop() > 400) {
+            $(".navbar").addClass("on-scroll");
+        } else {
+           $(".navbar").removeClass("on-scroll");
+        }
+    });
+
+    $(window).on("scroll", function() {
+       if($(window).scrollTop() > 400) {
+           $(".estimate-button").addClass("in-scroll");
+       } else {
+          $(".estimate-button").removeClass("in-scroll");
+       }
+   });
+    </script> 
+  </body>
+</html>

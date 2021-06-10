@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+#jekyll ignored files
+.jekyll-cache
+_site
+Gemfile
+Gemfile.lock
