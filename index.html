@@ -10,12 +10,15 @@ permalink: /
             <div class="intro-text">
                 <div class="row">
                     <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-12 text-center">
-                      <span style="font-weight: 300;font-size: 60px; ">Moving the world forward<br>through top notch software.</span>
+                      <span class="intro-text-main">Moving the world forward<br>through top notch software.</span>
                     </div>
-                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-12  text-center">
+                    <!-- <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-12  text-center">
                       <a class="btn btn-xl text-uppercase js-scroll-trigger" role="button" href="#index-services" style="margin-top: 10px;font-family: Heebo;color: white;">explore</a>
-                    </div>
+                    </div> -->
                 </div>
+                <a class="explore-button text-uppercase" href="#index-services">
+                  Explore
+              </a>
             </div>
         </div>
     </header> 
@@ -23,19 +26,69 @@ permalink: /
         <div class="container-fluid">
           <div class="row">
                 <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2 text-center col-12">
-                    <p style="font-family: Heebo;font-weight: 400;color: #2F1295;margin-top: 50px;">SERVICES</p>
+                    <p style="font-family: Heebo;font-weight: 400;color: #5C46F9;margin-top: 20px;font-size: 25px;">SERVICES</p>
                 </div>
                 <div class="col-sm-12 col-md-10 col-lg-10 col-xl-10 col-12" >
-                    <p style="font-weight: 400;font-family: Heebo;font-size: 75px;color: white;margin-bottom: 80px;">We provide services in</p>
+                    <p style="font-weight: 400;font-family: Heebo;font-size: 75px;color: white;margin-bottom: 80px;line-height: 80px;">We provide services in</p>
                 </div>
           </div>
 
-    <div class="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2">
+        <div class="slider_services">
+          <div class="carousel" data-flickity='{ "groupCells": "80%","prevNextButtons": false }'>
+            
+            <div class="carousel-cell">
+              <div class="content">
+                <p class="name mb-0">Web app development</p>
+                <p class="desc mb-0">Etiam sagittis ligula eget justo porttitor, sit 
+                  amet malesuada tellus condimentum. 
+                  Donec id interdum nisl, a rutrum diam. 
+                  Nunc luctus sapien nec nibh lacinia 
+                  rhoncus a ut augue.</p>
+              </div>
+            </div>
+    
+            <div class="carousel-cell">
+              <div class="content">
+                <p class="name mb-0">Mobile app development</p>
+                <p class="desc mb-0">Etiam sagittis ligula eget justo porttitor, sit 
+                  amet malesuada tellus condimentum. 
+                  Donec id interdum nisl, a rutrum diam. 
+                  Nunc luctus sapien nec nibh lacinia 
+                  rhoncus a ut augue.</p>
+              </div>
+            </div>
+    
+            <div class="carousel-cell">
+              <div class="content">
+                <p class="name mb-0">Product Design</p>
+                <p class="desc mb-0">Etiam sagittis ligula eget justo porttitor, sit 
+                  amet malesuada tellus condimentum. 
+                  Donec id interdum nisl, a rutrum diam. 
+                  Nunc luctus sapien nec nibh lacinia 
+                  rhoncus a ut augue.</p>
+              </div>
+            </div>
+    
+            <div class="carousel-cell">
+              <div class="content">
+                <p class="name mb-0">Development consulting</p>
+                <p class="desc mb-0">Etiam sagittis ligula eget justo porttitor, sit 
+                  amet malesuada tellus condimentum. 
+                  Donec id interdum nisl, a rutrum diam. 
+                  Nunc luctus sapien nec nibh lacinia 
+                  rhoncus a ut augue.</p>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+
+    <!-- <div class="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2">
 
 			<div class="col-5">
 				<div class="card card-block card-1">
           <p class="index-p1">
-            Paragraph
+            Paragraph 2
           </p>
           <p class="index-p2">
               Etiam sagittis ligula eget justo porttitor,<br>
@@ -75,21 +128,21 @@ permalink: /
         </div>
 			</div>
 
-    </div>
+    </div> -->
 </div>
 
     </section>
     <section id="busineses" style="background: black;">
         <div class="row" style="margin-right: 0px;margin-left: 0px; ">
-            <div class="col-12">
+            <div class="w-100">
                 <div style="background: url(&quot;assets/img/unnamed.png&quot;) center / cover no-repeat;height: 700px;text-align: center;">
-                    <p class="text-center p-image">
+                    <p class="text-center p-image" id="busineses_intro_text">
                       Trusted by 30+ revolutionary businesses and companies.</p>
                 </div>
             </div>
         </div>
-        <div class="container container-fluid">
-            <div class="row">
+        <div class="container-fluid">
+            <div class="row container">
                 <div class="col-2" style="border-right: 1px solid white;"></div>
                 <div class="col-10" style="height: auto;margin-top: 15px;">
                     <img class="img1" src="assets/img/google1.png">
@@ -102,52 +155,51 @@ permalink: /
                 </div>
             </div>
 
-            <div class="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2">
-              <div class="col-5"  style="padding-top:80px;">
-                <div class="card card-block card-1">
-                  <p class="d-inline business-p1">50+</p>
-                  <p class="d-inline business-p2">Projects</p>
+            <div class="carousel busineses-carusel" data-flickity='{ "groupCells": true,"prevNextButtons": false }'>
+            
+              <div class="carousel-cell">
+                <div class="content">
+                  <p class="business-p1">50+</p>
+                  <p class="business-p2">Projects</p>
                 </div>
               </div>
-              <div class="col-5">
-                <div class="card card-block card-2" style="padding-top:80px;">
-                  <p class="d-inline business-p1">10+</p>
-                  <p class="d-inline business-p2">Projects</p>
-                  </p>
+
+              <div class="carousel-cell">
+                <div class="content">
+                  <p class="business-p1">50+</p>
+                  <p class="business-p2">Projects</p>
                 </div>
               </div>
-              <div class="col-5">
-                <div class="card card-block card-2" style="padding-top:80px;">
-                  <p class="d-inline business-p1">20+</p>
-                  <p class="d-inline business-p2">Projects</p>
-                  </p>
+
+              <div class="carousel-cell">
+                <div class="content">
+                  <p class="business-p1">50+</p>
+                  <p class="business-p2">Projects</p>
                 </div>
               </div>
-              <div class="col-5">
-                <div class="card card-block card-2" style="padding-top:80px;">
-                  <p class="d-inline business-p1">30+</p>
-                  <p class="d-inline business-p2">Projects</p>
-                  </p>
+
+              <div class="carousel-cell">
+                <div class="content">
+                  <p class="business-p1">50+</p>
+                  <p class="business-p2">Projects</p>
                 </div>
               </div>
+
+              <div class="carousel-cell">
+                <div class="content">
+                  <p class="business-p1">50+</p>
+                  <p class="business-p2">Projects</p>
+                </div>
+              </div>
+      
             </div>
-            <!-- <div class="row" style="margin-top: 50px;">
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-12">
-                    <p class="d-inline business-p1">50+</p>
-                    <p class="d-inline business-p2">Projects</p>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-12">
-                  <p class="d-inline business-p1">10+</p>
-                  <p class="d-inline business-p2">Projects</p>
-                </div>
-            </div> -->
         </div>
     </section>
     <section id="clients" style="background: black;">
         <div class="container" style="position: relative;">
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-12" style="margin-bottom: 150px;">
-                    <p class="float-sm-left" style="color: #5C46F9;padding-top: 35px;padding-left: 30px;">Locations</p>
+                    <p class="float-sm-left" style="color: #5C46F9;padding-top: 35px;padding-left: 30px;font-size: 24px;">Locations</p>
                     <p class="float-sm-right first-business">
                     Our clients cover 75%<br>from the US and 25% from<br>Europe.</p>
                     <img src="assets/img/map.png" style="margin-top: 110px;width: 100%;">
@@ -161,6 +213,7 @@ permalink: /
                     <p style="font-weight: 300;font-size: 50px;color: white;opacity: 1;">Why our clients chose us</p>
                 </div>
             </div>
+            
             <div class="row">
                 <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 col-12">
                     <p class="p1-client">
@@ -203,7 +256,7 @@ permalink: /
                     </p>
                 </div>
                 <div class="col-sm-12 col-md-10 col-lg-10 col-xl-10">
-                    <p style="font-weight: 300;font-size: 60px;color: white;opacity: 0.24;">
+                    <p style="font-weight: 300;font-size: 60px;line-height: 67px !important;color: white;opacity: 0.24;">
                       Let's take a look at things you have on your mind.
                     </p>
                 </div>
