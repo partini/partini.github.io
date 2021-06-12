@@ -484,7 +484,6 @@ color: white;
   .flex-nowrap::-webkit-scrollbar { width: 0 !important }
   .flex-nowrap {
 
-    /* width:1500px;/* 40px - more place for scrollbar, is hidden under parent box */ */
        white-space: nowrap;
        overflow-x: scroll;
        overflow-y: hidden;
@@ -639,6 +638,104 @@ header.masthead .intro-text{
   padding: 0 !important;
 }
 
+.clients-slider-name{
+  color: #707070;
+}
+
+.info-toggles button{
+  background-color: transparent;
+  border: 0;
+  color: #fff !important;
+  margin-bottom: 1rem !important;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.info-toggles .item .content{
+  color: rgba(245, 245, 245, 0.5);
+  display: none;
+  padding-left: 4rem;
+  font-weight: 100;
+  font-size: 17px;
+  padding-bottom: 5rem;
+}
+
+#footer{
+  background: #000000;
+  padding: 0;
+  width: 100%;
+  position: relative;
+}
+
+#footer .get_in_touch_text{
+  font-size: 78px;
+  line-height: 90px;
+  color: #fff;
+  padding-right: 10px;
+}
+
+.left_footer_grid{
+  background-image: linear-gradient(to top right, rgb(92,70,249) 10%, #000 75%); 
+  padding: 4rem 0rem 14rem 0rem;
+}
+
+.right_footer_grid{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right_footer_grid button{
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  font-weight: 100;
+  font-size: 28px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #848484;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footer-bottom ul li a{
+  color: #fff;
+  padding-right: 20px;
+  font-size: 16px;
+  font-weight: 100;
+  opacity: 0.8;
+}
+
+#back_top{
+  color: #fff;
+  padding-right: 20px;
+  font-size: 16px;
+  font-weight: 100;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.right_bottom_footer_grid{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 83%;
+}
+
+#clients{
+  padding: 0;
+}
+
+.back_top_grid img{
+  position: absolute;
+  top: -77px;
+  left: 50%;
+  transform: translate(-70%);
+}
+
 @keyframes animateBusniessText{
   0%{
     left: 100%;
@@ -685,6 +782,48 @@ header.masthead .intro-text{
   .carousel-cell{
 		width: 80% !important;
 	}
+}
+
+@media (max-width: 767px){
+  .right_bottom_footer_grid{
+    justify-content: flex-start;
+  }
+
+  .left_footer_grid img{
+    transform: rotate(90deg);
+    width: 185px;
+    height: 100px;
+    margin-top: 2rem;
+  }
+
+  .footer-bottom{
+    position: relative;
+    padding-top: 5rem !important;
+  }
+
+  .back_top_grid{
+    position: absolute !important;
+    right: 0;
+    top: -80px;
+  }
+
+  .left_footer_grid div{
+    justify-content: center !important;
+  }
+
+  .right_footer_grid{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  #footer .get_in_touch_text{
+    font-size: 44px;
+    line-height: 50px;
+  }
+
+  .left_footer_grid{
+    padding-bottom: 6rem;
+  }
 }
 
 @media (max-width: 575px){
