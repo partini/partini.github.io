@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/flickity/flickity.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/fullpage/fullpage.css">
 
     <link href="http://fonts.cdnfonts.com/css/heebo" rel="stylesheet">
 
@@ -38,31 +39,27 @@
 
   <body  id="page-top">
   {% include head.html %}
- 
-
-
-
-    {{ content }}
-
-    {% if page.footer_type == "footer_2_columns" %} 
-      {% include footer_2_columns.html %}
-    {% elsif page.footer_type=="footer_1_column" %}
-        {% include footer_1_column.html %} 
-    {% elsif page.footer_type == "consult" %}
-      {% include footer_consult.html %}
-    {% endif %}
-    {% include analytics.html %}
+  {{ content }}
+  {% if page.footer_type == "footer_2_columns" %} 
+    {% include footer_2_columns.html %}
+  {% elsif page.footer_type=="footer_1_column" %}
+      {% include footer_1_column.html %} 
+  {% elsif page.footer_type == "consult" %}
+    {% include footer_consult.html %}
+  {% endif %}
+  {% include analytics.html %}
 
     <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
     <script src="{{ site.baseurl }}/assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="{{ site.baseurl }}/assets/js/agency.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/Full-Page-Background.js"></script>
+    <!-- <script src="{{ site.baseurl }}/assets/js/Full-Page-Background.js"></script>
     <script src="{{ site.baseurl }}/assets/js/Full-Page-Background-1-1.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/Full-Page-Background-3-1.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/Full-Page-Background-3-1.js"></script> -->
     <script src="{{ site.baseurl }}/assets/js/jquery.min-2.js"></script>
     <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
     <script src="{{ site.baseurl }}/assets/flickity/flickity.js"></script>
+    <script src="{{ site.baseurl }}/assets/fullpage/fullpage.js"></script>
     <script src="{{ site.baseurl }}/assets/js/global.js"></script>
     <script>
      $(window).on("scroll", function() {

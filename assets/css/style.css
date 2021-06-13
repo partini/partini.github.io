@@ -736,6 +736,17 @@ header.masthead .intro-text{
   transform: translate(-70%);
 }
 
+.bg-black{
+  background-color: #000 !important;
+}
+
+.fp-viewing-0{
+  background: #000 !important;
+}
+.padding-7{
+  padding-top: 7rem !important;
+}
+
 @keyframes animateBusniessText{
   0%{
     left: 100%;
@@ -784,13 +795,19 @@ header.masthead .intro-text{
 	}
 }
 
+
 @media (max-width: 767px){
+  .left_footer_grid img{
+    transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 992px){
   .right_bottom_footer_grid{
     justify-content: flex-start;
   }
 
   .left_footer_grid img{
-    transform: rotate(90deg);
     width: 185px;
     height: 100px;
     margin-top: 2rem;

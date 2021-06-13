@@ -14,3 +14,7 @@ $('.info-toggles .item').each(function(){
         $(this).parent().find('.content').toggle();
     });
 });
+
+var myFullpage = new fullpage('#fullpage', {
+    verticalCentered: false,
+});
