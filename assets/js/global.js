@@ -18,3 +18,11 @@ $('.info-toggles .item').each(function(){
 var myFullpage = new fullpage('#fullpage', {
     verticalCentered: false,
 });
+
+$('#back_top').click(function(){
+    fullpage_api.moveTo(1, 0);
+});
+
+$('#explore').click(function(){
+    fullpage_api.moveTo(2, 0);
+});
