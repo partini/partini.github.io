@@ -506,7 +506,7 @@ color: white;
         margin-right: initial !important;
         margin-top: auto;
         margin-bottom: auto;
-        padding-top:100px;
+        padding-top:1rem;
     }
         .get-estimate-header { 
         background-color: transparent !important;
@@ -987,11 +987,19 @@ header.masthead .intro-text{
 }
 
 #navbarResponsive a{
-   color: #fff !important;
+   color: #fff;
 }
 
 .navbar .navbar-collapse.show .navbar-nav{
   background-color: #000;
+}
+
+html,body{
+  overflow-x: hidden !important;
+}
+
+.bg-transparent{
+  background-color: transparent;
 }
 
 @keyframes animateBusniessText{
@@ -1037,6 +1045,12 @@ header.masthead .intro-text{
   }
 }
 
+@media (min-width: 767px){
+  .nav_with_black_color .nav-item a{
+    color: #000 !important;
+  }
+}
+
 @media (max-width: 767px) and (min-width: 575px){
 	.carousel-cell{
 		width: 50% !important;
@@ -1065,6 +1079,31 @@ header.masthead .intro-text{
 
   .team-section .image{
     height: unset;
+  }
+
+  #navbarResponsive{
+    background-color: #000 !important;
+    margin-left: -16px;
+    margin-right: -16px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    padding-top: 5rem !important;
+  }
+
+  .nav_with_black_color a{
+    color: #fff !important;
+  }
+
+  .menu_mobile_show .fa,
+  .menu_mobile_show a,
+  .menu_mobile_show img{
+    color: #fff !important;
+    filter: unset;
+  }
+
+  .estimate-button a{
+    text-align: center;
   }
 
 }

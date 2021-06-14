@@ -27,3 +27,13 @@ $('#back_top').click(function(){
 $('#explore').click(function(){
     fullpage_api.moveTo(2, 0);
 });
+
+$('#menu_burger').click(function(){
+    $('#navbarResponsive').toggle(function(){
+        if($(this).is(":visible")){
+            $('.navbar').addClass('menu_mobile_show')
+        } else{
+            $('.navbar').removeClass('menu_mobile_show')
+        }
+    });
+});
