@@ -415,6 +415,22 @@ font-size: 12px;font-family: Heebo;font-weight: 400;color: white;
   background-color: #5C46F9 !important;
 } */
 
+.nav_with_black_color a{
+  color: #000 !important;
+}
+
+.nav_with_black_color img{
+  filter: brightness(0%);
+}
+
+#page-top{
+  overflow-x: hidden;
+}
+
+.nav_with_black_color  .fa-bars{
+  color: #000;
+}
+
 #mainNav .navbar-brand{
   z-index: 999;
 }
@@ -450,7 +466,7 @@ color: white;
 }
 
 @media only screen and (max-width: 800px) {
-  .navbar-collapse {
+  /* .navbar-collapse {
             background: rgba(0, 0, 0, 1);
         opacity: 1;
         position: relative;
@@ -466,7 +482,7 @@ color: white;
         overflow-y: scroll;
         overflow-x: hidden;
         height: 100vh;
-  }
+  } */
   .navbar .navbar-collapse.collapsing[style*="height"] {
         opacity: 1;
         height: 100vh !important
@@ -478,13 +494,14 @@ color: white;
         width: 122%;
         margin-top:-21%;
     }
-    .navbar .navbar-collapse.collapse.show {
+    /* .navbar .navbar-collapse.collapse.show {
         opacity: 1;
         pointer-events: auto;
-        margin-left:-5%;
-        width:122%;
+        margin-left: -20px;
+        margin-right: -20px;
+        width: 100%;
         margin-top:-21%;
-    }
+    } */
     .navbar .navbar-collapse .navbar-nav {
         margin-right: initial !important;
         margin-top: auto;
@@ -953,6 +970,28 @@ header.masthead .intro-text{
 
 #benefits{
   padding: 4rem 0rem 4rem 0rem;
+}
+
+/* .nav_with_black_color .navbar-collapse.show a{
+  color: #fff !important;
+} */
+
+.navbar-collapse.show{
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #000;
+  width: 100%;
+  z-index: 99;
+}
+
+#navbarResponsive a{
+   color: #fff !important;
+}
+
+.navbar .navbar-collapse.show .navbar-nav{
+  background-color: #000;
 }
 
 @keyframes animateBusniessText{
