@@ -132,46 +132,57 @@ margin-top: -40px;
   font-family: Heebo;
 }
 .our-services .our-services-first{
-  margin-top: 100px; margin-left:50px;
+  margin-top: 100px;
 }
 
 .provide {
-  font-size: 20px; font-weight: 400;
+  font-size: 30px;
+  font-weight: 100;
 }
 
 .our {
-  font-size: 25px; font-weight: bold;
+  font-size: 28px; 
+  font-weight: bold;
 }
 
 
 #chat-bots {
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 100;
 }
 
 .border-class {
-  border-bottom: 1px solid rgba(0, 0, 0, .3); margin-top:40px; margin-bottom:40px
+  border-bottom: 1px solid rgba(112, 112, 112, 0.1); 
+  margin-top:40px; 
+  margin-bottom:40px
 }
 
 .our-values p{
-  font-size: 12px;margin-left: 50px;
+  font-size: 14px;
+  font-weight: 100;
 }
 
 .border-second-class {
-  border-bottom: 1px solid rgba(0, 0, 0, .3); margin-top:40px; margin-bottom:40px;
-}
-
-.projects {
-  margin-left:50px;
+  border-bottom: 1px solid rgba(112, 112, 112, 0.1); 
+  margin-top:40px; 
+  margin-bottom:40px
 }
 
 #paragraph-projects{
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 100;
 }
 .team-section {
   background-color:black;
 }
 .title{
-  font-weight: 400;color: white;font-family: Heebo;font-size: 25px;margin-top: -55px;
+  font-weight: 400;
+  color: white;
+  font-family: Heebo;
+  font-size: 38px;
+  line-height: 50px;
+  margin-top: -55px;
+  margin-bottom: 2rem;
 }
 .first-col-photo img{
    width: 100%;   height: auto; margin-bottom:20px;
@@ -180,7 +191,9 @@ margin-top: -40px;
   position:relative;
 }
 .second-col-photo img{
-  width: 100%;   height: auto; opacity: 0.50;  margin-bottom:20px;
+  width: 100%;   
+  height: auto; 
+  margin-bottom:20px;
 }
 .third-col-photo img{
   width: 100%;
@@ -322,14 +335,14 @@ font-size: 12px;font-family: Heebo;font-weight: 400;color: white;
 #inbox {background: #f7f7f7;margin-top: -80px;}
 .inbox{font-family: Heebo;}
 #provide{font-family: Heebo;}
-.provide-p1{  margin-bottom: 0px;font-size: 17px;margin-left: 40px;}
-.provide-p2{ font-weight: bold;font-size: 17px;margin-left: 40px;}
-.provide-p3{   font-size: 13px;margin-left: 40px;}
+.provide-p1{  margin-bottom: 0px;font-size: 30px; font-weight: 400;}
+.provide-p2{ font-weight: bold;font-size: 30px;}
+.provide-p3{ font-size: 16px;font-weight: 100;line-height: 22px;}
 .services-p1{font-size: 22px;font-family: Heebo;color: white;margin-top: 650px;}
-.first-service-col{background: rgba(0,123,255,0.81);text-align: left;padding-bottom: 1px;padding-right: 0px;padding-left: 15px;height: 265.5px;max-width: auto;}
-.second-service-col{background: rgba(35,9,9,0.69);background-color: #2F1295;text-align: left;max-width: auto;height: 265.5px;}
+.first-service-col{background: rgba(0,123,255,0.81);text-align: left;padding-bottom: 1px;padding-right: 0px;padding-left: 15px;padding-bottom:3rem; max-width: auto;}
+.second-service-col{background: rgba(35,9,9,0.69);background-color: #2F1295;text-align: left;max-width: auto;padding-bottom:3rem; }
 .first-service-row img{width: 75px;margin-top: 28px;margin-bottom: 5px;}
-.third-service-col{background-color: #9A95AB;text-align: left;max-width: auto;height: 265.5px;}
+.third-service-col{background-color: #9A95AB;text-align: left;max-width: auto;padding-bottom:3rem; }
 .service-p1{font-size: 13px;color: white;}
 .service-p2{  color: white;font-size: 11px;opacity: 0.61;font-family: Heebo;   position: absolute;   bottom: 0;   left: 3;}
 .portfolio-item{border: 0.5px solid rgb(207,211,214);margin-bottom: 0;text-align: center;height: 152px;}
@@ -753,6 +766,73 @@ header.masthead .intro-text{
   padding-top: 50px;
 }
 
+#trusted_part{
+  position: relative;
+}
+#trusted_part::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.2);
+}
+
+.services-header{
+  height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.services-header .services-p1{
+  margin-top: 0;
+  font-size: 40px;
+}
+
+.services_clients_title{
+  font-size: 40px;
+  line-height: 51px;
+  font-weight: 400;
+}
+
+.first-service-row .service-p2{
+  margin-left: 0;
+  font-size: 14px;
+}
+
+.first-service-row .service-p1{
+  margin-left: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: white;
+  font-weight: 100;
+}
+
+#technologies{
+  padding-top: 0 !important;
+}
+
+.second-service-row .title{
+  font-size: 20px;
+  color: #000;
+  line-height: 28px;
+}
+
+.color-primary{
+  color: #5C46F9 !important;
+}
+
+.font-weight-thin{
+  font-weight: 100 !important;
+}
+
+.color-black{
+  color: #000 !important;
+}
+
 @keyframes animateBusniessText{
   0%{
     left: 100%;
@@ -813,6 +893,13 @@ header.masthead .intro-text{
 @media (max-width: 767px){
   .left_footer_grid img{
     transform: rotate(90deg);
+  }
+  .list-footer{
+    margin-left: 0;
+  }
+  .second-list-footer{
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
