@@ -27,8 +27,11 @@ body{
 }
 
 .all-divs-borders {
-  width: auto;border: 1px solid #2F1295;margin-bottom: 10px;margin-top: 10px;
+  width: auto;
+  border: 1px solid #2F1295;
+  margin-bottom: 10px;margin-top: 10px;
   margin-left: 0px;
+  padding: 10px;
 }
 .all-divs-borders img{
 width: 80px;padding-top: 10px;
@@ -40,22 +43,29 @@ width: 80px;padding-top: 10px;
   margin-left: 150px;margin-top: -38px;font-weight: 300;font-size: 13px;
 }
 .firstparagraphs{
-  font-weight: 500;font-size: 12px;margin-bottom: 0px;margin-top: 30px;border-color: #5C46F9;  margin-left:20px;
+  font-weight: 600;font-size: 13px;margin-bottom: 0px;margin-top: 30px;border-color: #5C46F9;
 }
 .secondparagraphs{
-  font-weight: 400;font-size: 11px;border-width: 1.8px;border-color: rgb(200,204,209);border-bottom: 1px solid rgb(200,204,209);margin-bottom: 11px;max-width: 430px; margin-left:20px;
+  font-weight: 400;font-size: 12px;line-height: 18px;border-width: 1.8px;border-color: rgb(200,204,209);border-bottom: 1px solid rgb(200,204,209);margin-bottom: 11px;max-width: 430px;
 }
 .fulltime{
   color: black;font-weight: 400;font-size: 13px;margin-right: 12px;
 }
 .a-link{
-  color: black;font-weight: 400;margin-left: 0px;font-size: 13px;margin-right: 40px;
+  color: black;
+  font-weight: 400;
+  margin-left: 0px;
+  font-size: 13px;
 }
 .work-life{
-  font-weight: 500;font-family: Heebo;margin-bottom: 0px;
+  font-weight: 400;
+  margin-bottom: 0px;
+  font-size: 25px;
 }
 .work-life-two{
-  font-family: Heebo;font-weight: 300;font-size: 12px;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 25px;
 }
 .navbar {
   height: 90px;
@@ -72,10 +82,14 @@ font-family:Heebo;
   width: 60px;
 }
 
-.masthead {
-  opacity: 0.99;filter: brightness(75%) grayscale(8%) invert(0%);
-   width:auto;
-   height: auto;
+.masthead::before {
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ background-color: rgba(0, 0, 0, 0.3);
+ width: 100%;
+ height: 100%;
 }
 
 .intro-text {
@@ -293,16 +307,16 @@ font-size: 12px;font-family: Heebo;font-weight: 400;color: white;
 .p3{color: rgb(0,0,0);font-family: Heebo;font-weight: 300;font-size: 14px;margin-top: 150px;}
 .p4{color: black;font-weight: 300;font-family: Heebo;margin-bottom: 0px;}
 .benefits-col{  background: #f9f9f9;margin-top: 0px;}
-.title-benefits{  font-family: Heebo;font-size: 24px;margin-top: 25px;margin-left: 30px;}
-.first-benefits{  font-family: Heebo;margin-left: 40px;}
-.second-benefits{  font-size: 9px;margin-left: 40px;}
-.workplace{  margin-bottom: 60px;margin-top: -65px;padding-right: 0px;padding-left: 0px;}
-.workplace-paragraph{  margin-bottom: 0;font-family: Heebo;font-weight: 400;font-size: 30px;}
+.title-benefits{ font-size: 30px;padding-bottom: 4rem;}
+.first-benefits{ font-weight: 600; font-size: 24px;}
+.second-benefits{  font-size: 12px; font-weight: 100;}
+.workplace{  margin-bottom: 60px;margin-top: 65px;padding-right: 0px;padding-left: 0px;}
+.workplace-paragraph{  margin-bottom: 0;font-family: Heebo;font-weight: 400;font-size: 30px;margin: 10px}
 .workplace-paragraph-first{  font-family: Heebo;font-weight: 500;font-size: 14px;}
 .workplace-paragraph-second{font-size: 14px;font-weight: 400;font-family: Heebo;margin-bottom: 0px;margin-left: 0px;}
 .workplace-paragraph-third{  font-size: 14px;font-weight: 400;font-family: Heebo;margin-bottom: 0px;margin-left: 0px;}
 .adventures{  font-family: Heebo;}
-.adventures img {  width: 300px;}
+.adventures img {  width: 100%;}
 .first-col-jobdetails{font-family: Heebo;padding-right: 0px;padding-left: 40px;opacity: 1;}
 .first-col-jobdetails img{width: 100px;border-radius: 100%;height: 95px;margin-right: 10px;margin-left: 0px;  margin-bottom: 50px;}
 .p1-jobdetails{color: black;font-size: 35px;font-family: Heebo;font-weight: 400;margin-bottom: 0px;}
@@ -319,18 +333,27 @@ font-size: 12px;font-family: Heebo;font-weight: 400;color: white;
 .services-1-thirdrow p{font-weight: 300;margin-bottom: 80px;}
 .masthead-singlearticle{opacity: 0.81;filter: brightness(86%) contrast(114%) grayscale(18%) saturate(114%) sepia(0%);background: url(../img/foto55.png) center / cover no-repeat, black;height: 400px;}
 .first-col-singlearticle{font-size: 30px;font-family: Heebo;font-weight: 300;margin-bottom: 20px;}
-.careers-first-col input{width: 300px;border: none;border-width: 0;box-shadow: none;border-color: white;margin-top: 18px;color: rgb(0, 0, 0);font-weight: 300;font-size: 15px;margin-left: 5px;}
-.careers-second-row a{margin-right: 50px;color: black; font-weight: 300;font-size: 11px;}
+.careers-first-col input{width: 300px;border: none;border-width: 0;box-shadow: none;border-color: white;margin-top: 18px;color: rgb(0, 0, 0);font-weight: 300;font-size: 15px;margin-left: 5px;outline: 0;}
+.careers-second-row a{margin-right: 50px;color: black; font-weight: 300;font-size: 16px;}
 .border-careers{margin-top: 12px;border-right-style: solid;border-right-color: rgb(230,236,242);border-width: thin;font-size: 14px;margin-left: 12px;}
 .apply{color: black;font-weight: bold;font-size: 12px;}
 .first-col-insights{height: 750px;text-align: center;}
 .second-p-insights{font-family: Heebo;font-size: 40px; }
 .first-p-insights{margin-top: 200px;font-size: 16px;font-weight: bold;font-family: Heebo;}
 .third-p-insights{font-weight:500; font-size: 18px;font-family: Heebo;}
-.four-p-insights{font-size: 15px;font-weight:400;}
+.four-p-insights{font-size: 13px;font-weight:400; line-height: 20px;}
 .five-p-insights{font-size: 12px;font-family: Heebo; font-weight:bold;}
 .btn-learn{background: var(--white);border-top-color: rgb(255,255,255);border-right-color: white;border-bottom-color: white;border-left-color: white;}
-.btn-tools{border-radius: 30px;background: rgb(231,235,239);max-height: 35px;width: 38px;}
+.btn-tools{
+  border-radius: 100%;
+  background: rgb(231,235,239);
+  width: 50px;
+  height: 50px;
+}
+
+.btn-tools:hover{
+  background-color: #5C46F9;
+}
 .adventures-paragraphs p{font-family: Heebo;}
 #inbox {background: #f7f7f7;margin-top: -80px;}
 .inbox{font-family: Heebo;}
@@ -387,6 +410,11 @@ font-size: 12px;font-family: Heebo;font-weight: 400;color: white;
 		box-shadow: none;
 	}
 }
+
+/* #mainNav{
+  background-color: #5C46F9 !important;
+} */
+
 #mainNav .navbar-brand{
   z-index: 999;
 }
@@ -593,6 +621,10 @@ color: white;
 header.masthead .intro-text{
   padding-top: 0 !important;
   padding-bottom: 0 !important;
+}
+
+.masthead{
+  position: relative;
 }
 
 .masthead .container{
@@ -899,6 +931,28 @@ header.masthead .intro-text{
 .team-paragraph #p2{
   font-weight: 100;
   font-size: 16px;
+}
+
+.item_tools{
+  border-bottom: 1px solid rgba(112, 112, 112, 0.3);
+  margin-bottom: 15px;
+}
+
+#adventures{
+  padding-top: 100px !important;
+}
+
+.job_title{
+  font-weight: 400;
+}
+
+.job_footer{
+  display: flex;
+  justify-content: space-between;
+}
+
+#benefits{
+  padding: 4rem 0rem 4rem 0rem;
 }
 
 @keyframes animateBusniessText{

@@ -4,7 +4,7 @@ footer_type: footer_1_column
 title: Incodeks - Careers
 permalink: /careers/
 ---
-    <header class="masthead" style="background-image: url('{{ site.baseurl }}/assets/img/foto15.png');">
+    <!-- <header class="masthead" style="background-image: url('{{ site.baseurl }}/assets/img/foto15.png');">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" style="text-align: center;height: 750px;">
@@ -16,15 +16,29 @@ permalink: /careers/
                 </div>
             </div>
         </div>
+    </header> -->
+
+    <header class="masthead" style="background-image: url('{{ site.baseurl }}/assets/img/foto15.png');">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 services-header position-relative">
+                    <p class="services-p1">Join a workplace that is more than a workspace</p>
+                    <a class="btn btn-link" role="button">
+                      <i class="fa fa-long-arrow-down fa-2x" style="color: var(--light);"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </header>
+
     <section id="jobs" style="font-family: Heebo;">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                    <p style="font-family: Heebo;font-size: 25px;">Current Openings</p>
+                    <p style="font-size: 30px;">Current Openings</p>
                 </div>
             </div>
-            <div class="row" style="margin-top: 34px; border: 1px solid rgb(218,217,218) ;">
+            <div class="row m-0" style="margin-top: 34px; border: 1px solid rgb(218,217,218) ;">
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-12 careers-first-col" style="padding-bottom: 15px;">
                   <i class="fa fa-search">
                   </i>
@@ -45,7 +59,7 @@ permalink: /careers/
                   </span>
                 </div>
             </div>
-            <div class="row careers-second-row">
+            <div class="row careers-second-row mt-4 mb-4">
                 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" style="margin-top: 15px;margin-bottom: -10px;height: 30px;">
                     <a href="#">All jobs</a>
                     <a href="#">Results</a>
@@ -56,13 +70,15 @@ permalink: /careers/
                 {% for job in site.jobs %}
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-12">
                     <div class="all-divs-borders"><img class="d-inline" src="{{ site.baseurl }}/assets/img/Jem-final-profile-pic-circle2.png">
-                        <p class="d-inline">{{ job.title }}</p>
-                        <p class="location"><i class="fa fa-location-arrow"></i>{{ job.location }}<br></p>
+                        <p class="d-inline job_title">{{ job.title }}</p>
+                        <p class="location"><i class="fa fa-location-arrow mr-2"></i>{{ job.location }}<br></p>
                         <p class="firstparagraphs">{{ job.long_title }}</p>
-                        <p class="short_description secondparagraphs" >{{ job.short_description }}</p>
-                        <a class="fulltime" href="#">{{ job.type_of_position }}</a>
-                        <a class="a-link" href="#">{{ job.date | date: "%B %e, %Y" }} </a>
-                        <a class="apply" href="{{ site.baseurl }}{{ job.url }}">Apply now</a>
+                        <p class="short_description secondparagraphs pb-4" >{{ job.short_description }}</p>
+                        <div class="job_footer">
+                            <a class=" font-weight-bold fulltime" href="#">{{ job.type_of_position }}</a>
+                            <a class=" font-weight-bold a-link" href="#">{{ job.date | date: "%B %e, %Y" }} </a>
+                            <a class=" font-weight-bold apply" href="{{ site.baseurl }}{{ job.url }}">Apply now</a>
+                        </div>
                     </div>
                 </div>
                 {% endfor %}
@@ -74,89 +90,90 @@ permalink: /careers/
         <div class="container">
             <div class="row" style="margin-top: -55px;">
                 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                    <p class="text-center" style="margin-bottom: 0;font-family: Heebo;font-weight: 400;font-size: 20px;">Why work with us?</p>
-                    <p class="text-center" style="font-family: Heebo;font-weight: 500;font-size: 16px;margin-bottom: 0;color: #5C46F9;">Our diverse team is defined by a set of principles that makes&nbsp;<br></p>
-                    <p class="text-center" style="margin-bottom: 0;font-family: Heebo;font-weight: 500;font-size: 16px;color: #5C46F9;">us work well together. Here is a sneak peek.</p>
+                    <p class="text-center" style="margin-bottom: 0;font-family: Heebo;font-weight: 400;font-size: 40px;">Why work with us?</p>
+                    <p class="text-center" style="font-weight: 100;font-size: 16px;margin-bottom: 0;color: #5C46F9;font-size: 24px;line-height: 30px;">Our diverse team is defined by a set of principles that makes&nbsp;<br> us work well together. Here is a sneak peek.</p>
                 </div>
             </div>
             <div class="row" style="margin-top: 80px;margin-left: 0px;margin-right: 0px;">
                 <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center">
-                    <p class="text-left work-life">Self-Developing</p>
+                    <p class="text-left work-life mb-2">Self-Developing</p>
                     <p class="text-left work-life-two">Vestibulum pellentesque euismod ex, sit amet sollicitudin nisl lobortis vel. Integer est turpis, dapibus non diam efficitur, convallis porta mauris.</p>
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center">
-                    <p  class="text-left work-life">Work-Life balance</p>
+                    <p  class="text-left work-life mb-2">Work-Life balance</p>
                     <p class="text-left work-life-two" >Vestibulum pellentesque euismod ex, sit amet sollicitudin nisl lobortis vel. Integer est turpis, dapibus non diam efficitur, convallis porta mauris.</p>
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center">
-                    <p class="text-left work-life">Teamwork</p>
+                    <p class="text-left work-life mb-2">Teamwork</p>
                     <p class="text-left work-life-two">Vestibulum pellentesque euismod ex, sit amet sollicitudin nisl lobortis vel. Integer est turpis, dapibus non diam efficitur, convallis porta mauris.</p>
                 </div>
             </div>
         </div>
     </section>
-    <section id="benefits" class="benefits" style="margin-top: -230px;">
+    <section id="benefits" class="benefits" style="background: #f9f9f9;">
         <div class="container">
-            <div class="row" style="background-color: #858095;">
+            <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 benefits-col">
                     <p class="title-benefits">There are benefits in working with us</p>
                 </div>
             </div>
             <div class="row" style="background: #f9f9f9;">
-                <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 col-12">
-                  <i class="fa fa-sun-o" style="margin-left: 40px;"></i>
-                    <p class="first-benefits">Vacation</p>
-                    <p class="second-benefits">At Incodeks our environment is more&nbsp;<br>
-                      Agile oriented than ever. Those seeking&nbsp;<br>
-                      to deliver more value and fast prototype&nbsp;<br
-                      >we have the ability and professionalism&nbsp;<br>
-                      for that. we have the team of Project&nbsp;<br>
-                      Managers and engineers that will guide&nbsp;<br>
-                      you through the entire process for&nbsp;<br>
-                      building your product. We will carry out&nbsp;<br>
-                      our knowledge transfer process to hand&nbsp;<br>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <img class="" src="{{ site.baseurl }}/assets/img/sun.png">
+                    <p class="first-benefits mt-2 mb-2">Vacation</p>
+                    <p class="second-benefits">At Incodeks our environment is more
+                      Agile oriented than ever. Those seeking
+                      to deliver more value and fast prototype
+                      >we have the ability and professionalism
+                      for that. we have the team of Project
+                      Managers and engineers that will guide
+                      you through the entire process for
+                      building your product. We will carry out
+                      our knowledge transfer process to hand
                       over the reins to your dedicated team.</p>
                 </div>
-                <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 col-12">
-                  <i class="fa fa-hospital-o" style="margin-left: 40px;"></i>
-                    <p  class="first-benefits">Health Insurance<br></p>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <img class="" src="{{ site.baseurl }}/assets/img/plus.png">
+                    <p  class="first-benefits mt-2 mb-2">Health Insurance<br></p>
                     <p class="second-benefits" >We deliver QA services for our client&nbsp;<br>
-                      and we want to make sure that we&nbsp;<br>
-                      deliver quality to them, also help&nbsp;<br>
-                      evaluate the product’s compliance with&nbsp;<br>
-                      the original requirements and give you&nbsp;<br>
-                      valuable insights into end user&nbsp;<br>
-                      impressions of the product. Incodeks&nbsp;<br>
-                      thinks about your users and exactly how&nbsp;<br>
+                      and we want to make sure that we
+                      deliver quality to them, also help
+                      evaluate the product’s compliance with
+                      the original requirements and give you
+                      valuable insights into end user
+                      impressions of the product. Incodeks
+                      thinks about your users and exactly how
                       they'll interact with your application.&nbsp;</p>
                 </div>
-                <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 text-center col-12">
-                    <p class="text-left first-benefits">Flexible Hours<br></p>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <img class="" src="{{ site.baseurl }}/assets/img/watch.png">
+                    <p class="text-left first-benefits mt-2 mb-2">Flexible Hours<br></p>
                     <p class="text-left second-benefits">Beside the development process that we&nbsp;<br
-                      >do, we care about the life of products.&nbsp;<br>
-                      You can rely on us to help you scale as&nbsp;<br>
-                      your grow you user base. The reality on&nbsp;<br>
-                      now days is that software projects have&nbsp;<br>
-                      infinite life, they grow day by day. New&nbsp;<br>
-                      operating systems come out, and&nbsp;<br>
-                      platforms grow. Even the best of the&nbsp;<br>
-                      best software products require ongoing&nbsp;<br>
-                      attention, monitoring, evolution, and&nbsp;<br>
-                      improvements. We offer support for all&nbsp;<br>
+                      >do, we care about the life of products.
+                      You can rely on us to help you scale as
+                      your grow you user base. The reality on
+                      now days is that software projects have
+                      infinite life, they grow day by day. New
+                      operating systems come out, and
+                      platforms grow. Even the best of the
+                      best software products require ongoing
+                      attention, monitoring, evolution, and
+                      improvements. We offer support for all
                       of our projects post-launch.&nbsp;</p>
                 </div>
-                <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 col-12"><i class="fa fa-laptop" style="margin-left: 40px;"></i>
-                    <p class="first-benefits" >Friendly Environment</p>
-                    <p class="second-benefits" >We design and build the agile, resilient&nbsp;<br>systems that will keep your business&nbsp;<br>upto dated.&nbsp;<br>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <img class="" src="{{ site.baseurl }}/assets/img/heart_tv.png">
+                    <p class="first-benefits mt-2 mb-2" >Friendly Environment</p>
+                    <p class="second-benefits" >We design and build the agile, resilientsystems that will keep your businessupto dated.
                       <br>DevOps.. What does it mean?<br>
-                      <br>DevOps refers to the team behind the&nbsp;<br>
-                      design, development, launch, and&nbsp;<br
-                      >maintenance of your software.&nbsp;<br>
-                      The cloud solutions that make business&nbsp;<br>
-                      environment more flexible, scalable, and&nbsp;<br>
-                      connected. we leverage our expertise in&nbsp;<br>
-                      application development and implement&nbsp;<br>
-                      DevOps process that help process to&nbsp;<br>
+                      <br>DevOps refers to the team behind the
+                      design, development, launch, and
+                      >maintenance of your software.
+                      The cloud solutions that make business
+                      environment more flexible, scalable, and
+                      connected. we leverage our expertise in
+                      application development and implement
+                      DevOps process that help process to
                       automate and optimise operations.</p>
                 </div>
             </div>
@@ -164,12 +181,35 @@ permalink: /careers/
     </section>
     <section id="email" style="padding: 0;padding-top: 0; background: linear-gradient(138deg, white 85%, blue 140%);">
         <div class="container">
-            <div class="row">
+            <div class="row pb-5">
+
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 workplace">
-                    <p class="workplace-paragraph">Half of your life is spent at a workplace,&nbsp;<br>we want to make sure that time is fun.<br></p>
+                    <p class="workplace-paragraph">Half of your life is spent at a <span class="color-primary">workplace</span>,&nbsp;<br>we want to make sure that time is fun.<br></p>
                 </div>
+
+                <div class="col-md-4"></div>
+                <div class="col-md-4 mt-4">
+                    <p class="text-left workplace-paragraph-first mt-5">Send us email at <a href="mailto: info@incodeks.com" class="color-primary"> info@incodeks.com </a><br>or visit our offices in</p>
+                    <div class="row m-0 mt-5">
+
+                        <div class="col-md-6 p-0">
+                            <p>Ferizaj, Kosovo <br>
+                                Sejdi Sejdiu str. <br>
+                                Dardani
+                            </p>
+                        </div>
+
+                        <div class="col-md-6 p-0">
+                            <p>Pristina, Kosovo <br>
+                                Naim Maloku str. <br>
+                                Ulpiane
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
             </div>
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 workplace-two">
                     <p class="text-center workplace-paragraph-first">Send us email at incodeks.com<br>or visit our offices in</p>
                 </div>
@@ -181,7 +221,7 @@ permalink: /careers/
                 <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 workplace-four">
                     <p class="workplace-paragraph-third">Ferizaj, Kosovo<br>&nbsp;Sejdi Sejdiu str.<br>&nbsp;Dardani</p>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
   </section>
