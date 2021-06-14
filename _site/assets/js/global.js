@@ -17,6 +17,7 @@ $('.info-toggles .item').each(function(){
 
 var myFullpage = new fullpage('#fullpage', {
     verticalCentered: false,
+    responsiveWidth: 992
 });
 
 $('#back_top').click(function(){

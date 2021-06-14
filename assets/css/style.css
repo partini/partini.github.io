@@ -821,6 +821,23 @@ header.masthead .intro-text{
     justify-content: flex-start;
   }
 
+  .explore-button{
+    position: relative;
+    width: unset;
+    height: unset;
+    border: 0;
+    bottom: 0;
+    margin-top: 2rem;
+  }
+
+  .explore-button:hover{
+    border: 0
+  }
+
+  .explore-button::before{
+    display: none;
+  }
+
   .left_footer_grid img{
     width: 185px;
     height: 100px;
