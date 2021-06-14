@@ -11,7 +11,14 @@ function animateBussniessText(){
 $('.info-toggles .item').each(function(){
     $(this).find('button').click(function(){
         //$('.info-toggles .content').css('display','none');
-        $(this).parent().find('.content').toggle();
+        $(this).parent().find('.content').toggle(function(){
+            if($(this).is(":visible")){
+                $('.item').hide();
+                $(this).parent().show();
+            }else{
+                $('.item').show();
+            }
+        });
     });
 });
 
@@ -32,7 +39,7 @@ $('#menu_burger').click(function(){
     $('#navbarResponsive').toggle(function(){
         if($(this).is(":visible")){
             $('.navbar').addClass('menu_mobile_show')
-        } else{
+        }else{
             $('.navbar').removeClass('menu_mobile_show')
         }
     });
