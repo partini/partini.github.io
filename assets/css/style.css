@@ -185,7 +185,7 @@ margin-top: -40px;
   margin-bottom: 2rem;
 }
 .first-col-photo img{
-   width: 100%;   height: auto; margin-bottom:20px;
+   width: 100%;
 }
 .second-col-photo{
   position:relative;
@@ -193,12 +193,10 @@ margin-top: -40px;
 .second-col-photo img{
   width: 100%;   
   height: auto; 
-  margin-bottom:20px;
 }
 .third-col-photo img{
   width: 100%;
   height: auto;
-  margin-bottom:20px;
 }
 .second-row{
   margin-top: 25px; background-color:black;
@@ -264,10 +262,10 @@ margin-left: 100px;
 }
 
 .bottom-footer{
-border-top: 1px solid;
-margin-top: 8px;
-margin-left: 0px;
-margin-right: 0px;
+  border-top: 1px solid;
+  margin-top: 8px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 
@@ -831,6 +829,69 @@ header.masthead .intro-text{
 
 .color-black{
   color: #000 !important;
+}
+
+.team-section .image{
+  position: relative;
+  height: 400px;
+  transition: all 0.4s;
+}
+
+.team-section .fa{
+  position: relative;
+  color: #fff;
+  margin: 1rem;
+  background-color: #5C46F9;
+  padding: 1rem;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.team-section .fa-facebook::before{
+  margin-left: 3px;
+}
+
+.team-section .image img{
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+}
+
+.team-section .item{
+  transition: all 0.4s;
+  margin-bottom: 0rem;
+}
+
+.team-section .item:hover .hover{
+  display: flex;
+  
+}
+
+.team-section .hover{
+  position: absolute;
+  top: 0;
+  transition: all 0.4s;
+  display: none;
+  background-color: rgba(0,0,0, 0.5);
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-section .team-name{
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.team-section .team-position{
+  font-size: 20px;
+  font-weight: 100;
+  margin-top: 0px;
 }
 
 @keyframes animateBusniessText{
