@@ -1106,6 +1106,37 @@ html,body{
     text-align: center;
   }
 
+  .busineses-carusel .carousel-cell .content{
+    padding: 0 !important;
+    height: 17rem;
+    margin-top: 1rem;
+  }
+
+  .business-p2{
+    position: absolute;
+    bottom: 0;
+    font-weight: 600;
+  }
+
+  .on-scroll{
+    background: #5C46F9 !important
+  }
+
+}
+
+@media (max-width: 575px){
+  .section{
+    height: unset !important;
+    padding-bottom: 0 !important;
+  }
+
+  #clients{
+    padding-bottom: 7rem !important;
+  }
+
+  .masthead{
+    height: 600px !important;
+  }
 }
 
 @media (max-width: 992px){
