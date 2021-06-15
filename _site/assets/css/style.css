@@ -1067,6 +1067,10 @@ html,body{
   #services .fp-section{
     height: unset !important;
   }
+
+  .menu_nav_left_page{
+    display: none;
+  }
   
 }
 
