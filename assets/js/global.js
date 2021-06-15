@@ -73,3 +73,10 @@ $('#our_story').click(function(e){
         scrollTop: ($('.our-story').offset().top)
     },500);
 });
+
+$('.menu_nav_left_page ul li').each(function(){
+    $(this).click(function(){
+        $('.menu_nav_left_page ul li').removeClass('active');
+        $(this).addClass('active');
+    });
+});

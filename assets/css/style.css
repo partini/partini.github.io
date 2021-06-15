@@ -725,6 +725,7 @@ header.masthead .intro-text{
   padding: 0;
   width: 100%;
   position: relative;
+  background-image: linear-gradient(to right, rgb(92,70,249) -50%, #000)
 }
 
 #footer .get_in_touch_text{
@@ -735,9 +736,10 @@ header.masthead .intro-text{
 }
 
 .left_footer_grid{
-  background-image: linear-gradient(to top right, rgb(92,70,249) 10%, #000 75%); 
+  /* background-image: linear-gradient(to top right, rgb(92,70,249) 10%, #000 75%);  */
   padding: 4rem 0rem 14rem 0rem;
 }
+
 
 .right_footer_grid{
   display: flex;
@@ -1007,7 +1009,7 @@ html,body{
 }
 
 .menu_nav_left_page{
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 30px;
   transform: translate(0, -60%);
@@ -1018,16 +1020,28 @@ html,body{
   list-style: none;
   padding: 0;
   margin: 0;
-  background-color: #5C46F9;
-  padding: 10px;
+  background-color: transparent;
   border-radius: 10px;
+  width: 100px;
 }
 
 .menu_nav_left_page ul li a{
-  color: #fff;
+  color: #000;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 18px;
+  text-align: left;
+}
+
+.menu_nav_left_page ul li{
+  border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  text-align: left;
+}
+
+.menu_nav_left_page ul li.active{
+  border-bottom: 1px solid rgb(0, 0, 0, 1);
 }
 
 #provide{
