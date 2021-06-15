@@ -27,6 +27,11 @@ var myFullpage = new fullpage('#fullpage', {
     responsiveWidth: 992
 });
 
+var myFullpageServices = new fullpage('#services', {
+    verticalCentered: false,
+    responsiveWidth: 992
+});
+
 $('#back_top').click(function(){
     fullpage_api.moveTo(1, 0);
 });
@@ -43,4 +48,28 @@ $('#menu_burger').click(function(){
             $('.navbar').removeClass('menu_mobile_show')
         }
     });
+});
+
+$('#we_are').click(function(e){
+    $('html, body').animate({
+        scrollTop: ($('#services-section').offset().top)
+    },500);
+});
+
+$('#we_provide').click(function(e){
+    $('html, body').animate({
+        scrollTop: ($('.our-services').offset().top)
+    },500);
+});
+
+$('#team').click(function(e){
+    $('html, body').animate({
+        scrollTop: ($('.team-section').offset().top)
+    },500);
+});
+
+$('#our_story').click(function(e){
+    $('html, body').animate({
+        scrollTop: ($('.our-story').offset().top)
+    },500);
 });

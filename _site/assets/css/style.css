@@ -385,9 +385,6 @@ font-size: 12px;font-family: Heebo;font-weight: 400;color: white;
 .first-business{color: white;font-size: 60px;line-height: 65px;position: absolute;top: 5px;margin-left: 150px; color:white;max-height: 700px;min-height: 250px;}
 .footer-a{font-weight: 300;color: white;padding-left: 10px;}
 .footer-b{font-weight: 300;color: white;font-size: 12px;}
-.on-scroll{
-  background-color: #5C46F9 !important;
-}
 .in-scroll{
   background-color: #5C46F9 !important;
 }
@@ -1002,6 +999,42 @@ html,body{
   background-color: transparent;
 }
 
+.bg-white{
+  background-color: #fff !important;
+}
+.on-scroll{
+  background-color: #5C46F9 !important;
+}
+
+.menu_nav_left_page{
+  position: fixed;
+  top: 50%;
+  left: 30px;
+  transform: translate(0, -60%);
+  z-index: 1;
+}
+
+.menu_nav_left_page ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #5C46F9;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.menu_nav_left_page ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+#provide{
+  padding-top: 5rem;
+}
+
+
 @keyframes animateBusniessText{
   0%{
     left: 100%;
@@ -1022,9 +1055,19 @@ html,body{
 }
 
 @media (max-width: 992px){
+
   .first-business{
     line-height: 30px;
   }
+
+  .footer_slider{
+    display: none;
+  }
+
+  #services .fp-section{
+    height: unset !important;
+  }
+  
 }
 
 @media (max-width: 992px) and (min-width: 767px){
@@ -1038,11 +1081,31 @@ html,body{
 }
 
 @media (min-width: 992px){
+
   #estimate{
     position:absolute;
     bottom: 0;
     width: 100%;
   }
+
+  .services_nav{
+    background-color: #5C46F9 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  
+  /* .services_nav a{
+    color: #000 !important;
+  }
+  
+  .services_nav img{
+    filter: brightness(0)
+  } */
+
+  #technologies .container{
+    padding-top: 6rem;
+  }
+
 }
 
 @media (min-width: 767px){

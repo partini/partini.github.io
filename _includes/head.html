@@ -1,5 +1,5 @@
-<nav class="navbar navbar-dark navbar-expand-lg fixed-top navbar navbar-transparent navbar-expand-lg fixed-top bg-transparent" id="mainNav">
-    <div class="container-fluid {% if $page.title == 'Incodeks - Estimate' %} nav_with_black_color {% endif %}">
+<nav class="{% if $page.title == 'Incodeks - Services' %} services_nav{% endif %} {% if $page.title == 'Incodeks - Estimate' %} nav_with_black_color bg-white {% endif %} navbar navbar-dark navbar-expand-lg fixed-top navbar navbar-transparent navbar-expand-lg fixed-top bg-transparent" id="mainNav">
+    <div class="container-fluid">
       <a class="navbar-brand" href="{{ site.baseurl }}/index">
       <img src="{{ site.baseurl }}/assets/img/inc_logo.svg" style="width: 60px;">
     </a>
