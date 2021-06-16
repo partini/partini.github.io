@@ -781,6 +781,13 @@ header.masthead .intro-text{
   cursor: pointer;
 }
 
+.back_top.img{
+  position: absolute;
+  top: -77px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
 .right_bottom_footer_grid{
   display: flex;
   justify-content: flex-end;
@@ -788,16 +795,24 @@ header.masthead .intro-text{
   width: 83%;
 }
 
+.services_title_homepage{
+  font-weight: 400;
+  font-size: 75px;
+  color: white;
+  margin-bottom: 80px;
+  line-height: 80px;
+}
+
 #clients{
   padding: 0;
 }
 
-.back_top_grid img{
+/* .back_top_grid img{
   position: absolute;
   top: -77px;
   left: 50%;
   transform: translate(-70%);
-}
+} */
 
 .bg-black{
   background-color: #000 !important;
@@ -1048,6 +1063,48 @@ html,body{
   padding-top: 5rem;
 }
 
+.bg-grey{
+  background-color: #F2F2F2;
+  padding: 1rem;
+  padding-bottom: 0;
+}
+
+.services_grid img{
+  object-fit: contain;
+  margin-top: -2rem;
+}
+
+.back_top{
+  color: #fff !important;
+  padding-right: 20px;
+  font-size: 12px;
+  font-weight: 100;
+  text-decoration: none !important;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.questions_title{
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 67px !important;
+  color: white;
+  opacity: 0.24;
+}
+
+.questions_title_1{
+  color: #5C46F9;
+  font-weight: 300;
+  padding-top: 30px;
+  font-size: 24px;
+}
+
+.clientage_title{
+  color: #5C46F9;
+  font-weight: 400;
+  margin-top: 15px;
+  font-size: 24px;
+}
 
 @keyframes animateBusniessText{
   0%{
@@ -1096,6 +1153,7 @@ html,body{
   .busineses-carusel .carousel-cell {
     width: 50%;
   }
+
 }
 
 @media (min-width: 992px){
@@ -1162,6 +1220,19 @@ html,body{
     height: unset;
   }
 
+  .services_grid img{
+    object-fit: contain;
+    margin-top: 0rem;
+  }
+
+  .services_grid .item{
+    margin-bottom: 2rem;
+  }
+
+  .bg-grey{
+    padding-bottom: 2rem;
+  }
+
   #navbarResponsive{
     background-color: #000 !important;
     margin-left: -16px;
@@ -1203,6 +1274,30 @@ html,body{
     background: #5C46F9 !important
   }
 
+  .services_title_homepage{
+    font-size: 34px !important;
+    line-height: 46px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .questions_title{
+    font-size: 30px;
+    line-height: 44px !important;
+    text-align: center;
+  }
+
+  .questions_title_1{
+    text-align: center;
+  }
+  .clientage_title{
+    text-align: center;
+    margin-top: 0;
+  }
+  .section{
+    height: unset !important;
+    padding-bottom: 1rem !important;
+  }
 }
 
 @media (max-width: 575px){

@@ -32,7 +32,7 @@ var myFullpageServices = new fullpage('#services', {
     responsiveWidth: 992
 });
 
-$('#back_top').click(function(){
+$('.back_top').click(function(){
     fullpage_api.moveTo(1, 0);
 });
 
