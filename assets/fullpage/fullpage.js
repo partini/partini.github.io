@@ -3465,7 +3465,7 @@
             // }
 
             if(hasClass($html, ENABLED)){
-                showError('error', 'Fullpage.js can only be initialized once and you are doing it multiple times!');
+                //showError('error', '');
                 return;
             }
 

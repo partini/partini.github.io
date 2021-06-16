@@ -332,7 +332,7 @@ font-size: 12px;font-family: Heebo;font-weight: 400;color: white;
 .services-1-fourrow a{background: white;border-color: white;}
 .services-1-thirdrow p{font-weight: 300;margin-bottom: 80px;}
 .masthead-singlearticle{opacity: 0.81;filter: brightness(86%) contrast(114%) grayscale(18%) saturate(114%) sepia(0%);background: url(../img/foto55.png) center / cover no-repeat, black;height: 400px;}
-.first-col-singlearticle{font-size: 30px;font-family: Heebo;font-weight: 300;margin-bottom: 20px;}
+.first-col-singlearticle p{font-size: 30px;line-height: 40px;margin-bottom: 20px;}
 .careers-first-col input{width: 300px;border: none;border-width: 0;box-shadow: none;border-color: white;margin-top: 18px;color: rgb(0, 0, 0);font-weight: 300;font-size: 15px;margin-left: 5px;outline: 0;}
 .careers-second-row a{margin-right: 50px;color: black; font-weight: 300;font-size: 16px;}
 .border-careers{margin-top: 12px;border-right-style: solid;border-right-color: rgb(230,236,242);border-width: thin;font-size: 14px;margin-left: 12px;}
@@ -1214,6 +1214,9 @@ html,body{
   right: -2rem
 }
 
+#modal_job .modal-content{
+  
+}
 
 @keyframes animateBusniessText{
   0%{

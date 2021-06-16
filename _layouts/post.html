@@ -7,18 +7,22 @@ footer: footer_2_columns
     </header>
     {{ site.baseurl }}{{ post.featured_image }}
     <section style="padding-top: 0px; background: linear-gradient(138deg, white 85%, blue 140%);">
-        <div class="container">
+        <div class="container pt-4">
             <div class="row">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 first-col-singlearticle">
-                    <p class="text-sm-left text-md-left text-lg-left text-xl-left">
-                      {{ page.title }}
-                    </p>
+                <div class="col-lg-8 col-md-8 col-sm-12 col-12 first-col-singlearticle">
+                    <p class="font-weight-bold">{{ page.title }}</p>
                 </div>
-                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-12 second-col-singlearticle">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12"></div>
+                <!-- <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-12 second-col-singlearticle">
                     <div id="paragraphs">
                         <p class="text-sm-left text-md-left text-lg-center text-xl-center">Written on {{ page.date | date: "%B %e, %Y" }} <br/> {{ content }}</p>
 
                     </div>
+                </div> -->
+                <div class="col-lg-3 col-md-12 col-sm-12 col-12"></div>
+                <div class="col-lg-9 col-md-12 cols-sm-12 col-12">
+                    {{ content }}
+                    
                 </div>
                 {% include disqus.html %}
             </div>
