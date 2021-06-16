@@ -1214,8 +1214,8 @@ html,body{
   right: -2rem
 }
 
-#modal_job .modal-content{
-  
+.hidden{
+  display: none !important;
 }
 
 @keyframes animateBusniessText{

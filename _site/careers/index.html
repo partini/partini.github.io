@@ -112,9 +112,9 @@
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-12 careers-first-col" style="padding-bottom: 15px;">
                   <i class="fa fa-search">
                   </i>
-                  <input class="d-inline d-print-inline d-sm-inline d-md-inline d-lg-inline d-xl-inline d-xs-inline" type="search" placeholder="Search jobs by keyword">
+                  <input id="search_job" class="d-inline d-print-inline d-sm-inline d-md-inline d-lg-inline d-xl-inline d-xs-inline" type="text" placeholder="Search jobs by keyword">
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-sm-left text-md-right text-lg-right text-xl-right col-12 careers-second-col" style="margin-top: 17px;">
+                <!-- <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-sm-left text-md-right text-lg-right text-xl-right col-12 careers-second-col" style="margin-top: 17px;">
                   <span class="border-careers">
                     All jobs
                     <i class="fa fa-arrow-down" style="margin-right: 10px;margin-left: 5px;"></i>
@@ -127,197 +127,704 @@
                     By Industry
                     <i class="fa fa-arrow-down" style="margin-left: 5px;"></i>
                   </span>
-                </div>
+                </div> -->
             </div>
             <div class="row careers-second-row mt-4 mb-4">
                 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" style="margin-top: 15px;margin-bottom: -10px;height: 30px;">
-                    <a href="#">All jobs</a>
-                    <a href="#">Results</a>
-                    <a href="#">Clear filters</a>
+                    <a class="all_jobs">All jobs</a>
+                    <a class="results">Results</a>
+                    <!-- <a href="#">Clear filters</a> -->
                 </div>
             </div>
             <div class="row"> 
                 
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-12">
-                    <div class="all-divs-borders" data-toggle="modal" data-target="#modal_job"><img class="d-inline" src="/assets/img/Jem-final-profile-pic-circle2.png">
-                        <p class="d-inline job_title" data-toggle="modal" data-target="#modal_job">Software Architect</p>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-12 job_item" data-filter-item data-filter-title="software architect">
+                    <div class="all-divs-borders"><img class="d-inline" src="/assets/img/Jem-final-profile-pic-circle2.png">
+                        <p class="d-inline job_title">Software Architect</p>
                         <p class="location"><i class="fa fa-location-arrow mr-2"></i>Anywhere<br></p>
                         <p class="firstparagraphs">Junior Software Architect</p>
                         <p class="short_description secondparagraphs pb-4" >InCodeks is searching for a junior<br>software architect, fulltime.</p>
                         <div class="job_footer">
                             <a class=" font-weight-bold fulltime" href="#">Fulltime</a>
                             <a class=" font-weight-bold a-link" href="#">March  3, 2014 </a>
-                            <a class=" font-weight-bold apply" href="/jobs/2014-3-3-Hello%20copy%2010/">Apply now</a>
+                            <a class=" font-weight-bold apply" >Apply now</a>
+                            <!-- data-toggle="modal" data-target="#modal_job" -->
+                            <!-- href="/jobs/2014-3-3-Hello%20copy%2010/" -->
                         </div>
                     </div>
+
+                    <div class="title d-none">Software Architect</div>
+                    <div class="location_modal d-none">Anywhere</div>
+                    <div class="position d-none">Fulltime</div>
+                    <div class="employer d-none">Incodeks</div>
+                    <div class="date d-none">March  3, 2014</div>
+                    <div class="content d-none"><p>Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below). <br />
+ <br />
+The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the <a href="https://github.com/barryclark/jekyll-now">Jekyll Now repository</a> on GitHub. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie ipsum a quam gravida <br />
+iaculis. Vestibulum efficitur, ipsum ut facilisis rutrum, lacus diam cursus est, ut pellentesque leo &lt;br</p>
+<blockquote>
+  <p>odio id turpis. Sed pharetra faucibus quam, ornare faucibus ipsum congue ut. Sed purus risus, <br />
+fermentum in viverra nec, pulvinar vitae augue. Lorem ipsum dolor sit amet, consectetur <br />
+adipiscing elit. Phasellus non varius elit, ut tempor justo. Phasellus ultrices nunc justo. Sed <br />
+vestibulum lorem nec tempus ultricies. Proin id nisl sed est gravida egestas et quis diam. <br />
+Pellentesque congue magna nec malesuada tempus. Duis semper, quam sed porta fermentum, <br />
+justo elit rutrum nisi, a molestie eros turpis vel sem. In rhoncus convallis odio eget maximus.<br />
+<br />In feugiat ligula in magna sollicitudin condimentum. In iaculis purus in nisi lacinia, id elementum <br />
+magna dictum. Vivamus at eros augue. Aliquam felis sem, aliquet ac pulvinar et, feugiat ac tellus. <br />
+Phasellus suscipit rutrum tortor, et dignissim nisl. <br /><br />
+In velit felis, interdum et eros id, ultrices viverra ex. Sed auctor orci convallis, varius enim et, dictum <br />
+orci. Sed nec magna quis mi gravida dignissim eu quis nunc. Nullam a mollis nunc, a tempus elit. <br />
+Duis pharetra dolor sit amet porttitor blandit. Nullam vitae justo urna. Donec finibus quis est et <br />
+eleifend. Curabitur rhoncus eget nisl nec suscipit. Sed venenatis finibus ligula, non pellentesque <br />
+turpis volutpat mattis.<br /><br />Sed suscipit vel turpis consectetur ornare. Quisque vehicula aliquam congue. Sed aliquam <br />
+porttitor nisi, at iaculis risus sollicitudin eu. Nullam id ullamcorper lectus, eu tincidunt dolor. Proin <br />
+placerat erat ex, eu ultrices libero tempor a. Suspendisse quis enim quis orci molestie congue <br />
+lobortis sit amet ipsum. Pellentesque tincidunt ipsum nisl, eget sollicitudin neque mattis eget. <br />
+Suspendisse iaculis vitae neque quis sollicitudin. Nulla erat diam, luctus nec dui id, fermentum <br />
+pretium purus. Nunc sit amet nibh laoreet felis mattis fringilla. Nulla facilisi.&lt;/p&gt;</p>
+</blockquote>
+<p class="text-center text-sm-left text-md-left text-lg-center text-xl-center" style="font-weight: bold;font-family: Heebo;font-size: 18px;">Why it is a breakthrough?</p>
+<p class="text-sm-left text-md-left text-lg-center text-xl-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie ipsum a quam gravida&nbsp;<br />iaculis. Vestibulum efficitur, ipsum ut facilisis rutrum, lacus diam cursus est, ut pellentesque leo&nbsp;<br />odio id turpis. Sed pharetra faucibus quam, ornare faucibus ipsum congue ut. Sed purus risus,&nbsp;<br />fermentum in viverra nec, pulvinar vitae augue. Lorem ipsum dolor sit amet, consectetur&nbsp;<br />adipiscing elit. Phasellus non varius elit, ut tempor justo. Phasellus ultrices nunc justo. Sed&nbsp;<br />vestibulum lorem nec tempus ultricies. Proin id nisl sed est gravida egestas et quis diam.&nbsp;<br />Pellentesque congue magna nec malesuada tempus. Duis semper, quam sed porta fermentum,&nbsp;<br />justo elit rutrum nisi, a molestie eros turpis vel sem. In rhoncus convallis odio eget maximus.<br /><br />In feugiat ligula in magna sollicitudin condimentum. In iaculis purus in nisi lacinia, id elementum&nbsp;<br />magna dictum. Vivamus at eros augue. Aliquam felis sem, aliquet ac pulvinar et, feugiat ac tellus.&nbsp;<br />Phasellus suscipit rutrum tortor, et dignissim nisl.&nbsp;<br />
+</p>
+</div>
+                    <div class="long_title d-none">Junior Software Architect</div>
                 </div>
                 
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-12">
-                    <div class="all-divs-borders" data-toggle="modal" data-target="#modal_job"><img class="d-inline" src="/assets/img/Jem-final-profile-pic-circle2.png">
-                        <p class="d-inline job_title" data-toggle="modal" data-target="#modal_job">Software Architect</p>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-12 job_item" data-filter-item data-filter-title="software architect">
+                    <div class="all-divs-borders"><img class="d-inline" src="/assets/img/Jem-final-profile-pic-circle2.png">
+                        <p class="d-inline job_title">Software Architect</p>
                         <p class="location"><i class="fa fa-location-arrow mr-2"></i>Anywhere<br></p>
                         <p class="firstparagraphs">Junior Software Architect</p>
                         <p class="short_description secondparagraphs pb-4" >InCodeks is searching for a junior<br>software architect, fulltime.</p>
                         <div class="job_footer">
                             <a class=" font-weight-bold fulltime" href="#">Fulltime</a>
                             <a class=" font-weight-bold a-link" href="#">March  3, 2014 </a>
-                            <a class=" font-weight-bold apply" href="/jobs/2014-3-3-Hello%20copy%2011/">Apply now</a>
+                            <a class=" font-weight-bold apply" >Apply now</a>
+                            <!-- data-toggle="modal" data-target="#modal_job" -->
+                            <!-- href="/jobs/2014-3-3-Hello%20copy%2011/" -->
                         </div>
                     </div>
+
+                    <div class="title d-none">Software Architect</div>
+                    <div class="location_modal d-none">Anywhere</div>
+                    <div class="position d-none">Fulltime</div>
+                    <div class="employer d-none">Incodeks</div>
+                    <div class="date d-none">March  3, 2014</div>
+                    <div class="content d-none"><p>Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below). <br />
+ <br />
+The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the <a href="https://github.com/barryclark/jekyll-now">Jekyll Now repository</a> on GitHub. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie ipsum a quam gravida <br />
+iaculis. Vestibulum efficitur, ipsum ut facilisis rutrum, lacus diam cursus est, ut pellentesque leo &lt;br</p>
+<blockquote>
+  <p>odio id turpis. Sed pharetra faucibus quam, ornare faucibus ipsum congue ut. Sed purus risus, <br />
+fermentum in viverra nec, pulvinar vitae augue. Lorem ipsum dolor sit amet, consectetur <br />
+adipiscing elit. Phasellus non varius elit, ut tempor justo. Phasellus ultrices nunc justo. Sed <br />
+vestibulum lorem nec tempus ultricies. Proin id nisl sed est gravida egestas et quis diam. <br />
+Pellentesque congue magna nec malesuada tempus. Duis semper, quam sed porta fermentum, <br />
+justo elit rutrum nisi, a molestie eros turpis vel sem. In rhoncus convallis odio eget maximus.<br />
+<br />In feugiat ligula in magna sollicitudin condimentum. In iaculis purus in nisi lacinia, id elementum <br />
+magna dictum. Vivamus at eros augue. Aliquam felis sem, aliquet ac pulvinar et, feugiat ac tellus. <br />
+Phasellus suscipit rutrum tortor, et dignissim nisl. <br /><br />
+In velit felis, interdum et eros id, ultrices viverra ex. Sed auctor orci convallis, varius enim et, dictum <br />
+orci. Sed nec magna quis mi gravida dignissim eu quis nunc. Nullam a mollis nunc, a tempus elit. <br />
+Duis pharetra dolor sit amet porttitor blandit. Nullam vitae justo urna. Donec finibus quis est et <br />
+eleifend. Curabitur rhoncus eget nisl nec suscipit. Sed venenatis finibus ligula, non pellentesque <br />
+turpis volutpat mattis.<br /><br />Sed suscipit vel turpis consectetur ornare. Quisque vehicula aliquam congue. Sed aliquam <br />
+porttitor nisi, at iaculis risus sollicitudin eu. Nullam id ullamcorper lectus, eu tincidunt dolor. Proin <br />
+placerat erat ex, eu ultrices libero tempor a. Suspendisse quis enim quis orci molestie congue <br />
+lobortis sit amet ipsum. Pellentesque tincidunt ipsum nisl, eget sollicitudin neque mattis eget. <br />
+Suspendisse iaculis vitae neque quis sollicitudin. Nulla erat diam, luctus nec dui id, fermentum <br />
+pretium purus. Nunc sit amet nibh laoreet felis mattis fringilla. Nulla facilisi.&lt;/p&gt;</p>
+</blockquote>
+<p class="text-center text-sm-left text-md-left text-lg-center text-xl-center" style="font-weight: bold;font-family: Heebo;font-size: 18px;">Why it is a breakthrough?</p>
+<p class="text-sm-left text-md-left text-lg-center text-xl-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie ipsum a quam gravida&nbsp;<br />iaculis. Vestibulum efficitur, ipsum ut facilisis rutrum, lacus diam cursus est, ut pellentesque leo&nbsp;<br />odio id turpis. Sed pharetra faucibus quam, ornare faucibus ipsum congue ut. Sed purus risus,&nbsp;<br />fermentum in viverra nec, pulvinar vitae augue. Lorem ipsum dolor sit amet, consectetur&nbsp;<br />adipiscing elit. Phasellus non varius elit, ut tempor justo. Phasellus ultrices nunc justo. Sed&nbsp;<br />vestibulum lorem nec tempus ultricies. Proin id nisl sed est gravida egestas et quis diam.&nbsp;<br />Pellentesque congue magna nec malesuada tempus. Duis semper, quam sed porta fermentum,&nbsp;<br />justo elit rutrum nisi, a molestie eros turpis vel sem. In rhoncus convallis odio eget maximus.<br /><br />In feugiat ligula in magna sollicitudin condimentum. In iaculis purus in nisi lacinia, id elementum&nbsp;<br />magna dictum. Vivamus at eros augue. Aliquam felis sem, aliquet ac pulvinar et, feugiat ac tellus.&nbsp;<br />Phasellus suscipit rutrum tortor, et dignissim nisl.&nbsp;<br />
+</p>
+</div>
+                    <div class="long_title d-none">Junior Software Architect</div>
                 </div>
                 
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-12">
-                    <div class="all-divs-borders" data-toggle="modal" data-target="#modal_job"><img class="d-inline" src="/assets/img/Jem-final-profile-pic-circle2.png">
-                        <p class="d-inline job_title" data-toggle="modal" data-target="#modal_job">Software Architect</p>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-12 job_item" data-filter-item data-filter-title="software architect">
+                    <div class="all-divs-borders"><img class="d-inline" src="/assets/img/Jem-final-profile-pic-circle2.png">
+                        <p class="d-inline job_title">Software Architect</p>
                         <p class="location"><i class="fa fa-location-arrow mr-2"></i>Anywhere<br></p>
                         <p class="firstparagraphs">Junior Software Architect</p>
                         <p class="short_description secondparagraphs pb-4" >InCodeks is searching for a junior<br>software architect, fulltime.</p>
                         <div class="job_footer">
                             <a class=" font-weight-bold fulltime" href="#">Fulltime</a>
                             <a class=" font-weight-bold a-link" href="#">March  3, 2014 </a>
-                            <a class=" font-weight-bold apply" href="/jobs/2014-3-3-Hello%20copy%2012/">Apply now</a>
+                            <a class=" font-weight-bold apply" >Apply now</a>
+                            <!-- data-toggle="modal" data-target="#modal_job" -->
+                            <!-- href="/jobs/2014-3-3-Hello%20copy%2012/" -->
                         </div>
                     </div>
+
+                    <div class="title d-none">Software Architect</div>
+                    <div class="location_modal d-none">Anywhere</div>
+                    <div class="position d-none">Fulltime</div>
+                    <div class="employer d-none">Incodeks</div>
+                    <div class="date d-none">March  3, 2014</div>
+                    <div class="content d-none"><p>Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below). <br />
+ <br />
+The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the <a href="https://github.com/barryclark/jekyll-now">Jekyll Now repository</a> on GitHub. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie ipsum a quam gravida <br />
+iaculis. Vestibulum efficitur, ipsum ut facilisis rutrum, lacus diam cursus est, ut pellentesque leo &lt;br</p>
+<blockquote>
+  <p>odio id turpis. Sed pharetra faucibus quam, ornare faucibus ipsum congue ut. Sed purus risus, <br />
+fermentum in viverra nec, pulvinar vitae augue. Lorem ipsum dolor sit amet, consectetur <br />
+adipiscing elit. Phasellus non varius elit, ut tempor justo. Phasellus ultrices nunc justo. Sed <br />
+vestibulum lorem nec tempus ultricies. Proin id nisl sed est gravida egestas et quis diam. <br />
+Pellentesque congue magna nec malesuada tempus. Duis semper, quam sed porta fermentum, <br />
+justo elit rutrum nisi, a molestie eros turpis vel sem. In rhoncus convallis odio eget maximus.<br />
+<br />In feugiat ligula in magna sollicitudin condimentum. In iaculis purus in nisi lacinia, id elementum <br />
+magna dictum. Vivamus at eros augue. Aliquam felis sem, aliquet ac pulvinar et, feugiat ac tellus. <br />
+Phasellus suscipit rutrum tortor, et dignissim nisl. <br /><br />
+In velit felis, interdum et eros id, ultrices viverra ex. Sed auctor orci convallis, varius enim et, dictum <br />
+orci. Sed nec magna quis mi gravida dignissim eu quis nunc. Nullam a mollis nunc, a tempus elit. <br />
+Duis pharetra dolor sit amet porttitor blandit. Nullam vitae justo urna. Donec finibus quis est et <br />
+eleifend. Curabitur rhoncus eget nisl nec suscipit. Sed venenatis finibus ligula, non pellentesque <br />
+turpis volutpat mattis.<br /><br />Sed suscipit vel turpis consectetur ornare. Quisque vehicula aliquam congue. Sed aliquam <br />
+porttitor nisi, at iaculis risus sollicitudin eu. Nullam id ullamcorper lectus, eu tincidunt dolor. Proin <br />
+placerat erat ex, eu ultrices libero tempor a. Suspendisse quis enim quis orci molestie congue <br />
+lobortis sit amet ipsum. Pellentesque tincidunt ipsum nisl, eget sollicitudin neque mattis eget. <br />
+Suspendisse iaculis vitae neque quis sollicitudin. Nulla erat diam, luctus nec dui id, fermentum <br />
+pretium purus. Nunc sit amet nibh laoreet felis mattis fringilla. Nulla facilisi.&lt;/p&gt;</p>
+</blockquote>
+<p class="text-center text-sm-left text-md-left text-lg-center text-xl-center" style="font-weight: bold;font-family: Heebo;font-size: 18px;">Why it is a breakthrough?</p>
+<p class="text-sm-left text-md-left text-lg-center text-xl-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie ipsum a quam gravida&nbsp;<br />iaculis. Vestibulum efficitur, ipsum ut facilisis rutrum, lacus diam cursus est, ut pellentesque leo&nbsp;<br />odio id turpis. Sed pharetra faucibus quam, ornare faucibus ipsum congue ut. Sed purus risus,&nbsp;<br />fermentum in viverra nec, pulvinar vitae augue. Lorem ipsum dolor sit amet, consectetur&nbsp;<br />adipiscing elit. Phasellus non varius elit, ut tempor justo. Phasellus ultrices nunc justo. Sed&nbsp;<br />vestibulum lorem nec tempus ultricies. Proin id nisl sed est gravida egestas et quis diam.&nbsp;<br />Pellentesque congue magna nec malesuada tempus. Duis semper, quam sed porta fermentum,&nbsp;<br />justo elit rutrum nisi, a molestie eros turpis vel sem. In rhoncus convallis odio eget maximus.<br /><br />In feugiat ligula in magna sollicitudin condimentum. In iaculis purus in nisi lacinia, id elementum&nbsp;<br />magna dictum. Vivamus at eros augue. Aliquam felis sem, aliquet ac pulvinar et, feugiat ac tellus.&nbsp;<br />Phasellus suscipit rutrum tortor, et dignissim nisl.&nbsp;<br />
+</p>
+</div>
+                    <div class="long_title d-none">Junior Software Architect</div>
                 </div>
                 
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-12">
-                    <div class="all-divs-borders" data-toggle="modal" data-target="#modal_job"><img class="d-inline" src="/assets/img/Jem-final-profile-pic-circle2.png">
-                        <p class="d-inline job_title" data-toggle="modal" data-target="#modal_job">Software Architect</p>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-12 job_item" data-filter-item data-filter-title="software architect">
+                    <div class="all-divs-borders"><img class="d-inline" src="/assets/img/Jem-final-profile-pic-circle2.png">
+                        <p class="d-inline job_title">Software Architect</p>
                         <p class="location"><i class="fa fa-location-arrow mr-2"></i>Anywhere<br></p>
                         <p class="firstparagraphs">Junior Software Architect</p>
                         <p class="short_description secondparagraphs pb-4" >InCodeks is searching for a junior<br>software architect, fulltime.</p>
                         <div class="job_footer">
                             <a class=" font-weight-bold fulltime" href="#">Fulltime</a>
                             <a class=" font-weight-bold a-link" href="#">March  3, 2014 </a>
-                            <a class=" font-weight-bold apply" href="/jobs/2014-3-3-Hello%20copy%202/">Apply now</a>
+                            <a class=" font-weight-bold apply" >Apply now</a>
+                            <!-- data-toggle="modal" data-target="#modal_job" -->
+                            <!-- href="/jobs/2014-3-3-Hello%20copy%202/" -->
                         </div>
                     </div>
+
+                    <div class="title d-none">Software Architect</div>
+                    <div class="location_modal d-none">Anywhere</div>
+                    <div class="position d-none">Fulltime</div>
+                    <div class="employer d-none">Incodeks</div>
+                    <div class="date d-none">March  3, 2014</div>
+                    <div class="content d-none"><p>Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below). <br />
+ <br />
+The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the <a href="https://github.com/barryclark/jekyll-now">Jekyll Now repository</a> on GitHub. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie ipsum a quam gravida <br />
+iaculis. Vestibulum efficitur, ipsum ut facilisis rutrum, lacus diam cursus est, ut pellentesque leo &lt;br</p>
+<blockquote>
+  <p>odio id turpis. Sed pharetra faucibus quam, ornare faucibus ipsum congue ut. Sed purus risus, <br />
+fermentum in viverra nec, pulvinar vitae augue. Lorem ipsum dolor sit amet, consectetur <br />
+adipiscing elit. Phasellus non varius elit, ut tempor justo. Phasellus ultrices nunc justo. Sed <br />
+vestibulum lorem nec tempus ultricies. Proin id nisl sed est gravida egestas et quis diam. <br />
+Pellentesque congue magna nec malesuada tempus. Duis semper, quam sed porta fermentum, <br />
+justo elit rutrum nisi, a molestie eros turpis vel sem. In rhoncus convallis odio eget maximus.<br />
+<br />In feugiat ligula in magna sollicitudin condimentum. In iaculis purus in nisi lacinia, id elementum <br />
+magna dictum. Vivamus at eros augue. Aliquam felis sem, aliquet ac pulvinar et, feugiat ac tellus. <br />
+Phasellus suscipit rutrum tortor, et dignissim nisl. <br /><br />
+In velit felis, interdum et eros id, ultrices viverra ex. Sed auctor orci convallis, varius enim et, dictum <br />
+orci. Sed nec magna quis mi gravida dignissim eu quis nunc. Nullam a mollis nunc, a tempus elit. <br />
+Duis pharetra dolor sit amet porttitor blandit. Nullam vitae justo urna. Donec finibus quis est et <br />
+eleifend. Curabitur rhoncus eget nisl nec suscipit. Sed venenatis finibus ligula, non pellentesque <br />
+turpis volutpat mattis.<br /><br />Sed suscipit vel turpis consectetur ornare. Quisque vehicula aliquam congue. Sed aliquam <br />
+porttitor nisi, at iaculis risus sollicitudin eu. Nullam id ullamcorper lectus, eu tincidunt dolor. Proin <br />
+placerat erat ex, eu ultrices libero tempor a. Suspendisse quis enim quis orci molestie congue <br />
+lobortis sit amet ipsum. Pellentesque tincidunt ipsum nisl, eget sollicitudin neque mattis eget. <br />
+Suspendisse iaculis vitae neque quis sollicitudin. Nulla erat diam, luctus nec dui id, fermentum <br />
+pretium purus. Nunc sit amet nibh laoreet felis mattis fringilla. Nulla facilisi.&lt;/p&gt;</p>
+</blockquote>
+<p class="text-center text-sm-left text-md-left text-lg-center text-xl-center" style="font-weight: bold;font-family: Heebo;font-size: 18px;">Why it is a breakthrough?</p>
+<p class="text-sm-left text-md-left text-lg-center text-xl-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie ipsum a quam gravida&nbsp;<br />iaculis. Vestibulum efficitur, ipsum ut facilisis rutrum, lacus diam cursus est, ut pellentesque leo&nbsp;<br />odio id turpis. Sed pharetra faucibus quam, ornare faucibus ipsum congue ut. Sed purus risus,&nbsp;<br />fermentum in viverra nec, pulvinar vitae augue. Lorem ipsum dolor sit amet, consectetur&nbsp;<br />adipiscing elit. Phasellus non varius elit, ut tempor justo. Phasellus ultrices nunc justo. Sed&nbsp;<br />vestibulum lorem nec tempus ultricies. Proin id nisl sed est gravida egestas et quis diam.&nbsp;<br />Pellentesque congue magna nec malesuada tempus. Duis semper, quam sed porta fermentum,&nbsp;<br />justo elit rutrum nisi, a molestie eros turpis vel sem. In rhoncus convallis odio eget maximus.<br /><br />In feugiat ligula in magna sollicitudin condimentum. In iaculis purus in nisi lacinia, id elementum&nbsp;<br />magna dictum. Vivamus at eros augue. Aliquam felis sem, aliquet ac pulvinar et, feugiat ac tellus.&nbsp;<br />Phasellus suscipit rutrum tortor, et dignissim nisl.&nbsp;<br />
+</p>
+</div>
+                    <div class="long_title d-none">Junior Software Architect</div>
                 </div>
                 
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-12">
-                    <div class="all-divs-borders" data-toggle="modal" data-target="#modal_job"><img class="d-inline" src="/assets/img/Jem-final-profile-pic-circle2.png">
-                        <p class="d-inline job_title" data-toggle="modal" data-target="#modal_job">Software Architect</p>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-12 job_item" data-filter-item data-filter-title="software architect">
+                    <div class="all-divs-borders"><img class="d-inline" src="/assets/img/Jem-final-profile-pic-circle2.png">
+                        <p class="d-inline job_title">Software Architect</p>
                         <p class="location"><i class="fa fa-location-arrow mr-2"></i>Anywhere<br></p>
                         <p class="firstparagraphs">Junior Software Architect</p>
                         <p class="short_description secondparagraphs pb-4" >InCodeks is searching for a junior<br>software architect, fulltime.</p>
                         <div class="job_footer">
                             <a class=" font-weight-bold fulltime" href="#">Fulltime</a>
                             <a class=" font-weight-bold a-link" href="#">March  3, 2014 </a>
-                            <a class=" font-weight-bold apply" href="/jobs/2014-3-3-Hello%20copy%203/">Apply now</a>
+                            <a class=" font-weight-bold apply" >Apply now</a>
+                            <!-- data-toggle="modal" data-target="#modal_job" -->
+                            <!-- href="/jobs/2014-3-3-Hello%20copy%203/" -->
                         </div>
                     </div>
+
+                    <div class="title d-none">Software Architect</div>
+                    <div class="location_modal d-none">Anywhere</div>
+                    <div class="position d-none">Fulltime</div>
+                    <div class="employer d-none">Incodeks</div>
+                    <div class="date d-none">March  3, 2014</div>
+                    <div class="content d-none"><p>Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below). <br />
+ <br />
+The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the <a href="https://github.com/barryclark/jekyll-now">Jekyll Now repository</a> on GitHub. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie ipsum a quam gravida <br />
+iaculis. Vestibulum efficitur, ipsum ut facilisis rutrum, lacus diam cursus est, ut pellentesque leo &lt;br</p>
+<blockquote>
+  <p>odio id turpis. Sed pharetra faucibus quam, ornare faucibus ipsum congue ut. Sed purus risus, <br />
+fermentum in viverra nec, pulvinar vitae augue. Lorem ipsum dolor sit amet, consectetur <br />
+adipiscing elit. Phasellus non varius elit, ut tempor justo. Phasellus ultrices nunc justo. Sed <br />
+vestibulum lorem nec tempus ultricies. Proin id nisl sed est gravida egestas et quis diam. <br />
+Pellentesque congue magna nec malesuada tempus. Duis semper, quam sed porta fermentum, <br />
+justo elit rutrum nisi, a molestie eros turpis vel sem. In rhoncus convallis odio eget maximus.<br />
+<br />In feugiat ligula in magna sollicitudin condimentum. In iaculis purus in nisi lacinia, id elementum <br />
+magna dictum. Vivamus at eros augue. Aliquam felis sem, aliquet ac pulvinar et, feugiat ac tellus. <br />
+Phasellus suscipit rutrum tortor, et dignissim nisl. <br /><br />
+In velit felis, interdum et eros id, ultrices viverra ex. Sed auctor orci convallis, varius enim et, dictum <br />
+orci. Sed nec magna quis mi gravida dignissim eu quis nunc. Nullam a mollis nunc, a tempus elit. <br />
+Duis pharetra dolor sit amet porttitor blandit. Nullam vitae justo urna. Donec finibus quis est et <br />
+eleifend. Curabitur rhoncus eget nisl nec suscipit. Sed venenatis finibus ligula, non pellentesque <br />
+turpis volutpat mattis.<br /><br />Sed suscipit vel turpis consectetur ornare. Quisque vehicula aliquam congue. Sed aliquam <br />
+porttitor nisi, at iaculis risus sollicitudin eu. Nullam id ullamcorper lectus, eu tincidunt dolor. Proin <br />
+placerat erat ex, eu ultrices libero tempor a. Suspendisse quis enim quis orci molestie congue <br />
+lobortis sit amet ipsum. Pellentesque tincidunt ipsum nisl, eget sollicitudin neque mattis eget. <br />
+Suspendisse iaculis vitae neque quis sollicitudin. Nulla erat diam, luctus nec dui id, fermentum <br />
+pretium purus. Nunc sit amet nibh laoreet felis mattis fringilla. Nulla facilisi.&lt;/p&gt;</p>
+</blockquote>
+<p class="text-center text-sm-left text-md-left text-lg-center text-xl-center" style="font-weight: bold;font-family: Heebo;font-size: 18px;">Why it is a breakthrough?</p>
+<p class="text-sm-left text-md-left text-lg-center text-xl-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie ipsum a quam gravida&nbsp;<br />iaculis. Vestibulum efficitur, ipsum ut facilisis rutrum, lacus diam cursus est, ut pellentesque leo&nbsp;<br />odio id turpis. Sed pharetra faucibus quam, ornare faucibus ipsum congue ut. Sed purus risus,&nbsp;<br />fermentum in viverra nec, pulvinar vitae augue. Lorem ipsum dolor sit amet, consectetur&nbsp;<br />adipiscing elit. Phasellus non varius elit, ut tempor justo. Phasellus ultrices nunc justo. Sed&nbsp;<br />vestibulum lorem nec tempus ultricies. Proin id nisl sed est gravida egestas et quis diam.&nbsp;<br />Pellentesque congue magna nec malesuada tempus. Duis semper, quam sed porta fermentum,&nbsp;<br />justo elit rutrum nisi, a molestie eros turpis vel sem. In rhoncus convallis odio eget maximus.<br /><br />In feugiat ligula in magna sollicitudin condimentum. In iaculis purus in nisi lacinia, id elementum&nbsp;<br />magna dictum. Vivamus at eros augue. Aliquam felis sem, aliquet ac pulvinar et, feugiat ac tellus.&nbsp;<br />Phasellus suscipit rutrum tortor, et dignissim nisl.&nbsp;<br />
+</p>
+</div>
+                    <div class="long_title d-none">Junior Software Architect</div>
                 </div>
                 
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-12">
-                    <div class="all-divs-borders" data-toggle="modal" data-target="#modal_job"><img class="d-inline" src="/assets/img/Jem-final-profile-pic-circle2.png">
-                        <p class="d-inline job_title" data-toggle="modal" data-target="#modal_job">Software Architect</p>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-12 job_item" data-filter-item data-filter-title="software architect">
+                    <div class="all-divs-borders"><img class="d-inline" src="/assets/img/Jem-final-profile-pic-circle2.png">
+                        <p class="d-inline job_title">Software Architect</p>
                         <p class="location"><i class="fa fa-location-arrow mr-2"></i>Anywhere<br></p>
                         <p class="firstparagraphs">Junior Software Architect</p>
                         <p class="short_description secondparagraphs pb-4" >InCodeks is searching for a junior<br>software architect, fulltime.</p>
                         <div class="job_footer">
                             <a class=" font-weight-bold fulltime" href="#">Fulltime</a>
                             <a class=" font-weight-bold a-link" href="#">March  3, 2014 </a>
-                            <a class=" font-weight-bold apply" href="/jobs/2014-3-3-Hello%20copy%204/">Apply now</a>
+                            <a class=" font-weight-bold apply" >Apply now</a>
+                            <!-- data-toggle="modal" data-target="#modal_job" -->
+                            <!-- href="/jobs/2014-3-3-Hello%20copy%204/" -->
                         </div>
                     </div>
+
+                    <div class="title d-none">Software Architect</div>
+                    <div class="location_modal d-none">Anywhere</div>
+                    <div class="position d-none">Fulltime</div>
+                    <div class="employer d-none">Incodeks</div>
+                    <div class="date d-none">March  3, 2014</div>
+                    <div class="content d-none"><p>Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below). <br />
+ <br />
+The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the <a href="https://github.com/barryclark/jekyll-now">Jekyll Now repository</a> on GitHub. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie ipsum a quam gravida <br />
+iaculis. Vestibulum efficitur, ipsum ut facilisis rutrum, lacus diam cursus est, ut pellentesque leo &lt;br</p>
+<blockquote>
+  <p>odio id turpis. Sed pharetra faucibus quam, ornare faucibus ipsum congue ut. Sed purus risus, <br />
+fermentum in viverra nec, pulvinar vitae augue. Lorem ipsum dolor sit amet, consectetur <br />
+adipiscing elit. Phasellus non varius elit, ut tempor justo. Phasellus ultrices nunc justo. Sed <br />
+vestibulum lorem nec tempus ultricies. Proin id nisl sed est gravida egestas et quis diam. <br />
+Pellentesque congue magna nec malesuada tempus. Duis semper, quam sed porta fermentum, <br />
+justo elit rutrum nisi, a molestie eros turpis vel sem. In rhoncus convallis odio eget maximus.<br />
+<br />In feugiat ligula in magna sollicitudin condimentum. In iaculis purus in nisi lacinia, id elementum <br />
+magna dictum. Vivamus at eros augue. Aliquam felis sem, aliquet ac pulvinar et, feugiat ac tellus. <br />
+Phasellus suscipit rutrum tortor, et dignissim nisl. <br /><br />
+In velit felis, interdum et eros id, ultrices viverra ex. Sed auctor orci convallis, varius enim et, dictum <br />
+orci. Sed nec magna quis mi gravida dignissim eu quis nunc. Nullam a mollis nunc, a tempus elit. <br />
+Duis pharetra dolor sit amet porttitor blandit. Nullam vitae justo urna. Donec finibus quis est et <br />
+eleifend. Curabitur rhoncus eget nisl nec suscipit. Sed venenatis finibus ligula, non pellentesque <br />
+turpis volutpat mattis.<br /><br />Sed suscipit vel turpis consectetur ornare. Quisque vehicula aliquam congue. Sed aliquam <br />
+porttitor nisi, at iaculis risus sollicitudin eu. Nullam id ullamcorper lectus, eu tincidunt dolor. Proin <br />
+placerat erat ex, eu ultrices libero tempor a. Suspendisse quis enim quis orci molestie congue <br />
+lobortis sit amet ipsum. Pellentesque tincidunt ipsum nisl, eget sollicitudin neque mattis eget. <br />
+Suspendisse iaculis vitae neque quis sollicitudin. Nulla erat diam, luctus nec dui id, fermentum <br />
+pretium purus. Nunc sit amet nibh laoreet felis mattis fringilla. Nulla facilisi.&lt;/p&gt;</p>
+</blockquote>
+<p class="text-center text-sm-left text-md-left text-lg-center text-xl-center" style="font-weight: bold;font-family: Heebo;font-size: 18px;">Why it is a breakthrough?</p>
+<p class="text-sm-left text-md-left text-lg-center text-xl-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie ipsum a quam gravida&nbsp;<br />iaculis. Vestibulum efficitur, ipsum ut facilisis rutrum, lacus diam cursus est, ut pellentesque leo&nbsp;<br />odio id turpis. Sed pharetra faucibus quam, ornare faucibus ipsum congue ut. Sed purus risus,&nbsp;<br />fermentum in viverra nec, pulvinar vitae augue. Lorem ipsum dolor sit amet, consectetur&nbsp;<br />adipiscing elit. Phasellus non varius elit, ut tempor justo. Phasellus ultrices nunc justo. Sed&nbsp;<br />vestibulum lorem nec tempus ultricies. Proin id nisl sed est gravida egestas et quis diam.&nbsp;<br />Pellentesque congue magna nec malesuada tempus. Duis semper, quam sed porta fermentum,&nbsp;<br />justo elit rutrum nisi, a molestie eros turpis vel sem. In rhoncus convallis odio eget maximus.<br /><br />In feugiat ligula in magna sollicitudin condimentum. In iaculis purus in nisi lacinia, id elementum&nbsp;<br />magna dictum. Vivamus at eros augue. Aliquam felis sem, aliquet ac pulvinar et, feugiat ac tellus.&nbsp;<br />Phasellus suscipit rutrum tortor, et dignissim nisl.&nbsp;<br />
+</p>
+</div>
+                    <div class="long_title d-none">Junior Software Architect</div>
                 </div>
                 
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-12">
-                    <div class="all-divs-borders" data-toggle="modal" data-target="#modal_job"><img class="d-inline" src="/assets/img/Jem-final-profile-pic-circle2.png">
-                        <p class="d-inline job_title" data-toggle="modal" data-target="#modal_job">Software Architect</p>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-12 job_item" data-filter-item data-filter-title="software architect">
+                    <div class="all-divs-borders"><img class="d-inline" src="/assets/img/Jem-final-profile-pic-circle2.png">
+                        <p class="d-inline job_title">Software Architect</p>
                         <p class="location"><i class="fa fa-location-arrow mr-2"></i>Anywhere<br></p>
                         <p class="firstparagraphs">Junior Software Architect</p>
                         <p class="short_description secondparagraphs pb-4" >InCodeks is searching for a junior<br>software architect, fulltime.</p>
                         <div class="job_footer">
                             <a class=" font-weight-bold fulltime" href="#">Fulltime</a>
                             <a class=" font-weight-bold a-link" href="#">March  3, 2014 </a>
-                            <a class=" font-weight-bold apply" href="/jobs/2014-3-3-Hello%20copy%205/">Apply now</a>
+                            <a class=" font-weight-bold apply" >Apply now</a>
+                            <!-- data-toggle="modal" data-target="#modal_job" -->
+                            <!-- href="/jobs/2014-3-3-Hello%20copy%205/" -->
                         </div>
                     </div>
+
+                    <div class="title d-none">Software Architect</div>
+                    <div class="location_modal d-none">Anywhere</div>
+                    <div class="position d-none">Fulltime</div>
+                    <div class="employer d-none">Incodeks</div>
+                    <div class="date d-none">March  3, 2014</div>
+                    <div class="content d-none"><p>Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below). <br />
+ <br />
+The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the <a href="https://github.com/barryclark/jekyll-now">Jekyll Now repository</a> on GitHub. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie ipsum a quam gravida <br />
+iaculis. Vestibulum efficitur, ipsum ut facilisis rutrum, lacus diam cursus est, ut pellentesque leo &lt;br</p>
+<blockquote>
+  <p>odio id turpis. Sed pharetra faucibus quam, ornare faucibus ipsum congue ut. Sed purus risus, <br />
+fermentum in viverra nec, pulvinar vitae augue. Lorem ipsum dolor sit amet, consectetur <br />
+adipiscing elit. Phasellus non varius elit, ut tempor justo. Phasellus ultrices nunc justo. Sed <br />
+vestibulum lorem nec tempus ultricies. Proin id nisl sed est gravida egestas et quis diam. <br />
+Pellentesque congue magna nec malesuada tempus. Duis semper, quam sed porta fermentum, <br />
+justo elit rutrum nisi, a molestie eros turpis vel sem. In rhoncus convallis odio eget maximus.<br />
+<br />In feugiat ligula in magna sollicitudin condimentum. In iaculis purus in nisi lacinia, id elementum <br />
+magna dictum. Vivamus at eros augue. Aliquam felis sem, aliquet ac pulvinar et, feugiat ac tellus. <br />
+Phasellus suscipit rutrum tortor, et dignissim nisl. <br /><br />
+In velit felis, interdum et eros id, ultrices viverra ex. Sed auctor orci convallis, varius enim et, dictum <br />
+orci. Sed nec magna quis mi gravida dignissim eu quis nunc. Nullam a mollis nunc, a tempus elit. <br />
+Duis pharetra dolor sit amet porttitor blandit. Nullam vitae justo urna. Donec finibus quis est et <br />
+eleifend. Curabitur rhoncus eget nisl nec suscipit. Sed venenatis finibus ligula, non pellentesque <br />
+turpis volutpat mattis.<br /><br />Sed suscipit vel turpis consectetur ornare. Quisque vehicula aliquam congue. Sed aliquam <br />
+porttitor nisi, at iaculis risus sollicitudin eu. Nullam id ullamcorper lectus, eu tincidunt dolor. Proin <br />
+placerat erat ex, eu ultrices libero tempor a. Suspendisse quis enim quis orci molestie congue <br />
+lobortis sit amet ipsum. Pellentesque tincidunt ipsum nisl, eget sollicitudin neque mattis eget. <br />
+Suspendisse iaculis vitae neque quis sollicitudin. Nulla erat diam, luctus nec dui id, fermentum <br />
+pretium purus. Nunc sit amet nibh laoreet felis mattis fringilla. Nulla facilisi.&lt;/p&gt;</p>
+</blockquote>
+<p class="text-center text-sm-left text-md-left text-lg-center text-xl-center" style="font-weight: bold;font-family: Heebo;font-size: 18px;">Why it is a breakthrough?</p>
+<p class="text-sm-left text-md-left text-lg-center text-xl-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie ipsum a quam gravida&nbsp;<br />iaculis. Vestibulum efficitur, ipsum ut facilisis rutrum, lacus diam cursus est, ut pellentesque leo&nbsp;<br />odio id turpis. Sed pharetra faucibus quam, ornare faucibus ipsum congue ut. Sed purus risus,&nbsp;<br />fermentum in viverra nec, pulvinar vitae augue. Lorem ipsum dolor sit amet, consectetur&nbsp;<br />adipiscing elit. Phasellus non varius elit, ut tempor justo. Phasellus ultrices nunc justo. Sed&nbsp;<br />vestibulum lorem nec tempus ultricies. Proin id nisl sed est gravida egestas et quis diam.&nbsp;<br />Pellentesque congue magna nec malesuada tempus. Duis semper, quam sed porta fermentum,&nbsp;<br />justo elit rutrum nisi, a molestie eros turpis vel sem. In rhoncus convallis odio eget maximus.<br /><br />In feugiat ligula in magna sollicitudin condimentum. In iaculis purus in nisi lacinia, id elementum&nbsp;<br />magna dictum. Vivamus at eros augue. Aliquam felis sem, aliquet ac pulvinar et, feugiat ac tellus.&nbsp;<br />Phasellus suscipit rutrum tortor, et dignissim nisl.&nbsp;<br />
+</p>
+</div>
+                    <div class="long_title d-none">Junior Software Architect</div>
                 </div>
                 
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-12">
-                    <div class="all-divs-borders" data-toggle="modal" data-target="#modal_job"><img class="d-inline" src="/assets/img/Jem-final-profile-pic-circle2.png">
-                        <p class="d-inline job_title" data-toggle="modal" data-target="#modal_job">Software Architect</p>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-12 job_item" data-filter-item data-filter-title="software architect">
+                    <div class="all-divs-borders"><img class="d-inline" src="/assets/img/Jem-final-profile-pic-circle2.png">
+                        <p class="d-inline job_title">Software Architect</p>
                         <p class="location"><i class="fa fa-location-arrow mr-2"></i>Anywhere<br></p>
                         <p class="firstparagraphs">Junior Software Architect</p>
                         <p class="short_description secondparagraphs pb-4" >InCodeks is searching for a junior<br>software architect, fulltime.</p>
                         <div class="job_footer">
                             <a class=" font-weight-bold fulltime" href="#">Fulltime</a>
                             <a class=" font-weight-bold a-link" href="#">March  3, 2014 </a>
-                            <a class=" font-weight-bold apply" href="/jobs/2014-3-3-Hello%20copy%206/">Apply now</a>
+                            <a class=" font-weight-bold apply" >Apply now</a>
+                            <!-- data-toggle="modal" data-target="#modal_job" -->
+                            <!-- href="/jobs/2014-3-3-Hello%20copy%206/" -->
                         </div>
                     </div>
+
+                    <div class="title d-none">Software Architect</div>
+                    <div class="location_modal d-none">Anywhere</div>
+                    <div class="position d-none">Fulltime</div>
+                    <div class="employer d-none">Incodeks</div>
+                    <div class="date d-none">March  3, 2014</div>
+                    <div class="content d-none"><p>Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below). <br />
+ <br />
+The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the <a href="https://github.com/barryclark/jekyll-now">Jekyll Now repository</a> on GitHub. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie ipsum a quam gravida <br />
+iaculis. Vestibulum efficitur, ipsum ut facilisis rutrum, lacus diam cursus est, ut pellentesque leo &lt;br</p>
+<blockquote>
+  <p>odio id turpis. Sed pharetra faucibus quam, ornare faucibus ipsum congue ut. Sed purus risus, <br />
+fermentum in viverra nec, pulvinar vitae augue. Lorem ipsum dolor sit amet, consectetur <br />
+adipiscing elit. Phasellus non varius elit, ut tempor justo. Phasellus ultrices nunc justo. Sed <br />
+vestibulum lorem nec tempus ultricies. Proin id nisl sed est gravida egestas et quis diam. <br />
+Pellentesque congue magna nec malesuada tempus. Duis semper, quam sed porta fermentum, <br />
+justo elit rutrum nisi, a molestie eros turpis vel sem. In rhoncus convallis odio eget maximus.<br />
+<br />In feugiat ligula in magna sollicitudin condimentum. In iaculis purus in nisi lacinia, id elementum <br />
+magna dictum. Vivamus at eros augue. Aliquam felis sem, aliquet ac pulvinar et, feugiat ac tellus. <br />
+Phasellus suscipit rutrum tortor, et dignissim nisl. <br /><br />
+In velit felis, interdum et eros id, ultrices viverra ex. Sed auctor orci convallis, varius enim et, dictum <br />
+orci. Sed nec magna quis mi gravida dignissim eu quis nunc. Nullam a mollis nunc, a tempus elit. <br />
+Duis pharetra dolor sit amet porttitor blandit. Nullam vitae justo urna. Donec finibus quis est et <br />
+eleifend. Curabitur rhoncus eget nisl nec suscipit. Sed venenatis finibus ligula, non pellentesque <br />
+turpis volutpat mattis.<br /><br />Sed suscipit vel turpis consectetur ornare. Quisque vehicula aliquam congue. Sed aliquam <br />
+porttitor nisi, at iaculis risus sollicitudin eu. Nullam id ullamcorper lectus, eu tincidunt dolor. Proin <br />
+placerat erat ex, eu ultrices libero tempor a. Suspendisse quis enim quis orci molestie congue <br />
+lobortis sit amet ipsum. Pellentesque tincidunt ipsum nisl, eget sollicitudin neque mattis eget. <br />
+Suspendisse iaculis vitae neque quis sollicitudin. Nulla erat diam, luctus nec dui id, fermentum <br />
+pretium purus. Nunc sit amet nibh laoreet felis mattis fringilla. Nulla facilisi.&lt;/p&gt;</p>
+</blockquote>
+<p class="text-center text-sm-left text-md-left text-lg-center text-xl-center" style="font-weight: bold;font-family: Heebo;font-size: 18px;">Why it is a breakthrough?</p>
+<p class="text-sm-left text-md-left text-lg-center text-xl-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie ipsum a quam gravida&nbsp;<br />iaculis. Vestibulum efficitur, ipsum ut facilisis rutrum, lacus diam cursus est, ut pellentesque leo&nbsp;<br />odio id turpis. Sed pharetra faucibus quam, ornare faucibus ipsum congue ut. Sed purus risus,&nbsp;<br />fermentum in viverra nec, pulvinar vitae augue. Lorem ipsum dolor sit amet, consectetur&nbsp;<br />adipiscing elit. Phasellus non varius elit, ut tempor justo. Phasellus ultrices nunc justo. Sed&nbsp;<br />vestibulum lorem nec tempus ultricies. Proin id nisl sed est gravida egestas et quis diam.&nbsp;<br />Pellentesque congue magna nec malesuada tempus. Duis semper, quam sed porta fermentum,&nbsp;<br />justo elit rutrum nisi, a molestie eros turpis vel sem. In rhoncus convallis odio eget maximus.<br /><br />In feugiat ligula in magna sollicitudin condimentum. In iaculis purus in nisi lacinia, id elementum&nbsp;<br />magna dictum. Vivamus at eros augue. Aliquam felis sem, aliquet ac pulvinar et, feugiat ac tellus.&nbsp;<br />Phasellus suscipit rutrum tortor, et dignissim nisl.&nbsp;<br />
+</p>
+</div>
+                    <div class="long_title d-none">Junior Software Architect</div>
                 </div>
                 
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-12">
-                    <div class="all-divs-borders" data-toggle="modal" data-target="#modal_job"><img class="d-inline" src="/assets/img/Jem-final-profile-pic-circle2.png">
-                        <p class="d-inline job_title" data-toggle="modal" data-target="#modal_job">Software Architect</p>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-12 job_item" data-filter-item data-filter-title="software architect">
+                    <div class="all-divs-borders"><img class="d-inline" src="/assets/img/Jem-final-profile-pic-circle2.png">
+                        <p class="d-inline job_title">Software Architect</p>
                         <p class="location"><i class="fa fa-location-arrow mr-2"></i>Anywhere<br></p>
                         <p class="firstparagraphs">Junior Software Architect</p>
                         <p class="short_description secondparagraphs pb-4" >InCodeks is searching for a junior<br>software architect, fulltime.</p>
                         <div class="job_footer">
                             <a class=" font-weight-bold fulltime" href="#">Fulltime</a>
                             <a class=" font-weight-bold a-link" href="#">March  3, 2014 </a>
-                            <a class=" font-weight-bold apply" href="/jobs/2014-3-3-Hello%20copy%207/">Apply now</a>
+                            <a class=" font-weight-bold apply" >Apply now</a>
+                            <!-- data-toggle="modal" data-target="#modal_job" -->
+                            <!-- href="/jobs/2014-3-3-Hello%20copy%207/" -->
                         </div>
                     </div>
+
+                    <div class="title d-none">Software Architect</div>
+                    <div class="location_modal d-none">Anywhere</div>
+                    <div class="position d-none">Fulltime</div>
+                    <div class="employer d-none">Incodeks</div>
+                    <div class="date d-none">March  3, 2014</div>
+                    <div class="content d-none"><p>Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below). <br />
+ <br />
+The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the <a href="https://github.com/barryclark/jekyll-now">Jekyll Now repository</a> on GitHub. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie ipsum a quam gravida <br />
+iaculis. Vestibulum efficitur, ipsum ut facilisis rutrum, lacus diam cursus est, ut pellentesque leo &lt;br</p>
+<blockquote>
+  <p>odio id turpis. Sed pharetra faucibus quam, ornare faucibus ipsum congue ut. Sed purus risus, <br />
+fermentum in viverra nec, pulvinar vitae augue. Lorem ipsum dolor sit amet, consectetur <br />
+adipiscing elit. Phasellus non varius elit, ut tempor justo. Phasellus ultrices nunc justo. Sed <br />
+vestibulum lorem nec tempus ultricies. Proin id nisl sed est gravida egestas et quis diam. <br />
+Pellentesque congue magna nec malesuada tempus. Duis semper, quam sed porta fermentum, <br />
+justo elit rutrum nisi, a molestie eros turpis vel sem. In rhoncus convallis odio eget maximus.<br />
+<br />In feugiat ligula in magna sollicitudin condimentum. In iaculis purus in nisi lacinia, id elementum <br />
+magna dictum. Vivamus at eros augue. Aliquam felis sem, aliquet ac pulvinar et, feugiat ac tellus. <br />
+Phasellus suscipit rutrum tortor, et dignissim nisl. <br /><br />
+In velit felis, interdum et eros id, ultrices viverra ex. Sed auctor orci convallis, varius enim et, dictum <br />
+orci. Sed nec magna quis mi gravida dignissim eu quis nunc. Nullam a mollis nunc, a tempus elit. <br />
+Duis pharetra dolor sit amet porttitor blandit. Nullam vitae justo urna. Donec finibus quis est et <br />
+eleifend. Curabitur rhoncus eget nisl nec suscipit. Sed venenatis finibus ligula, non pellentesque <br />
+turpis volutpat mattis.<br /><br />Sed suscipit vel turpis consectetur ornare. Quisque vehicula aliquam congue. Sed aliquam <br />
+porttitor nisi, at iaculis risus sollicitudin eu. Nullam id ullamcorper lectus, eu tincidunt dolor. Proin <br />
+placerat erat ex, eu ultrices libero tempor a. Suspendisse quis enim quis orci molestie congue <br />
+lobortis sit amet ipsum. Pellentesque tincidunt ipsum nisl, eget sollicitudin neque mattis eget. <br />
+Suspendisse iaculis vitae neque quis sollicitudin. Nulla erat diam, luctus nec dui id, fermentum <br />
+pretium purus. Nunc sit amet nibh laoreet felis mattis fringilla. Nulla facilisi.&lt;/p&gt;</p>
+</blockquote>
+<p class="text-center text-sm-left text-md-left text-lg-center text-xl-center" style="font-weight: bold;font-family: Heebo;font-size: 18px;">Why it is a breakthrough?</p>
+<p class="text-sm-left text-md-left text-lg-center text-xl-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie ipsum a quam gravida&nbsp;<br />iaculis. Vestibulum efficitur, ipsum ut facilisis rutrum, lacus diam cursus est, ut pellentesque leo&nbsp;<br />odio id turpis. Sed pharetra faucibus quam, ornare faucibus ipsum congue ut. Sed purus risus,&nbsp;<br />fermentum in viverra nec, pulvinar vitae augue. Lorem ipsum dolor sit amet, consectetur&nbsp;<br />adipiscing elit. Phasellus non varius elit, ut tempor justo. Phasellus ultrices nunc justo. Sed&nbsp;<br />vestibulum lorem nec tempus ultricies. Proin id nisl sed est gravida egestas et quis diam.&nbsp;<br />Pellentesque congue magna nec malesuada tempus. Duis semper, quam sed porta fermentum,&nbsp;<br />justo elit rutrum nisi, a molestie eros turpis vel sem. In rhoncus convallis odio eget maximus.<br /><br />In feugiat ligula in magna sollicitudin condimentum. In iaculis purus in nisi lacinia, id elementum&nbsp;<br />magna dictum. Vivamus at eros augue. Aliquam felis sem, aliquet ac pulvinar et, feugiat ac tellus.&nbsp;<br />Phasellus suscipit rutrum tortor, et dignissim nisl.&nbsp;<br />
+</p>
+</div>
+                    <div class="long_title d-none">Junior Software Architect</div>
                 </div>
                 
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-12">
-                    <div class="all-divs-borders" data-toggle="modal" data-target="#modal_job"><img class="d-inline" src="/assets/img/Jem-final-profile-pic-circle2.png">
-                        <p class="d-inline job_title" data-toggle="modal" data-target="#modal_job">Software Architect</p>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-12 job_item" data-filter-item data-filter-title="software architect">
+                    <div class="all-divs-borders"><img class="d-inline" src="/assets/img/Jem-final-profile-pic-circle2.png">
+                        <p class="d-inline job_title">Software Architect</p>
                         <p class="location"><i class="fa fa-location-arrow mr-2"></i>Anywhere<br></p>
                         <p class="firstparagraphs">Junior Software Architect</p>
                         <p class="short_description secondparagraphs pb-4" >InCodeks is searching for a junior<br>software architect, fulltime.</p>
                         <div class="job_footer">
                             <a class=" font-weight-bold fulltime" href="#">Fulltime</a>
                             <a class=" font-weight-bold a-link" href="#">March  3, 2014 </a>
-                            <a class=" font-weight-bold apply" href="/jobs/2014-3-3-Hello%20copy%208/">Apply now</a>
+                            <a class=" font-weight-bold apply" >Apply now</a>
+                            <!-- data-toggle="modal" data-target="#modal_job" -->
+                            <!-- href="/jobs/2014-3-3-Hello%20copy%208/" -->
                         </div>
                     </div>
+
+                    <div class="title d-none">Software Architect</div>
+                    <div class="location_modal d-none">Anywhere</div>
+                    <div class="position d-none">Fulltime</div>
+                    <div class="employer d-none">Incodeks</div>
+                    <div class="date d-none">March  3, 2014</div>
+                    <div class="content d-none"><p>Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below). <br />
+ <br />
+The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the <a href="https://github.com/barryclark/jekyll-now">Jekyll Now repository</a> on GitHub. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie ipsum a quam gravida <br />
+iaculis. Vestibulum efficitur, ipsum ut facilisis rutrum, lacus diam cursus est, ut pellentesque leo &lt;br</p>
+<blockquote>
+  <p>odio id turpis. Sed pharetra faucibus quam, ornare faucibus ipsum congue ut. Sed purus risus, <br />
+fermentum in viverra nec, pulvinar vitae augue. Lorem ipsum dolor sit amet, consectetur <br />
+adipiscing elit. Phasellus non varius elit, ut tempor justo. Phasellus ultrices nunc justo. Sed <br />
+vestibulum lorem nec tempus ultricies. Proin id nisl sed est gravida egestas et quis diam. <br />
+Pellentesque congue magna nec malesuada tempus. Duis semper, quam sed porta fermentum, <br />
+justo elit rutrum nisi, a molestie eros turpis vel sem. In rhoncus convallis odio eget maximus.<br />
+<br />In feugiat ligula in magna sollicitudin condimentum. In iaculis purus in nisi lacinia, id elementum <br />
+magna dictum. Vivamus at eros augue. Aliquam felis sem, aliquet ac pulvinar et, feugiat ac tellus. <br />
+Phasellus suscipit rutrum tortor, et dignissim nisl. <br /><br />
+In velit felis, interdum et eros id, ultrices viverra ex. Sed auctor orci convallis, varius enim et, dictum <br />
+orci. Sed nec magna quis mi gravida dignissim eu quis nunc. Nullam a mollis nunc, a tempus elit. <br />
+Duis pharetra dolor sit amet porttitor blandit. Nullam vitae justo urna. Donec finibus quis est et <br />
+eleifend. Curabitur rhoncus eget nisl nec suscipit. Sed venenatis finibus ligula, non pellentesque <br />
+turpis volutpat mattis.<br /><br />Sed suscipit vel turpis consectetur ornare. Quisque vehicula aliquam congue. Sed aliquam <br />
+porttitor nisi, at iaculis risus sollicitudin eu. Nullam id ullamcorper lectus, eu tincidunt dolor. Proin <br />
+placerat erat ex, eu ultrices libero tempor a. Suspendisse quis enim quis orci molestie congue <br />
+lobortis sit amet ipsum. Pellentesque tincidunt ipsum nisl, eget sollicitudin neque mattis eget. <br />
+Suspendisse iaculis vitae neque quis sollicitudin. Nulla erat diam, luctus nec dui id, fermentum <br />
+pretium purus. Nunc sit amet nibh laoreet felis mattis fringilla. Nulla facilisi.&lt;/p&gt;</p>
+</blockquote>
+<p class="text-center text-sm-left text-md-left text-lg-center text-xl-center" style="font-weight: bold;font-family: Heebo;font-size: 18px;">Why it is a breakthrough?</p>
+<p class="text-sm-left text-md-left text-lg-center text-xl-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie ipsum a quam gravida&nbsp;<br />iaculis. Vestibulum efficitur, ipsum ut facilisis rutrum, lacus diam cursus est, ut pellentesque leo&nbsp;<br />odio id turpis. Sed pharetra faucibus quam, ornare faucibus ipsum congue ut. Sed purus risus,&nbsp;<br />fermentum in viverra nec, pulvinar vitae augue. Lorem ipsum dolor sit amet, consectetur&nbsp;<br />adipiscing elit. Phasellus non varius elit, ut tempor justo. Phasellus ultrices nunc justo. Sed&nbsp;<br />vestibulum lorem nec tempus ultricies. Proin id nisl sed est gravida egestas et quis diam.&nbsp;<br />Pellentesque congue magna nec malesuada tempus. Duis semper, quam sed porta fermentum,&nbsp;<br />justo elit rutrum nisi, a molestie eros turpis vel sem. In rhoncus convallis odio eget maximus.<br /><br />In feugiat ligula in magna sollicitudin condimentum. In iaculis purus in nisi lacinia, id elementum&nbsp;<br />magna dictum. Vivamus at eros augue. Aliquam felis sem, aliquet ac pulvinar et, feugiat ac tellus.&nbsp;<br />Phasellus suscipit rutrum tortor, et dignissim nisl.&nbsp;<br />
+</p>
+</div>
+                    <div class="long_title d-none">Junior Software Architect</div>
                 </div>
                 
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-12">
-                    <div class="all-divs-borders" data-toggle="modal" data-target="#modal_job"><img class="d-inline" src="/assets/img/Jem-final-profile-pic-circle2.png">
-                        <p class="d-inline job_title" data-toggle="modal" data-target="#modal_job">Software Architect</p>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-12 job_item" data-filter-item data-filter-title="software architect">
+                    <div class="all-divs-borders"><img class="d-inline" src="/assets/img/Jem-final-profile-pic-circle2.png">
+                        <p class="d-inline job_title">Software Architect</p>
                         <p class="location"><i class="fa fa-location-arrow mr-2"></i>Anywhere<br></p>
                         <p class="firstparagraphs">Junior Software Architect</p>
                         <p class="short_description secondparagraphs pb-4" >InCodeks is searching for a junior<br>software architect, fulltime.</p>
                         <div class="job_footer">
                             <a class=" font-weight-bold fulltime" href="#">Fulltime</a>
                             <a class=" font-weight-bold a-link" href="#">March  3, 2014 </a>
-                            <a class=" font-weight-bold apply" href="/jobs/2014-3-3-Hello%20copy%209/">Apply now</a>
+                            <a class=" font-weight-bold apply" >Apply now</a>
+                            <!-- data-toggle="modal" data-target="#modal_job" -->
+                            <!-- href="/jobs/2014-3-3-Hello%20copy%209/" -->
                         </div>
                     </div>
+
+                    <div class="title d-none">Software Architect</div>
+                    <div class="location_modal d-none">Anywhere</div>
+                    <div class="position d-none">Fulltime</div>
+                    <div class="employer d-none">Incodeks</div>
+                    <div class="date d-none">March  3, 2014</div>
+                    <div class="content d-none"><p>Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below). <br />
+ <br />
+The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the <a href="https://github.com/barryclark/jekyll-now">Jekyll Now repository</a> on GitHub. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie ipsum a quam gravida <br />
+iaculis. Vestibulum efficitur, ipsum ut facilisis rutrum, lacus diam cursus est, ut pellentesque leo &lt;br</p>
+<blockquote>
+  <p>odio id turpis. Sed pharetra faucibus quam, ornare faucibus ipsum congue ut. Sed purus risus, <br />
+fermentum in viverra nec, pulvinar vitae augue. Lorem ipsum dolor sit amet, consectetur <br />
+adipiscing elit. Phasellus non varius elit, ut tempor justo. Phasellus ultrices nunc justo. Sed <br />
+vestibulum lorem nec tempus ultricies. Proin id nisl sed est gravida egestas et quis diam. <br />
+Pellentesque congue magna nec malesuada tempus. Duis semper, quam sed porta fermentum, <br />
+justo elit rutrum nisi, a molestie eros turpis vel sem. In rhoncus convallis odio eget maximus.<br />
+<br />In feugiat ligula in magna sollicitudin condimentum. In iaculis purus in nisi lacinia, id elementum <br />
+magna dictum. Vivamus at eros augue. Aliquam felis sem, aliquet ac pulvinar et, feugiat ac tellus. <br />
+Phasellus suscipit rutrum tortor, et dignissim nisl. <br /><br />
+In velit felis, interdum et eros id, ultrices viverra ex. Sed auctor orci convallis, varius enim et, dictum <br />
+orci. Sed nec magna quis mi gravida dignissim eu quis nunc. Nullam a mollis nunc, a tempus elit. <br />
+Duis pharetra dolor sit amet porttitor blandit. Nullam vitae justo urna. Donec finibus quis est et <br />
+eleifend. Curabitur rhoncus eget nisl nec suscipit. Sed venenatis finibus ligula, non pellentesque <br />
+turpis volutpat mattis.<br /><br />Sed suscipit vel turpis consectetur ornare. Quisque vehicula aliquam congue. Sed aliquam <br />
+porttitor nisi, at iaculis risus sollicitudin eu. Nullam id ullamcorper lectus, eu tincidunt dolor. Proin <br />
+placerat erat ex, eu ultrices libero tempor a. Suspendisse quis enim quis orci molestie congue <br />
+lobortis sit amet ipsum. Pellentesque tincidunt ipsum nisl, eget sollicitudin neque mattis eget. <br />
+Suspendisse iaculis vitae neque quis sollicitudin. Nulla erat diam, luctus nec dui id, fermentum <br />
+pretium purus. Nunc sit amet nibh laoreet felis mattis fringilla. Nulla facilisi.&lt;/p&gt;</p>
+</blockquote>
+<p class="text-center text-sm-left text-md-left text-lg-center text-xl-center" style="font-weight: bold;font-family: Heebo;font-size: 18px;">Why it is a breakthrough?</p>
+<p class="text-sm-left text-md-left text-lg-center text-xl-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie ipsum a quam gravida&nbsp;<br />iaculis. Vestibulum efficitur, ipsum ut facilisis rutrum, lacus diam cursus est, ut pellentesque leo&nbsp;<br />odio id turpis. Sed pharetra faucibus quam, ornare faucibus ipsum congue ut. Sed purus risus,&nbsp;<br />fermentum in viverra nec, pulvinar vitae augue. Lorem ipsum dolor sit amet, consectetur&nbsp;<br />adipiscing elit. Phasellus non varius elit, ut tempor justo. Phasellus ultrices nunc justo. Sed&nbsp;<br />vestibulum lorem nec tempus ultricies. Proin id nisl sed est gravida egestas et quis diam.&nbsp;<br />Pellentesque congue magna nec malesuada tempus. Duis semper, quam sed porta fermentum,&nbsp;<br />justo elit rutrum nisi, a molestie eros turpis vel sem. In rhoncus convallis odio eget maximus.<br /><br />In feugiat ligula in magna sollicitudin condimentum. In iaculis purus in nisi lacinia, id elementum&nbsp;<br />magna dictum. Vivamus at eros augue. Aliquam felis sem, aliquet ac pulvinar et, feugiat ac tellus.&nbsp;<br />Phasellus suscipit rutrum tortor, et dignissim nisl.&nbsp;<br />
+</p>
+</div>
+                    <div class="long_title d-none">Junior Software Architect</div>
                 </div>
                 
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-12">
-                    <div class="all-divs-borders" data-toggle="modal" data-target="#modal_job"><img class="d-inline" src="/assets/img/Jem-final-profile-pic-circle2.png">
-                        <p class="d-inline job_title" data-toggle="modal" data-target="#modal_job">Software Architect</p>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-12 job_item" data-filter-item data-filter-title="software architect">
+                    <div class="all-divs-borders"><img class="d-inline" src="/assets/img/Jem-final-profile-pic-circle2.png">
+                        <p class="d-inline job_title">Software Architect</p>
                         <p class="location"><i class="fa fa-location-arrow mr-2"></i>Anywhere<br></p>
                         <p class="firstparagraphs">Junior Software Architect</p>
                         <p class="short_description secondparagraphs pb-4" >InCodeks is searching for a junior<br>software architect, fulltime.</p>
                         <div class="job_footer">
                             <a class=" font-weight-bold fulltime" href="#">Fulltime</a>
                             <a class=" font-weight-bold a-link" href="#">March  3, 2014 </a>
-                            <a class=" font-weight-bold apply" href="/jobs/2014-3-3-Hello%20copy/">Apply now</a>
+                            <a class=" font-weight-bold apply" >Apply now</a>
+                            <!-- data-toggle="modal" data-target="#modal_job" -->
+                            <!-- href="/jobs/2014-3-3-Hello%20copy/" -->
                         </div>
                     </div>
+
+                    <div class="title d-none">Software Architect</div>
+                    <div class="location_modal d-none">Anywhere</div>
+                    <div class="position d-none">Fulltime</div>
+                    <div class="employer d-none">Incodeks</div>
+                    <div class="date d-none">March  3, 2014</div>
+                    <div class="content d-none"><p>Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below). <br />
+ <br />
+The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the <a href="https://github.com/barryclark/jekyll-now">Jekyll Now repository</a> on GitHub. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie ipsum a quam gravida <br />
+iaculis. Vestibulum efficitur, ipsum ut facilisis rutrum, lacus diam cursus est, ut pellentesque leo &lt;br</p>
+<blockquote>
+  <p>odio id turpis. Sed pharetra faucibus quam, ornare faucibus ipsum congue ut. Sed purus risus, <br />
+fermentum in viverra nec, pulvinar vitae augue. Lorem ipsum dolor sit amet, consectetur <br />
+adipiscing elit. Phasellus non varius elit, ut tempor justo. Phasellus ultrices nunc justo. Sed <br />
+vestibulum lorem nec tempus ultricies. Proin id nisl sed est gravida egestas et quis diam. <br />
+Pellentesque congue magna nec malesuada tempus. Duis semper, quam sed porta fermentum, <br />
+justo elit rutrum nisi, a molestie eros turpis vel sem. In rhoncus convallis odio eget maximus.<br />
+<br />In feugiat ligula in magna sollicitudin condimentum. In iaculis purus in nisi lacinia, id elementum <br />
+magna dictum. Vivamus at eros augue. Aliquam felis sem, aliquet ac pulvinar et, feugiat ac tellus. <br />
+Phasellus suscipit rutrum tortor, et dignissim nisl. <br /><br />
+In velit felis, interdum et eros id, ultrices viverra ex. Sed auctor orci convallis, varius enim et, dictum <br />
+orci. Sed nec magna quis mi gravida dignissim eu quis nunc. Nullam a mollis nunc, a tempus elit. <br />
+Duis pharetra dolor sit amet porttitor blandit. Nullam vitae justo urna. Donec finibus quis est et <br />
+eleifend. Curabitur rhoncus eget nisl nec suscipit. Sed venenatis finibus ligula, non pellentesque <br />
+turpis volutpat mattis.<br /><br />Sed suscipit vel turpis consectetur ornare. Quisque vehicula aliquam congue. Sed aliquam <br />
+porttitor nisi, at iaculis risus sollicitudin eu. Nullam id ullamcorper lectus, eu tincidunt dolor. Proin <br />
+placerat erat ex, eu ultrices libero tempor a. Suspendisse quis enim quis orci molestie congue <br />
+lobortis sit amet ipsum. Pellentesque tincidunt ipsum nisl, eget sollicitudin neque mattis eget. <br />
+Suspendisse iaculis vitae neque quis sollicitudin. Nulla erat diam, luctus nec dui id, fermentum <br />
+pretium purus. Nunc sit amet nibh laoreet felis mattis fringilla. Nulla facilisi.&lt;/p&gt;</p>
+</blockquote>
+<p class="text-center text-sm-left text-md-left text-lg-center text-xl-center" style="font-weight: bold;font-family: Heebo;font-size: 18px;">Why it is a breakthrough?</p>
+<p class="text-sm-left text-md-left text-lg-center text-xl-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie ipsum a quam gravida&nbsp;<br />iaculis. Vestibulum efficitur, ipsum ut facilisis rutrum, lacus diam cursus est, ut pellentesque leo&nbsp;<br />odio id turpis. Sed pharetra faucibus quam, ornare faucibus ipsum congue ut. Sed purus risus,&nbsp;<br />fermentum in viverra nec, pulvinar vitae augue. Lorem ipsum dolor sit amet, consectetur&nbsp;<br />adipiscing elit. Phasellus non varius elit, ut tempor justo. Phasellus ultrices nunc justo. Sed&nbsp;<br />vestibulum lorem nec tempus ultricies. Proin id nisl sed est gravida egestas et quis diam.&nbsp;<br />Pellentesque congue magna nec malesuada tempus. Duis semper, quam sed porta fermentum,&nbsp;<br />justo elit rutrum nisi, a molestie eros turpis vel sem. In rhoncus convallis odio eget maximus.<br /><br />In feugiat ligula in magna sollicitudin condimentum. In iaculis purus in nisi lacinia, id elementum&nbsp;<br />magna dictum. Vivamus at eros augue. Aliquam felis sem, aliquet ac pulvinar et, feugiat ac tellus.&nbsp;<br />Phasellus suscipit rutrum tortor, et dignissim nisl.&nbsp;<br />
+</p>
+</div>
+                    <div class="long_title d-none">Junior Software Architect</div>
                 </div>
                 
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-12">
-                    <div class="all-divs-borders" data-toggle="modal" data-target="#modal_job"><img class="d-inline" src="/assets/img/Jem-final-profile-pic-circle2.png">
-                        <p class="d-inline job_title" data-toggle="modal" data-target="#modal_job">Software Architect</p>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-12 job_item" data-filter-item data-filter-title="software architect">
+                    <div class="all-divs-borders"><img class="d-inline" src="/assets/img/Jem-final-profile-pic-circle2.png">
+                        <p class="d-inline job_title">Software Architect</p>
                         <p class="location"><i class="fa fa-location-arrow mr-2"></i>Anywhere<br></p>
                         <p class="firstparagraphs">Junior Software Architect</p>
                         <p class="short_description secondparagraphs pb-4" >InCodeks is searching for a junior<br>software architect, fulltime.</p>
                         <div class="job_footer">
                             <a class=" font-weight-bold fulltime" href="#">Fulltime</a>
                             <a class=" font-weight-bold a-link" href="#">March  3, 2014 </a>
-                            <a class=" font-weight-bold apply" href="/jobs/2014-3-3-Hello/">Apply now</a>
+                            <a class=" font-weight-bold apply" >Apply now</a>
+                            <!-- data-toggle="modal" data-target="#modal_job" -->
+                            <!-- href="/jobs/2014-3-3-Hello/" -->
                         </div>
                     </div>
+
+                    <div class="title d-none">Software Architect</div>
+                    <div class="location_modal d-none">Anywhere</div>
+                    <div class="position d-none">Fulltime</div>
+                    <div class="employer d-none">Incodeks</div>
+                    <div class="date d-none">March  3, 2014</div>
+                    <div class="content d-none"><p>Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below). <br />
+ <br />
+The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the <a href="https://github.com/barryclark/jekyll-now">Jekyll Now repository</a> on GitHub. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie ipsum a quam gravida <br />
+iaculis. Vestibulum efficitur, ipsum ut facilisis rutrum, lacus diam cursus est, ut pellentesque leo &lt;br</p>
+<blockquote>
+  <p>odio id turpis. Sed pharetra faucibus quam, ornare faucibus ipsum congue ut. Sed purus risus, <br />
+fermentum in viverra nec, pulvinar vitae augue. Lorem ipsum dolor sit amet, consectetur <br />
+adipiscing elit. Phasellus non varius elit, ut tempor justo. Phasellus ultrices nunc justo. Sed <br />
+vestibulum lorem nec tempus ultricies. Proin id nisl sed est gravida egestas et quis diam. <br />
+Pellentesque congue magna nec malesuada tempus. Duis semper, quam sed porta fermentum, <br />
+justo elit rutrum nisi, a molestie eros turpis vel sem. In rhoncus convallis odio eget maximus.<br />
+<br />In feugiat ligula in magna sollicitudin condimentum. In iaculis purus in nisi lacinia, id elementum <br />
+magna dictum. Vivamus at eros augue. Aliquam felis sem, aliquet ac pulvinar et, feugiat ac tellus. <br />
+Phasellus suscipit rutrum tortor, et dignissim nisl. <br /><br />
+In velit felis, interdum et eros id, ultrices viverra ex. Sed auctor orci convallis, varius enim et, dictum <br />
+orci. Sed nec magna quis mi gravida dignissim eu quis nunc. Nullam a mollis nunc, a tempus elit. <br />
+Duis pharetra dolor sit amet porttitor blandit. Nullam vitae justo urna. Donec finibus quis est et <br />
+eleifend. Curabitur rhoncus eget nisl nec suscipit. Sed venenatis finibus ligula, non pellentesque <br />
+turpis volutpat mattis.<br /><br />Sed suscipit vel turpis consectetur ornare. Quisque vehicula aliquam congue. Sed aliquam <br />
+porttitor nisi, at iaculis risus sollicitudin eu. Nullam id ullamcorper lectus, eu tincidunt dolor. Proin <br />
+placerat erat ex, eu ultrices libero tempor a. Suspendisse quis enim quis orci molestie congue <br />
+lobortis sit amet ipsum. Pellentesque tincidunt ipsum nisl, eget sollicitudin neque mattis eget. <br />
+Suspendisse iaculis vitae neque quis sollicitudin. Nulla erat diam, luctus nec dui id, fermentum <br />
+pretium purus. Nunc sit amet nibh laoreet felis mattis fringilla. Nulla facilisi.&lt;/p&gt;</p>
+</blockquote>
+<p class="text-center text-sm-left text-md-left text-lg-center text-xl-center" style="font-weight: bold;font-family: Heebo;font-size: 18px;">Why it is a breakthrough?</p>
+<p class="text-sm-left text-md-left text-lg-center text-xl-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie ipsum a quam gravida&nbsp;<br />iaculis. Vestibulum efficitur, ipsum ut facilisis rutrum, lacus diam cursus est, ut pellentesque leo&nbsp;<br />odio id turpis. Sed pharetra faucibus quam, ornare faucibus ipsum congue ut. Sed purus risus,&nbsp;<br />fermentum in viverra nec, pulvinar vitae augue. Lorem ipsum dolor sit amet, consectetur&nbsp;<br />adipiscing elit. Phasellus non varius elit, ut tempor justo. Phasellus ultrices nunc justo. Sed&nbsp;<br />vestibulum lorem nec tempus ultricies. Proin id nisl sed est gravida egestas et quis diam.&nbsp;<br />Pellentesque congue magna nec malesuada tempus. Duis semper, quam sed porta fermentum,&nbsp;<br />justo elit rutrum nisi, a molestie eros turpis vel sem. In rhoncus convallis odio eget maximus.<br /><br />In feugiat ligula in magna sollicitudin condimentum. In iaculis purus in nisi lacinia, id elementum&nbsp;<br />magna dictum. Vivamus at eros augue. Aliquam felis sem, aliquet ac pulvinar et, feugiat ac tellus.&nbsp;<br />Phasellus suscipit rutrum tortor, et dignissim nisl.&nbsp;<br />
+</p>
+</div>
+                    <div class="long_title d-none">Junior Software Architect</div>
                 </div>
                 
 
@@ -479,8 +986,8 @@
                     </div>
                 </div>
                 <div class="col-lg-9 col-md-9 col-sm-12 col-12">
-                    <p class="name mb-0">Software Architect</p>
-                    <p class="position">Junior Software Architect / Prishtina, Kosovo</p>
+                    <p class="name mb-0"></p>
+                    <p class="position_title"></p>
                 </div>
             </div>
         </div>
@@ -488,32 +995,21 @@
           <div class="row p-0">
 
               <div class="col-lg-9 col-md-12 col-sm-12 pt-3 ">
-                  <p class="body_title mb-0">Who are we looking for?</p>
-                  <p class="body_text">
-                    Vestibulum consectetur elit quis risus porttitor, nec cursus justo pulvinar. Fusce tristique, tellus ut sollicitudin semper, leo ipsum efficitur metus, eu rhoncus augue tortor eu dolor. Vestibulum a odio lobortis, efficitur lorem sed, volutpat odio. Proin pulvinar tellus a blandit iaculis. Donec auctor sapien non velit maximus blandit. Phasellus et arcu urna. Sed enim nunc, porttitor quis pulvinar vitae, mattis sed enim. Vestibulum vestibulum leo mauris, ac blandit tortor volutpat quis. Sed dictum rutrum lectus. Integer non pellentesque felis.
-                    <br><br>
-                    Morbi ut diam ac mi lobortis luctus eget quis turpis. Duis viverra mi lectus, et maximus mauris rutrum eu. Nullam ornare arcu eu dui faucibus ullamcorper. Vivamus dignissim fermentum mauris. Maecenas sagittis eros mollis nibh rhoncus interdum. Aliquam sit amet turpis ac leo finibus fermentum. Suspendisse velit felis, sagittis vel neque quis, porttitor dignissim ligula. Aliquam elementum finibus faucibus. Praesent id aliquam magna. Curabitur lectus lorem, molestie quis vehicula sed, consequat vitae nulla. Ut non nisi ante. Quisque convallis porttitor diam non convallis.
-                  </p>
-
-                  <p class="body_title mb-0">Responsibilites</p>
-                    <p class="body_text mb-0"> Vestibulum consectetur elit quis risus porttitor, nec cursus justo pulvinar. Fusce tristique, tellus ut sollicitudin semper, leo ipsum efficitur metus, eu rhoncus augue tortor eu dolor. Vestibulum a odio lobortis, efficitur lorem sed, volutpat odio. Proin pulvinar tellus a blandit iaculis. Donec auctor sapien non velit maximus blandit. 
-                        <br><br>
-                        Phasellus et arcu urna. Sed enim nunc, porttitor quis pulvinar vitae, mattis sed enim. Vestibulum vestibulum leo mauris, ac blandit tortor volutpat quis. Sed dictum rutrum lectus. Integer non pellentesque felis.
-                    </p>
+                  <div class="body_text"></div>
               </div>
 
               <div class="col-lg-3 col-md-12 col-sm-12 pt-3">
                 <p class="mb-0 title_job">JOB TYPE</p>
-                <p class="small_title">Fulltime</p>
+                <p class="small_title">Full time</p>
 
                 <p class="mb-0 title_job">LOCATION</p>
-                <p class="small_title">Prishtina, Kosovo</p>
+                <p class="small_title location_test"></p>
 
                 <p class="mb-0 title_job">DATE POSTED</p>
-                <p class="small_title">03 / 05 / 2006</p>
+                <p class="small_title date"></p>
 
                 <p class="mb-0 title_job">EMPLOYER</p>
-                <p class="small_title">Dardha LLC</p>
+                <p class="small_title employer"></p>
 
               </div>
 
@@ -608,8 +1104,8 @@
     <!-- <script src="/assets/js/Full-Page-Background.js"></script>
     <script src="/assets/js/Full-Page-Background-1-1.js"></script>
     <script src="/assets/js/Full-Page-Background-3-1.js"></script> -->
-    <script src="/assets/js/jquery.min-2.js"></script>
-    <script src="/assets/js/jquery.min.js"></script>
+    <!-- <script src="/assets/js/jquery.min-2.js"></script>
+    <script src="/assets/js/jquery.min.js"></script> -->
     <script src="/assets/flickity/flickity.js"></script>
     <script src="/assets/fullpage/fullpage.js"></script>
     <script src="/assets/js/global.js"></script>

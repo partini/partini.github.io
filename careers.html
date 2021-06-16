@@ -42,9 +42,9 @@ permalink: /careers/
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-12 careers-first-col" style="padding-bottom: 15px;">
                   <i class="fa fa-search">
                   </i>
-                  <input class="d-inline d-print-inline d-sm-inline d-md-inline d-lg-inline d-xl-inline d-xs-inline" type="search" placeholder="Search jobs by keyword">
+                  <input id="search_job" class="d-inline d-print-inline d-sm-inline d-md-inline d-lg-inline d-xl-inline d-xs-inline" type="text" placeholder="Search jobs by keyword">
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-sm-left text-md-right text-lg-right text-xl-right col-12 careers-second-col" style="margin-top: 17px;">
+                <!-- <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-sm-left text-md-right text-lg-right text-xl-right col-12 careers-second-col" style="margin-top: 17px;">
                   <span class="border-careers">
                     All jobs
                     <i class="fa fa-arrow-down" style="margin-right: 10px;margin-left: 5px;"></i>
@@ -57,29 +57,39 @@ permalink: /careers/
                     By Industry
                     <i class="fa fa-arrow-down" style="margin-left: 5px;"></i>
                   </span>
-                </div>
+                </div> -->
             </div>
             <div class="row careers-second-row mt-4 mb-4">
                 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" style="margin-top: 15px;margin-bottom: -10px;height: 30px;">
-                    <a href="#">All jobs</a>
-                    <a href="#">Results</a>
-                    <a href="#">Clear filters</a>
+                    <a class="all_jobs">All jobs</a>
+                    <a class="results">Results</a>
+                    <!-- <a href="#">Clear filters</a> -->
                 </div>
             </div>
             <div class="row"> 
                 {% for job in site.jobs %}
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-12">
-                    <div class="all-divs-borders" data-toggle="modal" data-target="#modal_job"><img class="d-inline" src="{{ site.baseurl }}/assets/img/Jem-final-profile-pic-circle2.png">
-                        <p class="d-inline job_title" data-toggle="modal" data-target="#modal_job">{{ job.title }}</p>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-12 job_item" data-filter-item data-filter-title="{{ job.title | downcase }}">
+                    <div class="all-divs-borders"><img class="d-inline" src="{{ site.baseurl }}/assets/img/Jem-final-profile-pic-circle2.png">
+                        <p class="d-inline job_title">{{ job.title }}</p>
                         <p class="location"><i class="fa fa-location-arrow mr-2"></i>{{ job.location }}<br></p>
                         <p class="firstparagraphs">{{ job.long_title }}</p>
                         <p class="short_description secondparagraphs pb-4" >{{ job.short_description }}</p>
                         <div class="job_footer">
                             <a class=" font-weight-bold fulltime" href="#">{{ job.type_of_position }}</a>
                             <a class=" font-weight-bold a-link" href="#">{{ job.date | date: "%B %e, %Y" }} </a>
-                            <a class=" font-weight-bold apply" href="{{ site.baseurl }}{{ job.url }}">Apply now</a>
+                            <a class=" font-weight-bold apply" >Apply now</a>
+                            <!-- data-toggle="modal" data-target="#modal_job" -->
+                            <!-- href="{{ site.baseurl }}{{ job.url }}" -->
                         </div>
                     </div>
+
+                    <div class="title d-none">{{ job.title }}</div>
+                    <div class="location_modal d-none">{{ job.location }}</div>
+                    <div class="position d-none">{{ job.type_of_position }}</div>
+                    <div class="employer d-none">{{ job.employer }}</div>
+                    <div class="date d-none">{{ job.date | date: "%B %e, %Y" }}</div>
+                    <div class="content d-none">{{ job.content }}</div>
+                    <div class="long_title d-none">{{ job.long_title }}</div>
                 </div>
                 {% endfor %}
 
@@ -241,8 +251,8 @@ permalink: /careers/
                     </div>
                 </div>
                 <div class="col-lg-9 col-md-9 col-sm-12 col-12">
-                    <p class="name mb-0">Software Architect</p>
-                    <p class="position">Junior Software Architect / Prishtina, Kosovo</p>
+                    <p class="name mb-0"></p>
+                    <p class="position_title"></p>
                 </div>
             </div>
         </div>
@@ -250,32 +260,21 @@ permalink: /careers/
           <div class="row p-0">
 
               <div class="col-lg-9 col-md-12 col-sm-12 pt-3 ">
-                  <p class="body_title mb-0">Who are we looking for?</p>
-                  <p class="body_text">
-                    Vestibulum consectetur elit quis risus porttitor, nec cursus justo pulvinar. Fusce tristique, tellus ut sollicitudin semper, leo ipsum efficitur metus, eu rhoncus augue tortor eu dolor. Vestibulum a odio lobortis, efficitur lorem sed, volutpat odio. Proin pulvinar tellus a blandit iaculis. Donec auctor sapien non velit maximus blandit. Phasellus et arcu urna. Sed enim nunc, porttitor quis pulvinar vitae, mattis sed enim. Vestibulum vestibulum leo mauris, ac blandit tortor volutpat quis. Sed dictum rutrum lectus. Integer non pellentesque felis.
-                    <br><br>
-                    Morbi ut diam ac mi lobortis luctus eget quis turpis. Duis viverra mi lectus, et maximus mauris rutrum eu. Nullam ornare arcu eu dui faucibus ullamcorper. Vivamus dignissim fermentum mauris. Maecenas sagittis eros mollis nibh rhoncus interdum. Aliquam sit amet turpis ac leo finibus fermentum. Suspendisse velit felis, sagittis vel neque quis, porttitor dignissim ligula. Aliquam elementum finibus faucibus. Praesent id aliquam magna. Curabitur lectus lorem, molestie quis vehicula sed, consequat vitae nulla. Ut non nisi ante. Quisque convallis porttitor diam non convallis.
-                  </p>
-
-                  <p class="body_title mb-0">Responsibilites</p>
-                    <p class="body_text mb-0"> Vestibulum consectetur elit quis risus porttitor, nec cursus justo pulvinar. Fusce tristique, tellus ut sollicitudin semper, leo ipsum efficitur metus, eu rhoncus augue tortor eu dolor. Vestibulum a odio lobortis, efficitur lorem sed, volutpat odio. Proin pulvinar tellus a blandit iaculis. Donec auctor sapien non velit maximus blandit. 
-                        <br><br>
-                        Phasellus et arcu urna. Sed enim nunc, porttitor quis pulvinar vitae, mattis sed enim. Vestibulum vestibulum leo mauris, ac blandit tortor volutpat quis. Sed dictum rutrum lectus. Integer non pellentesque felis.
-                    </p>
+                  <div class="body_text"></div>
               </div>
 
               <div class="col-lg-3 col-md-12 col-sm-12 pt-3">
                 <p class="mb-0 title_job">JOB TYPE</p>
-                <p class="small_title">Fulltime</p>
+                <p class="small_title">Full time</p>
 
                 <p class="mb-0 title_job">LOCATION</p>
-                <p class="small_title">Prishtina, Kosovo</p>
+                <p class="small_title location_test"></p>
 
                 <p class="mb-0 title_job">DATE POSTED</p>
-                <p class="small_title">03 / 05 / 2006</p>
+                <p class="small_title date"></p>
 
                 <p class="mb-0 title_job">EMPLOYER</p>
-                <p class="small_title">Dardha LLC</p>
+                <p class="small_title employer"></p>
 
               </div>
 
