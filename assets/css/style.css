@@ -734,6 +734,14 @@ header.masthead .intro-text{
   padding-right: 10px;
 }
 
+#footer .get_in_touch_text_1{
+  font-size: 40px;
+  line-height: 50px;
+  color: #fff;
+  padding-right: 10px;
+  margin-left: 25px;
+}
+
 .left_footer_grid{
   /* background-image: linear-gradient(to top right, rgb(92,70,249) 10%, #000 75%);  */
   padding: 4rem 0rem 14rem 0rem;
@@ -974,6 +982,7 @@ header.masthead .intro-text{
 
 .job_title{
   font-weight: 400;
+  cursor: pointer;
 }
 
 .job_footer{
@@ -1125,6 +1134,86 @@ html,body{
   height: 40px;
   object-fit: contain;
 }
+
+#modal_job .modal-content{
+  padding: 2rem;
+}
+
+#modal_job .name{
+  font-size: 30px;
+}
+
+#modal_job .position{
+  font-size: 14px;
+}
+
+#modal_job  .image{
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+  background-color: #5C46F9;
+}
+
+#modal_job .modal-header .row{
+  display: flex;
+  align-items: center;
+}
+
+#modal_job .modal-header{
+  padding-bottom: 3rem;
+}
+
+#modal_job .body_title{
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#modal_job .body_text{
+  font-size: 14px;
+  font-weight: 100;
+}
+
+#modal_job .modal-body{
+  padding-bottom: 4rem;
+}
+
+#modal_job .apply{
+  background-color: #5C46F9 !important;
+  border-radius: 2px !important;
+  padding: 0.5rem 2.5rem 0.5rem 2.5rem !important;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 100;
+  outline: 0;
+  border: 0
+}
+
+#modal_job .modal-footer{
+  justify-content: flex-start;
+  padding-top: 2rem !important;
+}
+
+#modal_job .title_job{
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+}
+
+#modal_job .small_title{
+  font-size: 14px;
+  color: rgba(0, 0, 0, 1);
+  font-weight: bold;
+}
+
+#close_modal_job{
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: -2rem
+}
+
 
 @keyframes animateBusniessText{
   0%{

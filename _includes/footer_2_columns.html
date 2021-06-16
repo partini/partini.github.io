@@ -1,9 +1,17 @@
-<section id="footer">
+<section id="footer" class="section bg-black padding-7 d-none d-md-none d-lg-block">
   <div class="row">
 
       <div class="col-lg-6 col-md-6 left_footer_grid">
         <div class="d-flex justify-content-end">
-        <p class="get_in_touch_text"><strong>Let's get in</strong><br><strong>touch.</strong></p>
+          {% if page.name == "aboutus.html" %} 
+            <p class="get_in_touch_text_1">Have a project in mind? <br/> Let's work together.</p>
+          {% elsif page.name == "services.html" %}
+            <p class="get_in_touch_text_1">We look forward to hearing from you. <br> Let's see how we can help.</p>
+          {% elsif page.name == "index.html" %}
+            <p class="get_in_touch_text"><strong>Let's get in</strong><br><strong>touch.</strong></p>
+          {% else %}
+            <p class="get_in_touch_text_1">Have a project in mind? <br/> Let's work together.</p>
+          {% endif %}
         </div>
         <div class="d-flex justify-content-end pr-5">
           <img src="{{ site.baseurl }}/assets/img/icon-footer.png" alt=""> 
@@ -12,7 +20,15 @@
 
       <div class="col-lg-6 col-md-6 right_footer_grid">
           <button>
-            GET AN ESTIMATE OF <br>  YOUR PROJECT
+            {% if page.name == "aboutus.html" %} 
+              Contact us
+            {% elsif page.name == "services.html" %}
+              Book a free consultation
+            {% elsif page.name == "index.html" %}
+              GET AN ESTIMATE OF <br> YOUR PROJECT
+            {% else %}
+              Contact us
+            {% endif %}
           </button>
       </div>
 
