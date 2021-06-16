@@ -1351,7 +1351,17 @@ html,body{
   .back_top_grid{
     position: absolute !important;
     right: 0;
-    top: -80px;
+    bottom: -18px;
+  }
+
+  .team-paragraph{
+    margin-top: 0px;
+    padding-top: 0px;
+    padding: 2rem;
+  }
+
+  .back_top.img{
+    display: none
   }
 
   .left_footer_grid div{

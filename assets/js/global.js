@@ -1,9 +1,3 @@
-// $(document).on('scroll', function() {
-//     if( $(this).scrollTop() >= $('#busineses').position().top - 100 ){
-//         animateBussniessText();
-//     }
-// });
-
 function animateBussniessText(){
     $('#busineses_intro_text').css('animation','animateBusniessText 1s');
 }
@@ -50,28 +44,14 @@ $('#menu_burger').click(function(){
     });
 });
 
-$('#we_are').click(function(e){
+function animateScrollAnchor(from, to){
     $('html, body').animate({
-        scrollTop: ($('#services-section').offset().top)
+        scrollTop: (to.offset().top)
     },500);
-});
+}
 
-$('#we_provide').click(function(e){
-    $('html, body').animate({
-        scrollTop: ($('.our-services').offset().top)
-    },500);
-});
-
-$('#team').click(function(e){
-    $('html, body').animate({
-        scrollTop: ($('.team-section').offset().top)
-    },500);
-});
-
-$('#our_story').click(function(e){
-    $('html, body').animate({
-        scrollTop: ($('.our-story').offset().top)
-    },500);
+$('.go_to_provide').click(function(){
+    fullpage_api.moveTo(2, 0);
 });
 
 $('.menu_nav_left_page ul li').each(function(){

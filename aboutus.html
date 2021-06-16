@@ -10,7 +10,7 @@ permalink: /about/
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 services-header position-relative">
                 <p class="services-p1">Development team of reactive technologists.</p>
-                <a class="btn btn-link" role="button">
+                <a class="btn btn-link we_are" role="button" onclick="animateScrollAnchor($('.we_are'), $('#services-section'))">
                   <i class="fa fa-long-arrow-down fa-2x" style="color: var(--light);"></i>
                 </a>
             </div>
@@ -20,10 +20,10 @@ permalink: /about/
 
 <div class="menu_nav_left_page">
     <ul>
-        <li><a href="#" id="we_are">Services</a></li>
-        <li><a href="#" id="we_provide">Values</a></li>
-        <li><a href="#" id="team">People</a></li>
-        <li><a href="#" id="our_story">Our Story</a></li>
+        <li><a onclick="animateScrollAnchor($('.we_are'), $('#services-section'))" class="we_are">Services</a></li>
+        <li><a onclick="animateScrollAnchor($('#we_provide'), $('.our-services'))" id="we_provide">Values</a></li>
+        <li><a onclick="animateScrollAnchor($('#team'), $('.team-section'))" id="team">People</a></li>
+        <li><a onclick="animateScrollAnchor($('#our_story'), $('.our-story'))" id="our_story">Our Story</a></li>
     </ul>
 </div>
 
