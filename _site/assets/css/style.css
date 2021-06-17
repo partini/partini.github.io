@@ -335,7 +335,7 @@ font-size: 12px;font-family: Heebo;font-weight: 400;color: white;
 .first-col-singlearticle p{font-size: 30px;line-height: 40px;margin-bottom: 20px;}
 .careers-first-col input{width: 300px;border: none;border-width: 0;box-shadow: none;border-color: white;margin-top: 18px;color: rgb(0, 0, 0);font-weight: 300;font-size: 15px;margin-left: 5px;outline: 0;}
 .careers-second-row a{margin-right: 50px;color: black; font-weight: 300;font-size: 16px;}
-.border-careers{margin-top: 12px;border-right-style: solid;border-right-color: rgb(230,236,242);border-width: thin;font-size: 14px;margin-left: 12px;}
+.border-careers{border-right-style: solid;border-right-color: rgb(230,236,242);border-width: thin;font-size: 14px;margin-left: 12px;}
 .apply{color: black;font-weight: bold;font-size: 12px;}
 .first-col-insights{height: 750px;text-align: center;}
 .second-p-insights{font-family: Heebo;font-size: 40px; }
@@ -1218,6 +1218,74 @@ html,body{
   display: none !important;
 }
 
+.menu_sub{
+  display: none;
+  position: absolute;
+  background-color: #Fff;
+  width: 200px;
+  right: 0;
+  padding: 10px;
+  text-align: left;
+  z-index: 1;
+  box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.45);
+-webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.45);
+-moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.45);
+}
+
+.menu_sub .links{
+  flex-direction: column;
+}
+
+.menu_sub .links a{
+  color: #000;
+  font-size: 12px;
+  text-decoration: none !important;
+}
+
+.menu_sub .small_title{
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.search_job_item{
+  position: relative;
+  cursor: pointer;
+}
+
+.search_job_item i{
+  float: right;
+  margin-top: 3px;
+}
+
+.search_job_item:nth-child(1) .menu_sub,
+.search_job_item:nth-child(2) .menu_sub{
+  right: unset;
+  left: 0;
+}
+
+.careers-first-col{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 15px;
+}
+
+.careers-first-col input{
+  margin-top:  0;
+}
+
+.careers-second-col{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+@media (max-width: 992px){
+  #services #footer{
+    display: none;
+  }
+}
+
 @keyframes animateBusniessText{
   0%{
     left: 100%;
@@ -1326,6 +1394,10 @@ html,body{
 @media (max-width: 767px){
   .left_footer_grid img{
     transform: rotate(90deg);
+  }
+
+  .search_job_item .menu_sub{
+    width: 150px;
   }
   .list-footer{
     margin-left: 0;

@@ -92,30 +92,18 @@ $('.job_item').each(function(){
     });
 });
 
-
-
-  // Search contractor
   $('#search_job').keyup(function(){
-    
     var value = $(this).val();
-    // var parent = $(this).parent().parent().find('#first_last_name').val();
-    // var company_name = $(this).parent().parent().find('#company_name').val();
-    // var description = $(this).parent().parent().find('#description').val();
-
     var filterItems = $('[data-filter-item]');
     var filterItems_title = $('[data-filter-title]');
-    // var filterItems_description = $('[data-filter-description]');
-    var filterItem = $('[data-filter-item]').val();
+    //var filterItem = $('[data-filter-item]').val();
 
     if ( value != '' ) {
         filterItems.addClass('hidden');
         filterItems_title.addClass('hidden');
-
         $('[data-filter-item][data-filter-title*="' + value.toLowerCase() + '"]').removeClass('hidden');
-
         $('.results').css('font-weight', 'bold');
         $('.all_jobs').css('font-weight', 'normal');
-        console.log('test')
     } else {
         filterItems.removeClass('hidden');
         filterItems_title.removeClass('hidden');
@@ -123,4 +111,18 @@ $('.job_item').each(function(){
         $('.all_jobs').css('font-weight', 'bold');
     }
 
+  });
+
+  $('.search_job_item').each(function(){
+    var sub_menu = $(this).find('.menu_sub');
+    $(this).click(function(){
+        sub_menu.toggle(function(){
+            if($(this).is(":visible")){
+                $('.menu_sub').hide();
+                $(this).show();
+            }else{
+                $(this).hide();
+            }
+        });
+    });
   });
