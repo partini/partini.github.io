@@ -1284,6 +1284,9 @@ html,body{
   #services #footer{
     display: none;
   }
+  #fullpage #footer{
+    display: none;
+  }
 }
 
 @keyframes animateBusniessText{
