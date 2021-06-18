@@ -1287,6 +1287,10 @@ html,body{
   #fullpage #footer{
     display: none;
   }
+
+  #fullapge .masthead{
+    height: 500px !important;
+  }
 }
 
 @keyframes animateBusniessText{
@@ -1489,7 +1493,7 @@ html,body{
     margin-top: 0;
   }
   .section{
-    height: unset !important;
+    height: unset;
     padding-bottom: 1rem !important;
   }
 }
