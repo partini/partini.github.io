@@ -373,7 +373,7 @@ font-size: 12px;font-family: Heebo;font-weight: 400;color: white;
 .index-p1 {font-weight: 300;font-family: Heebo;font-size: 20px; color: white;}
 .index-p2 {font-family: Heebo;  font-weight: 400;      font-size: 20px;    color: white;
 }
-.p-image{color: white;font-weight: 100;font-family: Heebo;font-size: 39px;margin: auto;padding-top: 300px;}
+.p-image{color: white;font-weight: 400;font-size: 39px;margin: auto;}
 .img1{width: 100px;margin-left: 15px;margin-bottom: 15px;}
 .business-p1{font-size: 13rem;font-weight: 100;font-family: Heebo;color: #FFFFFF;opacity: 0.40;}
 .business-p2{color: white;font-size: 22px;font-weight: 300;font-family: Heebo;margin-left: 10px;}
@@ -680,11 +680,11 @@ header.masthead .intro-text{
 
 #busineses_intro_text{
   position: absolute;
+  top: 50%;
   left: 50%;
   width: 100%;
   right: 0;
-  transform: translate(-50%,0);
-  line-height: 50px;
+  transform: translate(-50%,-50%);
 }
 
 .busineses-carusel .content{
@@ -846,7 +846,7 @@ header.masthead .intro-text{
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.2);
+  background: rgba(0,0,0,0.5);
 }
 
 .services-header{
@@ -907,6 +907,19 @@ header.masthead .intro-text{
   position: relative;
   height: 400px;
   transition: all 0.4s;
+  background: #fff;
+}
+.no-image img{
+  object-fit: contain !important;
+  width: 100px !important;
+  height: 100px !important;
+}
+
+.no-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px !important;
 }
 
 .team-section .fa{
@@ -926,8 +939,8 @@ header.masthead .intro-text{
 }
 
 .team-section .image img{
-  width: 100% !important;
-  height: 100% !important;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
