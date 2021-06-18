@@ -1064,7 +1064,9 @@ html,body{
   border-radius: 10px;
   width: 100px;
 }
-
+.masthead{
+  background-attachment: fixed !important;
+}
 .menu_nav_left_page ul li a{
   color: #000 !important;
   text-decoration: none;
