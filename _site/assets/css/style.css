@@ -891,6 +891,10 @@ header.masthead .intro-text{
   line-height: 28px;
 }
 
+.color-white{
+  color: #fff !important;
+}
+
 .color-primary{
   color: #5C46F9 !important;
 }
