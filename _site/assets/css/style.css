@@ -1342,6 +1342,10 @@ html,body{
   .menu_nav_left_page{
     display: none;
   }
+
+  #busineses{
+    height: 700px !important;
+  }
   
 }
 
@@ -1506,15 +1510,15 @@ html,body{
     margin-top: 0;
   }
   .section{
-    height: unset;
-    padding-bottom: 1rem !important;
+    height: auto;
+    padding-bottom: 4rem !important;
   }
 }
 
 @media (max-width: 575px){
   .section{
-    height: unset !important;
-    padding-bottom: 0 !important;
+    height: auto !important;
+    padding-bottom: 4rem !important;
   }
 
   #clients{
