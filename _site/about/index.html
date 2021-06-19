@@ -2,7 +2,6 @@
 <html>
   <head>
     <title>Incodeks -  About – Incodeks – Moving the world forward through top notch software.</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <meta charset="utf-8" />
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
@@ -19,20 +18,17 @@
     <meta property="og:title" content="Incodeks -  About" />
     <meta property="twitter:title" content="Incodeks -  About" />
     
-
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
  
     <link rel="alternate" type="application/rss+xml" title="Incodeks - Moving the world forward through top notch software." href="/feed.xml" />
-
     <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/FontAwesome.css">
     <link rel="stylesheet" href="/assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="/assets/flickity/flickity.css">
     <link rel="stylesheet" href="/assets/fullpage/fullpage.css">
     <link rel="stylesheet" href="/assets/css/style.css">
-
     <link href="https://fonts.cdnfonts.com/css/heebo" rel="stylesheet">
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
@@ -74,7 +70,7 @@
     </div>
 </nav>
 
-  <header class="masthead" style="background-image: url('/assets/team_images/9X8A2018.jpg');">
+    <header class="masthead" style="background-image: url('/assets/team_images/9X8A2018.jpg');">
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 services-header position-relative">
@@ -107,22 +103,67 @@
             </div>
         </div>
         <div class="row text-center services_grid">
-            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 item">
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 item">
                 <div class="bg-grey w-100 h-100">
                     <p class="font-weight-bold text-left">Client Size</p>
-                    <img src="/assets/img/client_size.png" alt="" class="w-100 h-100">
+                    <div id="piechart"></div>
+                    <!-- <img src="/assets/img/client_size.png" alt="" class="w-100 h-100"> -->
                 </div>
             </div>
-            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 item">
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 item">
                 <div class="bg-grey w-100 h-100">
                     <p class="font-weight-bold text-left">Average budget</p>
-                    <img src="/assets/img/budget.png" alt="" class="w-100 h-100">
+                    <div id = "column_chart" style = "width: 100%;height: 300px;">
+                    </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 item">
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 item">
                 <div class="bg-grey w-100 h-100">
                     <p class="font-weight-bold text-left">Average team size</p>
-                    <img src="/assets/img/team_size.png" alt="" class="w-100 h-100">
+                    <div class="row pt-5">
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                            <div class="image">
+                                <img src="/assets/img/team_size_person.png" alt="" class="w-100 h-100">
+                                <div class="number">1</div>
+                            </div>
+                            <p>PM</p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                            <div class="image">
+                                <img src="/assets/img/team_size_person.png" alt="" class="w-100 h-100">
+                                <div class="number">8</div>
+                            </div>
+                            <p>SE</p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                            <div class="image">
+                                <img src="/assets/img/team_size_person.png" alt="" class="w-100 h-100">
+                                <div class="number">4</div>
+                            </div>
+                            <p>TS</p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                            <div class="image">
+                                <img src="/assets/img/team_size_person.png" alt="" class="w-100 h-100">
+                                <div class="number">2</div>
+                            </div>
+                            <p>QA</p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                            <div class="image">
+                                <img src="/assets/img/team_size_person.png" alt="" class="w-100 h-100">
+                                <div class="number">1</div>
+                            </div>
+                            <p>UI/UX</p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                            <div class="image">
+                                <img src="/assets/img/team_size_person.png" alt="" class="w-100 h-100">
+                                <div class="number">1</div>
+                            </div>
+                            <p>Ad</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -508,7 +549,7 @@
 </section>
    
   
-  
+    
 	<!-- Google Analytics -->
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -530,30 +571,9 @@
     <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="/assets/js/agency.js"></script>
-    <!-- <script src="/assets/js/Full-Page-Background.js"></script>
-    <script src="/assets/js/Full-Page-Background-1-1.js"></script>
-    <script src="/assets/js/Full-Page-Background-3-1.js"></script> -->
-    <!-- <script src="/assets/js/jquery.min-2.js"></script>
-    <script src="/assets/js/jquery.min.js"></script> -->
     <script src="/assets/flickity/flickity.js"></script>
     <script src="/assets/fullpage/fullpage.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="/assets/js/global.js"></script>
-    <script>
-     $(window).on("scroll", function() {
-        if($(window).scrollTop() > 400) {
-            $(".navbar").addClass("on-scroll");
-        } else {
-           $(".navbar").removeClass("on-scroll");
-        }
-    });
-
-    $(window).on("scroll", function() {
-       if($(window).scrollTop() > 400) {
-           $(".estimate-button").addClass("in-scroll");
-       } else {
-          $(".estimate-button").removeClass("in-scroll");
-       }
-   });
-    </script> 
   </body>
 </html>

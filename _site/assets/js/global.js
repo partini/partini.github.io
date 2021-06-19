@@ -126,3 +126,57 @@ $('.job_item').each(function(){
         });
     });
   });
+
+$(window).on("scroll", function() {
+    if($(window).scrollTop() > 400) {
+        $(".navbar").addClass("on-scroll");
+    } else {
+       $(".navbar").removeClass("on-scroll");
+    }
+});
+
+$(window).on("scroll", function() {
+   if($(window).scrollTop() > 400) {
+       $(".estimate-button").addClass("in-scroll");
+   } else {
+      $(".estimate-button").removeClass("in-scroll");
+   }
+});
+
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Hours per Day'],
+  ['Enterprise', 23],
+  ['Mid-size', 47],
+  ['Startup', 30],
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'', 'width':'100%', 'height':'100%'};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+
+
+function drawChart1() {
+    // Define the chart to be drawn.
+    var data = google.visualization.arrayToDataTable([
+       ['Year', 'Development budget'],
+       ['In Development',  50],
+       ['In Product Design',  12],
+    ]);
+
+    var options = {title: 'Budget (in thousands dollars)'}; 
+
+    // Instantiate and draw the chart.
+    var chart = new google.visualization.ColumnChart(document.getElementById('column_chart'));
+    chart.draw(data, options);
+ }
+ google.charts.setOnLoadCallback(drawChart1);

@@ -1303,6 +1303,44 @@ html,body{
   justify-content: flex-end;
 }
 
+#piechart rect,
+#column_chart svg > rect{
+  fill: transparent !important;
+}
+
+#services-section .services_grid .item{
+  margin-bottom: 2rem;
+}
+
+#services-section .services_grid .item .image{
+  position: relative;
+}
+
+#services-section .services_grid .item img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border: 1px solid #5C46F9;
+  border-radius: 100%;
+}
+
+#services-section .services_grid .item .image .number{
+ position: absolute;
+ background-color: #5C46F9;
+ width: 30px;
+ height: 30px;
+ border-radius: 100%;
+ top: 0;
+ right:  0;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ top: 1rem;
+ right: -0.5rem;
+ color: #fff;
+}
+
+
 @media (max-width: 992px){
   #services #footer{
     display: none;

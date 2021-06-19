@@ -2,23 +2,19 @@
 <html>
   <head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     {% include meta.html %}
-
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
  
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/FontAwesome.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/flickity/flickity.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/fullpage/fullpage.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
-
     <link href="https://fonts.cdnfonts.com/css/heebo" rel="stylesheet">
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
@@ -39,44 +35,23 @@
 
   <body  id="page-top">
   {% include head.html %}
-  {{ content }}
+    {{ content }}
   {% if page.footer_type == "footer_2_columns" %} 
     {% include footer_2_columns.html %}
   {% elsif page.footer_type=="footer_1_column" %}
     {% include footer_2_columns.html %}
   {% elsif page.footer_type == "consult" %}
-  {% include footer_2_columns.html %}
+    {% include footer_2_columns.html %}
   {% endif %}
-  {% include analytics.html %}
+    {% include analytics.html %}
 
     <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
     <script src="{{ site.baseurl }}/assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="{{ site.baseurl }}/assets/js/agency.js"></script>
-    <!-- <script src="{{ site.baseurl }}/assets/js/Full-Page-Background.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/Full-Page-Background-1-1.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/Full-Page-Background-3-1.js"></script> -->
-    <!-- <script src="{{ site.baseurl }}/assets/js/jquery.min-2.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script> -->
     <script src="{{ site.baseurl }}/assets/flickity/flickity.js"></script>
     <script src="{{ site.baseurl }}/assets/fullpage/fullpage.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="{{ site.baseurl }}/assets/js/global.js"></script>
-    <script>
-     $(window).on("scroll", function() {
-        if($(window).scrollTop() > 400) {
-            $(".navbar").addClass("on-scroll");
-        } else {
-           $(".navbar").removeClass("on-scroll");
-        }
-    });
-
-    $(window).on("scroll", function() {
-       if($(window).scrollTop() > 400) {
-           $(".estimate-button").addClass("in-scroll");
-       } else {
-          $(".estimate-button").removeClass("in-scroll");
-       }
-   });
-    </script> 
   </body>
 </html>

@@ -38,22 +38,67 @@ permalink: /about/
             </div>
         </div>
         <div class="row text-center services_grid">
-            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 item">
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 item">
                 <div class="bg-grey w-100 h-100">
                     <p class="font-weight-bold text-left">Client Size</p>
-                    <img src="{{ site.baseurl }}/assets/img/client_size.png" alt="" class="w-100 h-100">
+                    <div id="piechart"></div>
+                    <!-- <img src="{{ site.baseurl }}/assets/img/client_size.png" alt="" class="w-100 h-100"> -->
                 </div>
             </div>
-            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 item">
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 item">
                 <div class="bg-grey w-100 h-100">
                     <p class="font-weight-bold text-left">Average budget</p>
-                    <img src="{{ site.baseurl }}/assets/img/budget.png" alt="" class="w-100 h-100">
+                    <div id = "column_chart" style = "width: 100%;height: 300px;">
+                    </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 item">
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 item">
                 <div class="bg-grey w-100 h-100">
                     <p class="font-weight-bold text-left">Average team size</p>
-                    <img src="{{ site.baseurl }}/assets/img/team_size.png" alt="" class="w-100 h-100">
+                    <div class="row pt-5">
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                            <div class="image">
+                                <img src="{{ site.baseurl }}/assets/img/team_size_person.png" alt="" class="w-100 h-100">
+                                <div class="number">1</div>
+                            </div>
+                            <p>PM</p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                            <div class="image">
+                                <img src="{{ site.baseurl }}/assets/img/team_size_person.png" alt="" class="w-100 h-100">
+                                <div class="number">8</div>
+                            </div>
+                            <p>SE</p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                            <div class="image">
+                                <img src="{{ site.baseurl }}/assets/img/team_size_person.png" alt="" class="w-100 h-100">
+                                <div class="number">4</div>
+                            </div>
+                            <p>TS</p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                            <div class="image">
+                                <img src="{{ site.baseurl }}/assets/img/team_size_person.png" alt="" class="w-100 h-100">
+                                <div class="number">2</div>
+                            </div>
+                            <p>QA</p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                            <div class="image">
+                                <img src="{{ site.baseurl }}/assets/img/team_size_person.png" alt="" class="w-100 h-100">
+                                <div class="number">1</div>
+                            </div>
+                            <p>UI/UX</p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                            <div class="image">
+                                <img src="{{ site.baseurl }}/assets/img/team_size_person.png" alt="" class="w-100 h-100">
+                                <div class="number">1</div>
+                            </div>
+                            <p>Ad</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
