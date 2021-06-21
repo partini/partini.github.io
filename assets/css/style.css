@@ -1588,6 +1588,17 @@ html,body{
     justify-content: flex-start;
   }
 
+  #navbarResponsive{
+    background-color: #000 !important;
+    margin-left: -16px;
+    margin-right: -16px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    padding-top: 5rem !important;
+
+  }
+
   .explore-button{
     position: relative;
     width: unset;
