@@ -1233,8 +1233,13 @@ html,body{
   outline: 0;
   background-color: transparent;
   position: absolute;
-  top: 0;
-  right: -2rem
+  top: 14px;
+  right: 1rem;
+  opacity: 1;
+}
+
+#close_modal_job img{
+  filter: brightness(0);
 }
 
 .hidden{
