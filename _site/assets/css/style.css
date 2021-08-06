@@ -544,6 +544,12 @@ color: white;
   }
 }
 
+.services_sub_title{
+  text-align: center;
+  color: #fff;
+  opacity: 0.8;
+}
+
 
 .carousel-cell {
   width: 30%;
@@ -804,7 +810,7 @@ header.masthead .intro-text{
 
 .services_title_homepage{
   font-weight: 400;
-  font-size: 75px;
+  font-size: 40px;
   color: white;
   margin-bottom: 80px;
   line-height: 80px;
@@ -812,6 +818,17 @@ header.masthead .intro-text{
 
 #clients{
   padding: 0;
+}
+
+.slider_services .item-service .title{
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.slider_services .item-service{
+  background: #5C46F9;
 }
 
 /* .back_top_grid img{
@@ -1427,6 +1444,25 @@ html,body{
  color: #fff;
 }
 
+.free_estimate_button{
+  background-color: #5C46F9;
+  color: #fff;
+  z-index: 1;
+  padding: 1rem 2rem 1rem 2rem;
+  font-size: 18px;
+  margin: 0 auto;
+  text-decoration: none !important;
+  transition: all 0.4s;
+  border: 1px solid transparent;
+  margin-top: 2rem;
+}
+
+.free_estimate_button:hover{
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #5C46F9;
+}
+
 
 @media (max-width: 992px){
   #services #footer{
@@ -1625,7 +1661,7 @@ html,body{
   }
 
   .services_title_homepage{
-    font-size: 34px !important;
+    font-size: 25px !important;
     line-height: 46px;
     margin-bottom: 0;
     text-align: center;
