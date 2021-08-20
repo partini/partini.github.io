@@ -27,6 +27,7 @@ var myFullpageServices = new fullpage('#services', {
 });
 
 $('.back_top').click(function(){
+    $("html, body").animate({ scrollTop: 0 }, 600);
     fullpage_api.moveTo(1, 0);
 });
 
