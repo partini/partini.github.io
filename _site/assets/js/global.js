@@ -157,8 +157,14 @@ function drawChart() {
   ['Startup', 30],
 ]);
 
+let width_chart = 400;
+
+if (window.matchMedia("(max-width: 767px)").matches){
+    width_chart = 350;
+}
+
   // Optional; add a title and set the width and height of the chart
-  var options = {'title':'', 'width':'100%', 'height':'100%'};
+  var options = {'title':'',  'width':width_chart, 'height':'100%','is3D':true,};
 
   // Display the chart inside the <div> element with id="piechart"
   var chart = new google.visualization.PieChart(document.getElementById('piechart'));
@@ -174,7 +180,7 @@ function drawChart1() {
        ['In Product Design',  12],
     ]);
 
-    var options = {title: 'Budget (in thousands dollars)'}; 
+    var options = {title: 'Budget (in thousands dollars)','is3D':true,}; 
 
     // Instantiate and draw the chart.
     var chart = new google.visualization.ColumnChart(document.getElementById('column_chart'));
