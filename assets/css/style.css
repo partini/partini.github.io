@@ -810,6 +810,12 @@ header.masthead .intro-text{
   width: 83%;
 }
 
+@media (max-width: 767px){
+  .right_bottom_footer_grid{
+    margin-top: 1rem;
+  }
+}
+
 .services_title_homepage{
   font-weight: 400;
   font-size: 40px;
