@@ -1739,6 +1739,10 @@ html,body{
     padding-bottom: 4rem !important;
   }
 
+  .app.section{
+    height: 650px !important;
+  }
+
   #clients{
     padding-bottom: 7rem !important;
   }

@@ -187,3 +187,5 @@ function drawChart1() {
     chart.draw(data, options);
  }
  google.charts.setOnLoadCallback(drawChart1);
+
+ console.clear();
