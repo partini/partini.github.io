@@ -1211,6 +1211,10 @@ html,body{
   .masthead{
     background-attachment: fixed !important;
   }
+  #agile_image{
+    width: 400px;
+    margin: 0 auto;
+  }
 }
 
 .menu_nav_left_page ul li a{
@@ -1388,7 +1392,9 @@ html,body{
 .hidden{
   display: none !important;
 }
-
+#how_we_engage{
+  padding: 103px 0 !important;
+}
 .menu_sub{
   display: none;
   position: absolute;
@@ -1522,6 +1528,9 @@ html,body{
   #index-services{
     height: auto !important;
   }
+  #agile_image{
+    width: 100%;
+  }
 }
 
 @keyframes animateBusniessText{
@@ -1630,6 +1639,9 @@ html,body{
   .carousel-cell{
 		width: 80% !important;
 	}
+  #agile_image{
+    height: 400px;
+  }
 }
 
 
@@ -1844,5 +1856,9 @@ html,body{
 
   .busineses-carusel .content{
     flex-direction: column;
+  }
+
+  #agile_image{
+    height: 250px;
   }
 }
