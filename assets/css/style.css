@@ -824,10 +824,6 @@ header.masthead .intro-text{
   line-height: 80px;
 }
 
-#clients{
-  padding: 0;
-}
-
 .slider_services .item-service .title{
   font-size: 18px;
   color: #fff;
@@ -1555,9 +1551,9 @@ html,body{
     display: none;
   }
 
-  #services .fp-section{
+  /* #services .fp-section{
     height: unset !important;
-  }
+  } */
 
   .menu_nav_left_page{
     display: none;
@@ -1746,10 +1742,6 @@ html,body{
 
   .app.section{
     height: 650px !important;
-  }
-
-  #clients{
-    padding-bottom: 7rem !important;
   }
 
   .masthead{
