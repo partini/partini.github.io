@@ -845,7 +845,6 @@ header.masthead .intro-text{
 }
 
 .item_services_home{
-  border: 1px solid #fff;
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
@@ -854,12 +853,6 @@ header.masthead .intro-text{
   padding: 1rem;
   text-align: justify;
   height: 100%;
-  border-image: 
-  linear-gradient(
-    to bottom, 
-    #5C46F9, 
-    rgba(0, 0, 0, 0)
-  ) 1 100%;
 }
 
 .item_services_home .title_service_home{
