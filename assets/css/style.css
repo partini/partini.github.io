@@ -555,7 +555,6 @@ color: white;
 .carousel-cell {
   width: 30%;
   height: auto;
-  margin-right: 30px;
 /*  background: #8C8;*/
   border-radius: 0px;
   position: relative;
@@ -592,7 +591,6 @@ color: white;
 	text-transform: initial;
 	line-height: 22px;
   margin-top: 1rem;
-  text-align: justify;
 }
 
 .flickity-page-dots .dot.is-selected{
@@ -1639,6 +1637,11 @@ html,body{
     transform: rotate(90deg);
   }
 
+  .services-header .services-p1{
+    font-size: 23px !important;
+    line-height: 31px !important;
+  }
+
   .search_job_item .menu_sub{
     width: 150px;
   }
@@ -1745,7 +1748,22 @@ html,body{
   }
 
   .masthead{
-    height: 600px !important;
+    height: 400px !important;
+  }
+  .services-header{
+    height: 100%;
+  }
+
+  .masthead .row{
+    height: 100%;
+  }
+
+  .free_estimate_button{
+    height: 61px !important;
+  }
+
+  #homepage .masthead .row{
+    height: unset !important;
   }
 }
 
