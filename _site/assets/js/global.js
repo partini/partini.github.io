@@ -43,7 +43,7 @@ $('#menu_burger').click(function(){
 
 function animateScrollAnchor(from, to){
     $('html, body').animate({
-        scrollTop: (to.offset().top)
+        scrollTop: (to.offset().top - 50)
     },500);
 }
 

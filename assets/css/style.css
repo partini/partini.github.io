@@ -650,6 +650,14 @@ header.masthead .intro-text{
   height: 100%;
 }
 
+#what_we_offer{
+  padding-bottom:  0 !important;
+}
+
+#clients{
+  padding-bottom: 13rem !important;
+}
+
 .explore-button{
   position: absolute;
   bottom: 71px;

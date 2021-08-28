@@ -89,10 +89,13 @@ permalink: /careers/
                 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" style="margin-top: 15px;margin-bottom: -10px;height: 30px;">
                     <a class="all_jobs">All jobs</a>
                     <a class="results">Results</a>
-                    <!-- <a href="#">Clear filters</a> -->
+                </div>
+
+                <div class="col-md-12 mt-4">
+                    <p>No jobs posted yet!</p>
                 </div>
             </div>
-            <div class="row"> 
+            <!-- <div class="row"> 
                 {% for job in site.jobs %}
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-12 job_item" data-filter-item data-filter-title="{{ job.title | downcase }}">
                     <div class="all-divs-borders"><img class="d-inline" src="{{ site.baseurl }}/assets/img/Jem-final-profile-pic-circle2.png">
@@ -104,8 +107,6 @@ permalink: /careers/
                             <a class=" font-weight-bold fulltime" href="#">{{ job.type_of_position }}</a>
                             <a class=" font-weight-bold a-link" href="#">{{ job.date | date: "%B %e, %Y" }} </a>
                             <a class=" font-weight-bold apply" >Apply now</a>
-                            <!-- data-toggle="modal" data-target="#modal_job" -->
-                            <!-- href="{{ site.baseurl }}{{ job.url }}" -->
                         </div>
                     </div>
 
@@ -118,8 +119,8 @@ permalink: /careers/
                     <div class="long_title d-none">{{ job.long_title }}</div>
                 </div>
                 {% endfor %}
+            </div> -->
 
-            </div>
         </div>
     </section>
     <section id="work" style="background: white;margin-top: -130px;">
