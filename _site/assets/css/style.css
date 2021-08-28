@@ -768,12 +768,14 @@ header.masthead .intro-text{
   align-items: center;
 }
 
-.right_footer_grid button{
+.right_footer_grid a{
   background-color: transparent;
   border: 0;
   color: #fff;
   font-weight: 100;
   font-size: 28px;
+  text-align: center;
+  text-decoration: none !important;
 }
 
 .footer-bottom {
@@ -1772,6 +1774,10 @@ html,body{
 
   #homepage .masthead .row{
     height: unset !important;
+  }
+
+  #clients{
+    padding-top: 0 !important;
   }
 }
 
