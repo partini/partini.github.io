@@ -1601,7 +1601,9 @@ html,body{
   
   .portfolio-item:nth-child(6),
   .portfolio-item:nth-child(14),
-  .portfolio-item:nth-child(12){
+  .portfolio-item:nth-child(12),
+  .portfolio-item:nth-child(18),
+  .portfolio-item:nth-child(19){
     border-right: 1px solid #D8D8D8
   }
 
@@ -1610,14 +1612,52 @@ html,body{
   .portfolio-item:nth-child(11),
   .portfolio-item:nth-child(13),
   .portfolio-item:nth-child(14),
-  .portfolio-item:nth-child(12){
+  .portfolio-item:nth-child(15),
+  .portfolio-item:nth-child(16),
+  .portfolio-item:nth-child(17),
+  .portfolio-item:nth-child(18),
+  .portfolio-item:nth-child(12),
+  .portfolio-item:nth-child(19){
     border-bottom: 1px solid #D8D8D8
+  }
+
+  .portfolio-item:nth-child(16),
+  .portfolio-item:nth-child(17),
+  .portfolio-item:nth-child(18),
+  .portfolio-item:nth-child(19){
+    border-top: 0 !important;
+  }
+
+  .portfolio-item:nth-child(15){
+    border-top: 0 !important;
+    border-left: 0 !important;
+  }
+
+  .portfolio-item:nth-child(16),
+  .portfolio-item:nth-child(17),
+  .portfolio-item:nth-child(20){
+    border-right: 0 !important;
   }
 
   #technologies .container{
     padding-top: 6rem;
   }
 
+}
+
+@media (max-width: 992px) and (min-width: 575px){
+  #technologies .portfolio-item:nth-child(even) {
+    border-right: 1px solid #D8D8D8;
+  }
+
+  .portfolio-item:nth-child(18),
+  .portfolio-item:nth-child(19){
+    border-bottom: 1px solid #D8D8D8;
+  }
+
+  .portfolio-item:nth-child(19){
+    border-right: 1px solid #D8D8D8;
+  }
 }
 
 @media (min-width: 767px){
