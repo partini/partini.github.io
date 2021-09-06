@@ -7,7 +7,7 @@ $('.info-toggles .item').each(function(){
         //$('.info-toggles .content').css('display','none');
         $(this).parent().find('.content').toggle(function(){
             if($(this).is(":visible")){
-                $('.item').hide();
+                //$('.item').hide();
                 $(this).parent().show();
             }else{
                 $('.item').show();
