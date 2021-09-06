@@ -724,6 +724,7 @@ header.masthead .intro-text{
   margin-bottom: 1rem !important;
   font-weight: 100;
   font-size: 20px;
+  opacity: 0.8;
 }
 
 .info-toggles .item .content{
