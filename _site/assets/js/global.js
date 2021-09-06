@@ -148,9 +148,9 @@ google.charts.setOnLoadCallback(drawChart);
 function drawChart() {
   var data = google.visualization.arrayToDataTable([
   ['Task', 'Hours per Day'],
-  ['Enterprise', 23],
-  ['Mid-size', 47],
-  ['Startup', 30],
+  ['Enterprise', 20],
+  ['Mid-size', 20],
+  ['Startup', 60],
 ]);
 
 let width_chart = 400;

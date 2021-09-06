@@ -582,6 +582,7 @@ color: white;
 	color: #fff;
 	text-transform: uppercase;
   line-height: 30px;
+  opacity: 0.8;
 }
 
 .carousel-cell .content .desc{
@@ -591,6 +592,7 @@ color: white;
 	text-transform: initial;
 	line-height: 22px;
   margin-top: 1rem;
+  opacity: 0.8;
 }
 
 .flickity-page-dots .dot.is-selected{

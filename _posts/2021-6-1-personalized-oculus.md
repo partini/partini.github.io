@@ -1,82 +1,92 @@
 ---
 layout: post
-title: Personalized Oculus
-excerpt: What makes a great personalized playlist? Three Product Designers responsible for crafting Spotify's listening experience share their thoughts
+title: Cognitive Virtual Assistants
+excerpt: As many of us know, Dialogflow on June 6  2020 will stop the integration of many platforms that it had automatically, and from now on the implementation of these integrations has shifted to an open source.
 footer_type: footer_1_column
-featured_image: assets/img/foto10.png
+featured_image: assets/posts/bg-post1.png
 ---
 
-Introduction
-As many of us know, Dialogflow on June 6  2020 will stop the integration of many platforms that it had automatically, and from now on the implementation of these integrations has shifted to an open source. The purpose of this article is to set up an integration deployment to connect your existing Dialogflow agent with Twilio chat service platform. If you are a developer who uses Dialogflow to create different Dialoglow Agents who communicate with WhatsAPP, then you will definitely need this article.
-
-If you do not have an existing Dialogflow agent, you can set one up by reading the documentation here.
-
-Initial Setup
-Setting up G Cloud CLI
-The deployment process for GCP Cloud Run via this article utilizes G Cloud CLI commands. Follow the steps below to set up G Cloud CLI locally for this deployment.
-
-On the G Cloud CLI documentation page, select your OS and follow the instructions for the installation.
-Run G Cloud config get-value project to check the GCP Project configured.
-Go into the Dialogflow agent’s settings and check the Project ID associated with the agent. The GCP Project configured in the G Cloud CLI should match the agent’s Project ID.
-If the project IDs do not match, run G Cloud config set project PROJECT-ID, replacing PROJECT-ID with the Project ID from step 3.
-Service Account Setup (GCP)
-For the integration to function properly, it is necessary to create a Service Account in your agent’s GCP Project. See this page of the documentation for more details.
-
-Follow the steps below to create a Service Account and set up the integration.
-
-Go into the Dialogflow agent’s settings and click on the Project ID link to open its associated GCP Project.
-Click on the navigation menu in the GCP console, hover over “IAM & admin”, and click “Service accounts”.
-Click on “+ CREATE SERVICE ACCOUNT”, fill in the details, and give it the “Dialogflow Client API” role.
-Click on “+ Create Key” and download the resulting JSON key file.
-Save the JSON key file in the twilio platform subdirectory.
-If deploying this integration outside of GCP Cloud Run, it may be necessary to set the GOOGLE_APPLICATION_CREDENTIALS environmental variable on the deployment environment to the absolute path of the Service Account JSON key file. See this guide for details.
-
-Deploying the Integration
-Setup
-Go into the Dialogflow agent’s settings and click on the Project ID link to open its associated GCP Project.
-Click on the navigation menu in the GCP console and click “Billing”. Set up and enable billing for the project.
-Enable Cloud Build and Cloud Run API for the project here.
-Clone this git repository onto your local machine or development environment: git clone https://github.com/GoogleCloudPlatform/dialogflow-integrations.git
-Open the root directory of the repository on your local machine or development environment.
-Dockerfile and Creating the Build
-Open the Dockerfile in the root directory of the repository, and change YOUR_INTEGRATION in the following line to “Twilio”
-
-ENV INTEGRATION=YOUR_INTEGRATION  → ENV INTEGRATION=twilio
-
-If you have not done so already, copy your Service Account JSON key file to the Twilio platform subdirectory.
+## Author
+I am Shpetim Sadriu working for Incodeks L.L.C as a Senior Software Engineer, experienced with a demonstrated history of working in the information technology and services industry. 
+I am writing this article because Cognitive Virtual Assistants (CVA) is advanced technology by the product business which is fundamentally a new sort of interaction between Hardware and Human Interaction. Cooperation concentrates in progress with a model on showing the legitimacy of the connection between communication, language and the disclosure of techniques to diminish the administration. This examination is offered another measurement to discover the source direction whose voice-recognition is made to be conceivable by the brainpower of Artificial Intelligence (AI).
+Such a commitment to the paper comprises of: reviewing and summing up center thoughts from different orders, having the chance to see how much communication with Voice Recognition (VR) brings to the table; clarify why the objective with remote helpers is in the closer view; Defining the difficulties on the off chance that you need to offer more open doors for Cognitive Virtual Assistants (CVA) has been demonstrated below:
 
 
-Twilio (Text Messaging) Integration
-Setup
-Prerequisites
+## Introduction
+<img src="/assets/posts/unnamed.jpeg" style="height: 500px; object-fit:contain">
 
-Create a Twilio account.
-Replace the value of projectId in the server.js file with your Dialogflow agent’s Project ID.
-Retrieving Credentials
-Log in to the Twilio Dashboard.
-Under the “Project Info” section, take the values for Account SID and Auth Token and replace the value for accountSid and authToken in the server.js file respectively.
-Deploying the Integration Using Cloud Run
-In your local terminal, change the active directory to the twilio root directory.
+<b>How DialogFlow works?</b>
+1. A user sends a text/voice message to a device or an Application.
+2. The message is categorized and matched to a corresponding intent (Intents
+are defined manually by developers in DialogFlow)
+3. DialogFlow agent reads text/voice and responds to input based on the
+Intents. (This conversion from intent text responses to audio is known as
+audio output, speech synthesis, text-to-speech, or TTS)
+4. The App/Device transfers the message to DialogFlow.
 
-Run the following command to save the state of your repository into GCP Container Registry. Replace PROJECT-ID with your agent’s GCP Project ID.
-
-G Cloud builds submit –tag gcr.io/PROJECT-ID/dialogflow-twilio
-
-Deploy your integration to live using the following command. Replace PROJECT-ID with your agent’s GCP project Id and YOUR_KEY_FILE with the name (not path) of your Service Account JSON key file.
-
-G Cloud beta run deploy –image gcr.io/PROJECT-ID/dialogflow-twilio –update-env-vars GOOGLE_APPLICATION_CREDENTIALS=YOUR_KEY_FILE –memory 1Gi
-
-When prompted for a target platform, select a platform by entering the corresponding number (for example, 1 for Cloud Run (fully managed)).
-When prompted for a region, select a region (for example, us-central1).
-When prompted for a service name hit enter to accept the default.
-When prompted to allow unauthenticated invocations press y.
-Copy the URL given to you, and use it according to the README file in the given integration’s folder.
-Setting up Phone Number
-In the “Phone Number” section, go to Active numbers.
-Click on the purchased number.
-Underneath “Messaging”, take the value for the server URL printed in the console after the completion of the execution of the last command from the above section to the “A message comes in” fill-in box. Set the first drop-down to Web-hook and the HTTP method to HTTP POST.
+<p><b>Google Assistant</b></p>
+How to build Google Assistant using DialogFlow?
+First of all sign-in Google &quot;Go to Action Console&quot; and click on &quot;New Project&quot;
+<br>
+<br>
+<img src="/assets/posts/unnamed1.png" style="height: 300px; object-fit:contain">
+<br>
+<br>
+Select your project name 'e-Shop', it should be unique due to your purpose. When you create the project you will be able to find templates or create from scratch your idea.
+<br>
+<br>
+<div style="width: 100%;text-align: center">
+<img src="/assets/posts/unnamed2.png" style="height: 100px; width: 100;object-fit:contain;margin: 0 auto" />
+</div>
+<br>
+<br>
+For this project I have chosen the "Health & Fitness" template, therefore we need to set up our actions. Go to <b>"Build your Action"</b> and <b>"Add Action(s)"</b>. 
+Now we are going to create action by selecting Custom Intent and clicking the <b>"BUILD"</b> button.
+<br>
+<br>
+<img src="/assets/posts/unnamed3.png" style="height: 400px;object-fit:contain;margin: 0 auto" />
  
+Build your first Action
+<br>
+Build a custom conversational experience for the Google Assistant.
+<br>
+Now it is time to connect with DialogFlow go to console, and create a new project. 
+<br>
+<img src="/assets/posts/unnamed4.png" style="height: 400px;width: 100%;object-fit:contain;margin: 0 auto" />
+<br>
+In the DialogFlow tab you will be able to see on the left panel, Intents, Entities, Knowledge, Fulfillment, Integrations and so on.
+<b>Responses</b> and delete Text Responses by creating your own. For example, i have written: "Welcome to e-Shop, Do you wanna hear more about nutritions?". 
 
- 
+Click Save, and let us create some follow-up intents as below, with "Yes"
+<img src="/assets/posts/unnamed5.png" style="width: 100%;object-fit:contain;margin: 0 auto" />
 
-Author: Arlind Kerqeli
+<span style="color: red">Note:</span> "A <b>follow-up intent</b> is a child of its associated parent <b>intent</b>. When you create a <b>follow-up intent</b>, an output context is automatically added to the parent intent and an input context of the same name is added to the <b>follow-up intent</b>."
+<br>
+After Creating <b>"Follow-up Intent"</b> with response "Yes" click the row, go to response again, and add your response, for example: "Here are the best Nutritions: 1.Serious Mass, 2.MassTech, 3.Gold Weight", then click Save.
+<br>
+By adding different Follow-up, in the default or your own Intents, you will be able to have the best fit for your voice/chatbot virtual assistants project.
+
+Once you write click Save button and go to Integration tab on the left panel side, then click <b>"INTEGRATION SETTINGS"</b>
+<br>
+<br>
+<img src="/assets/posts/unnamed6.png" style="width: 100%;height: 400px; object-fit:contain;margin: 0 auto" />
+<br><br>
+Set "Auto-preview changes" to true, and click on Test, in order to see results.
+<br>
+<br>
+<img src="/assets/posts/unnamed7.png" style="width: 100%;height: 400px; object-fit:contain;margin: 0 auto; margin-bottom: 2rem" />
+<img src="/assets/posts/unnamed8.png" style="width: 100%;height: 400px; object-fit:contain;margin: 0 auto;" />
+<br><br>
+Results are shown above in the images, you can build your own bot and give different responses according to the topic you chose. 
+When you create your own idea, now it is time to explain how to publish your voice/chat bot. 
+
+<img src="/assets/posts/unnamed9.png" style="width: 100%;height: 400px; object-fit:contain;margin: 0 auto;" />
+
+"Overview", and click "Decide how your Action is invoked", Choose a name for your Action, or type this name to begin interacting with it and click "Save" (Remember: name should be unique, and not existed before).
+Go to "Overview", Get Ready for deployment,  --> Enter information required for the Actions directory, add necessary data, description, your logo and other informations. Invocation should be at least one selected in order users to be guided in the right way. Once you are done, click "Save".
+
+<img src="/assets/posts/unnamed10.png" style="width: 100%;height: 400px; object-fit:contain;margin: 0 auto;" />
+<br>
+Go to "Overview", select the "Release" tab and then click on "Create a Release".
+
+### Author: Shpetim Sadriu
