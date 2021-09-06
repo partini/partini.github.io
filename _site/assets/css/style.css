@@ -1246,6 +1246,10 @@ html,body{
   padding-top: 5rem;
 }
 
+.place_career{
+  height: 250px;
+}
+
 .bg-grey{
   background-color: #F2F2F2;
   padding: 1rem;
