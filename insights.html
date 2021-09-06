@@ -26,7 +26,12 @@ permalink: /insights/
                     <p class="" style="font-weight:bold;font-size: 24px;">Our Adventures</p>
                 </div>
                 {% for post in site.posts %} 
-                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4"><img src="{{ site.baseurl }}/{{ post.featured_image }}">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+
+                  <div class="featured_image_post">
+                    <img src="{{ site.baseurl }}/{{ post.featured_image }}">
+                  </div>
+
                     <p class="third-p-insights mt-2">{{ post.title }}</p>
                     <p class="four-p-insights mb-0">
                       {{ post.excerpt }}
