@@ -176,7 +176,7 @@ function drawChart1() {
        ['In Product Design',  12],
     ]);
 
-    var options = {title: 'Budget (in thousands dollars)','is3D':true,}; 
+    var options = {title: 'Budget (in thousands US dollars)','is3D':true,}; 
 
     // Instantiate and draw the chart.
     var chart = new google.visualization.ColumnChart(document.getElementById('column_chart'));

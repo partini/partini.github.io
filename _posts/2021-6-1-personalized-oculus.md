@@ -6,13 +6,13 @@ footer_type: footer_1_column
 featured_image: assets/posts/bg-post1.png
 ---
 
-## Author
+##### Author
 I am Shpetim Sadriu working for Incodeks L.L.C as a Senior Software Engineer, experienced with a demonstrated history of working in the information technology and services industry. 
 I am writing this article because Cognitive Virtual Assistants (CVA) is advanced technology by the product business which is fundamentally a new sort of interaction between Hardware and Human Interaction. Cooperation concentrates in progress with a model on showing the legitimacy of the connection between communication, language and the disclosure of techniques to diminish the administration. This examination is offered another measurement to discover the source direction whose voice-recognition is made to be conceivable by the brainpower of Artificial Intelligence (AI).
 Such a commitment to the paper comprises of: reviewing and summing up center thoughts from different orders, having the chance to see how much communication with Voice Recognition (VR) brings to the table; clarify why the objective with remote helpers is in the closer view; Defining the difficulties on the off chance that you need to offer more open doors for Cognitive Virtual Assistants (CVA) has been demonstrated below:
 
 
-## Introduction
+##### Introduction
 <img src="/assets/posts/unnamed.jpeg" style="height: 500px; object-fit:contain">
 
 <b>How DialogFlow works?</b>
@@ -89,4 +89,4 @@ Go to "Overview", Get Ready for deployment,  --> Enter information required for 
 <br>
 Go to "Overview", select the "Release" tab and then click on "Create a Release".
 
-### Author: Shpetim Sadriu
+##### Author: Shpetim Sadriu
