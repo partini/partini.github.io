@@ -361,16 +361,27 @@ font-size: 12px;font-family: Heebo;font-weight: 400;color: white;
 #inbox {background: #f7f7f7;margin-top: -80px;}
 .inbox{font-family: Heebo;}
 #provide{font-family: Heebo;}
+.bg-blue-dark{
+  background-color: #2F1295 !important;
+}
+
+.bg-blue-light{
+  background-color: #5C46F9 !important;
+}
+
+.bg-grey-light{
+  background-color: #9A95AB !important;
+}
 .provide-p1{  margin-bottom: 0px;font-size: 30px; font-weight: 400;}
 .provide-p2{ font-weight: bold;font-size: 30px;}
 .provide-p3{ font-size: 16px;font-weight: 100;line-height: 22px;}
 .services-p1{font-size: 22px;font-family: Heebo;color: white;margin-top: 650px;}
-.first-service-col{background: rgba(0,123,255,0.81);text-align: left;padding-bottom: 1px;padding-right: 0px;padding-left: 15px;padding-bottom:3rem; max-width: auto;}
+.first-service-col{height: 100%; border-radius: 4px; background: rgba(0,123,255,0.81);text-align: left;padding-bottom: 1px;padding-right: 0px;padding-left: 15px;padding-bottom:3rem; max-width: auto;}
 .second-service-col{background: rgba(35,9,9,0.69);background-color: #2F1295;text-align: left;max-width: auto;padding-bottom:3rem; }
-.first-service-row img{width: 75px;margin-top: 28px;margin-bottom: 5px;}
+.first-service-row img{width: 150px;height: 150px;object-fit: cover;border-radius: 150px; margin-top: 16px;margin-bottom: 5px;}
 .third-service-col{background-color: #9A95AB;text-align: left;max-width: auto;padding-bottom:3rem; }
 .service-p1{font-size: 13px;color: white;}
-.service-p2{  color: white;font-size: 11px;opacity: 0.61;font-family: Heebo;   position: absolute;   bottom: 0;   left: 3;}
+.service-p2{  color: white;font-size: 11px;opacity: 0.61; position: absolute;bottom: 0}
 #tecnologies p{font-size: 14px;}
 .portfolio-borders{border: 0.5px solid rgb(207,211,214);text-align: center;height: 152px;}
 .index-p1 {font-weight: 300;font-family: Heebo;font-size: 20px; color: white;}
@@ -1335,10 +1346,9 @@ html,body{
   border-radius: 100%;
   background-color: #5C46F9;
 }
-.team-section .image amp-img{
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover;
+
+.testimonials-section img{
+
 }
 
 #modal_job .modal-header .row{
