@@ -1335,6 +1335,11 @@ html,body{
   border-radius: 100%;
   background-color: #5C46F9;
 }
+.team-section .image amp-img{
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+}
 
 #modal_job .modal-header .row{
   display: flex;
