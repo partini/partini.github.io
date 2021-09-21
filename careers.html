@@ -98,7 +98,12 @@ permalink: /careers/
             <div class="row"> 
                 {% for job in site.jobs %}
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-12 job_item" data-filter-item data-filter-title="{{ job.title | downcase }}">
-                    <div class="all-divs-borders"><img class="d-inline" src="{{ site.baseurl }}/assets/img/Jem-final-profile-pic-circle2.png">
+                    <div class="all-divs-borders">
+                        <img class="d-inline" src="{{ site.baseurl }}/assets/img/logo.png" width="80" height="80" style="padding: 10px;
+                        background: #5C46F9;
+                        height: 80px;
+                        border-radius: 100%;
+                        object-fit: contain;">
                         <p class="d-inline job_title">{{ job.title }}</p>
                         <p class="location"><i class="fa fa-location-arrow mr-2"></i>{{ job.location }}<br></p>
                         <p class="firstparagraphs">{{ job.long_title }}</p>
@@ -123,7 +128,7 @@ permalink: /careers/
 
         </div>
     </section>
-    <section id="work" style="background: white;margin-top: -130px;">
+    <section id="work" style="background: white;margin-top: -50px;">
         <div class="container">
             <div class="row" style="margin-top: -55px;">
                 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
@@ -168,8 +173,8 @@ permalink: /careers/
                 <div class="col-lg-6 col-md-6 col-sm-6 col-12 mb-4">
                     <img class="" src="{{ site.baseurl }}/assets/img/watch.png">
                     <p class="text-left first-benefits mt-2 mb-2">Flexible Hours<br></p>
-                    <p class="text-left second-benefits">Beside the development process that we&nbsp;<br
-                      >do, we care about the life of products.
+                    <p class="text-left second-benefits">Beside the development process that we
+                  do, we care about the life of products.
                       You can rely on us to help you scale as
                       your grow you user base. The reality on
                       now days is that software projects have
@@ -233,7 +238,7 @@ permalink: /careers/
             <div class="row w-100 p-0">
                 <div class="col-lg-3 col-md-4 col-sm-12 col-12">
                     <div class="image">
-
+                        <img class="d-inline" src="{{ site.baseurl }}/assets/img/logo.png" width="80" height="80" style="padding: 10px;object-fit: contain;">
                     </div>
                 </div>
                 <div class="col-lg-9 col-md-9 col-sm-12 col-12">
@@ -267,9 +272,9 @@ permalink: /careers/
           </div>
         </div>
         <div class="modal-footer text-left">
-          <button class="apply">
+          <a class="apply" href="mailto:info@incodeks.com" style="text-decoration: none !important;">
               Apply Now
-          </button>
+          </a>
         </div>
       </div>
     </div>

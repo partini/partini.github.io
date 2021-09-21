@@ -42,13 +42,13 @@ width: 80px;padding-top: 10px;
   margin-left: 25px;
 }
 .location {
-  margin-left: 150px;margin-top: -38px;font-weight: 300;font-size: 13px;
+  margin-left: 150px;margin-top: -33px;font-weight: 300;font-size: 13px;
 }
 .firstparagraphs{
   font-weight: 600;font-size: 13px;margin-bottom: 0px;margin-top: 30px;border-color: #5C46F9;
 }
 .secondparagraphs{
-  font-weight: 400;font-size: 12px;line-height: 18px;border-width: 1.8px;border-color: rgb(200,204,209);border-bottom: 1px solid rgb(200,204,209);margin-bottom: 11px;max-width: 430px;
+  font-weight: 400;font-size: 12px;line-height: 18px;border-width: 1.8px;border-color: rgb(200,204,209);border-bottom: 1px solid rgb(200,204,209);margin-bottom: 11px;max-width: 100%;
 }
 .fulltime{
   color: black;font-weight: 400;font-size: 13px;margin-right: 12px;
@@ -1334,6 +1334,7 @@ html,body{
 
 #modal_job .name{
   font-size: 30px;
+  line-height: 33px;
 }
 
 #modal_job .position{
@@ -1345,6 +1346,8 @@ html,body{
   height: 140px;
   border-radius: 100%;
   background-color: #5C46F9;
+  display: flex;
+  align-items: center;
 }
 
 .testimonials-section img{
