@@ -45,7 +45,7 @@ width: 80px;padding-top: 10px;
   margin-left: 150px;margin-top: -33px;font-weight: 300;font-size: 13px;
 }
 .firstparagraphs{
-  font-weight: 600;font-size: 13px;margin-bottom: 0px;margin-top: 30px;border-color: #5C46F9;
+  font-weight: 600;font-size: 15px;margin-bottom: 0px;margin-top: 30px;border-color: #5C46F9;
 }
 .secondparagraphs{
   font-weight: 400;font-size: 12px;line-height: 18px;border-width: 1.8px;border-color: rgb(200,204,209);border-bottom: 1px solid rgb(200,204,209);margin-bottom: 11px;max-width: 100%;
@@ -339,7 +339,9 @@ font-size: 12px;font-family: Heebo;font-weight: 400;color: white;
 .careers-first-col input{width: 300px;border: none;border-width: 0;box-shadow: none;border-color: white;margin-top: 18px;color: rgb(0, 0, 0);font-weight: 300;font-size: 15px;margin-left: 5px;outline: 0;}
 .careers-second-row a{margin-right: 50px;color: black; font-weight: 300;font-size: 16px;}
 .border-careers{border-right-style: solid;border-right-color: rgb(230,236,242);border-width: thin;font-size: 14px;margin-left: 12px;}
-.apply{color: black;font-weight: bold;font-size: 12px;}
+.apply-small{
+  color: black;font-weight: bold;font-size: 12px;cursor: pointer;
+}
 .first-col-insights{height: 750px;text-align: center;}
 .second-p-insights{font-family: Heebo;font-size: 40px; }
 .first-p-insights{margin-top: 200px;font-size: 16px;font-weight: bold;font-family: Heebo;}
@@ -1162,6 +1164,12 @@ header.masthead .intro-text{
 .job_title{
   font-weight: 400;
   cursor: pointer;
+  color: #000;
+  text-decoration: none !important;
+}
+
+.job_title:hover{
+  color: #000 !important;
 }
 
 .job_footer{
@@ -1953,5 +1961,8 @@ html,body{
 
   #agile_image{
     height: 250px;
+  }
+  .job_title{
+    font-size: 13px;
   }
 }

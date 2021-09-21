@@ -104,14 +104,14 @@ permalink: /careers/
                         height: 80px;
                         border-radius: 100%;
                         object-fit: contain;">
-                        <p class="d-inline job_title">{{ job.title }}</p>
+                        <a class="d-inline job_title apply">{{ job.title }}</a>
                         <p class="location"><i class="fa fa-location-arrow mr-2"></i>{{ job.location }}<br></p>
                         <p class="firstparagraphs">{{ job.long_title }}</p>
                         <p class="short_description secondparagraphs pb-4" >{{ job.short_description }}</p>
                         <div class="job_footer">
                             <a class=" font-weight-bold fulltime" href="#">{{ job.type_of_position }}</a>
                             <a class=" font-weight-bold a-link" href="#">{{ job.date | date: "%B %e, %Y" }} </a>
-                            <a class=" font-weight-bold apply" >Apply now</a>
+                            <a class=" font-weight-bold apply apply-small" >Apply now</a>
                         </div>
                     </div>
 
@@ -272,7 +272,7 @@ permalink: /careers/
           </div>
         </div>
         <div class="modal-footer text-left">
-          <a class="apply" href="mailto:info@incodeks.com" style="text-decoration: none !important;">
+          <a class="apply" href="" style="text-decoration: none !important;">
               Apply Now
           </a>
         </div>
