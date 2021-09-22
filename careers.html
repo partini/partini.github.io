@@ -4,20 +4,6 @@ footer_type: footer_1_column
 title: Incodeks - Careers
 permalink: /careers/
 ---
-    <!-- <header class="masthead" style="background-image: url('{{ site.baseurl }}/assets/img/foto15.png');">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" style="text-align: center;height: 750px;">
-                    <p style="font-size: 40px;font-family: Heebo;color: white;margin-top: 550px;">Join a workplace that is more than a workspace</p>
-                    <p style="margin-top: 40px;">Scroll down for more<br></p>
-                    <a class="btn btn-link" href="#jobs" role="button">
-                      <i class="fa fa-long-arrow-down" style="color: var(--light);"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </header> -->
-
     <header class="masthead" style="background-image: url('{{ site.baseurl }}/assets/team_images/9X8A1989.jpg');">
         <div class="container">
             <div class="row">
@@ -109,8 +95,8 @@ permalink: /careers/
                         <p class="firstparagraphs">{{ job.long_title }}</p>
                         <p class="short_description secondparagraphs pb-4" >{{ job.short_description }}</p>
                         <div class="job_footer">
-                            <a class=" font-weight-bold fulltime" href="#">{{ job.type_of_position }}</a>
-                            <a class=" font-weight-bold a-link" href="#">{{ job.date | date: "%B %e, %Y" }} </a>
+                            <a class=" font-weight-bold fulltime">{{ job.type_of_position }}</a>
+                            <a class=" font-weight-bold a-link">{{ job.date | date: "%B %e, %Y" }} </a>
                             <a class=" font-weight-bold apply apply-small" >Apply now</a>
                         </div>
                     </div>
