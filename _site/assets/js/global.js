@@ -87,7 +87,7 @@ $('.job_item').each(function(){
         modal_date.html(date);
         modal_position.html(position);
         modal.modal('show');
-        modal_apply.attr('href', `mailto:info@incodeks.com?subject=`+position);
+        modal_apply.attr('href', `mailto:careers@incodeks.com?subject=`+position);
     });
 
     console.log(position);
