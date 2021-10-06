@@ -20,10 +20,6 @@ body {
   margin-left: 20px;
 }
 
-.d-inline {
-  margin-left: 20px;
-}
-
 .fltime {
   margin-left: 20px;
 }
@@ -38,11 +34,14 @@ body {
 .all-divs-borders img{
 width: 80px;padding-top: 10px;
 }
-.d-inline {
+/* .d-inline {
   margin-left: 25px;
-}
+} */
 .location {
-  margin-left: 150px;margin-top: -33px;font-weight: 300;font-size: 13px;
+  font-weight: 300;
+  font-size: 13px;
+  margin-bottom: 0;
+  text-align: center;
 }
 .firstparagraphs{
   font-weight: 600;font-size: 15px;margin-bottom: 0px;margin-top: 30px;border-color: #5C46F9;
