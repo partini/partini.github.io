@@ -82,7 +82,7 @@ permalink: /careers/
                 </div> -->
             </div>
             <div class="row"> 
-                {% for job in site.jobs %}
+                {% for job in site.jobs reversed %}
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-12 job_item" data-filter-item data-filter-title="{{ job.title | downcase }}">
                     <div class="all-divs-borders">
                         <div style="display: flex;justify-content: space-evenly;align-items: center;">
