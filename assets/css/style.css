@@ -1962,3 +1962,11 @@ html,body{
     font-size: 13px;
   }
 }
+
+.nav_with_black_color.on-scroll .navbar-brand img{
+  filter: unset !important;
+}
+
+.nav_with_black_color.on-scroll .nav-item .nav-link{
+  color: #fff !important;
+}
