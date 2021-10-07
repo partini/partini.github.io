@@ -1970,3 +1970,11 @@ html,body{
 .nav_with_black_color.on-scroll .nav-item .nav-link{
   color: #fff !important;
 }
+
+.career-item-flex{
+  display: flex;
+}
+
+.career-item-flex img{
+  object-fit: contain;
+}
