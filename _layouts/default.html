@@ -8,7 +8,7 @@
     <meta property="og:image:width" content="400" /> 
     <meta property="og:image:height" content="300" />
 
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{% if page.title == "Incodeks" %}{% else %}Incodeks - {% endif %}{{ site.description }}</title>
 
     {% include meta.html %}
  
