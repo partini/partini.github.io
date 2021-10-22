@@ -1266,6 +1266,7 @@ html,body{
 
 .place_career{
   height: 250px;
+  object-fit: cover;
 }
 
 .bg-grey{
