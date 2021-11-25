@@ -3,7 +3,7 @@ layout: job
 excerpt: Job post 
 footer_type: consult
 title: Software Engineer - Python
-location: Ferizaj, Kosovo
+location: Prishtine, Kosovo
 long_title: Junior Python Software Engineer
 short_description: Incodeks Group L.L.C a fast-growing technology company is looking for experienced candidates with excellent soft and technical skills for the Software Engineer position to join our great team. 
 type_of_position: Fulltime
