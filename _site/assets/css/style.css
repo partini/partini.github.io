@@ -600,7 +600,7 @@ color: white;
 }
 
 .carousel-cell .content .desc{
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: 100;
 	color: #fff;
 	text-transform: initial;
@@ -1269,6 +1269,17 @@ html,body{
   object-fit: cover;
 }
 
+.footer-bottom .row{
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.processes .carousel-cell .content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .bg-grey{
   background-color: #F2F2F2;
   padding: 1rem;
@@ -1798,6 +1809,11 @@ html,body{
     font-weight: 600;
   }
 
+  #footer .row{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
   .on-scroll{
     background: #5C46F9 !important
   }
@@ -1839,7 +1855,7 @@ html,body{
   }
 
   .masthead{
-    height: 400px !important;
+    height: 440px !important;
   }
   .services-header{
     height: 100%;
@@ -1860,6 +1876,26 @@ html,body{
   #clients{
     padding-top: 0 !important;
   }
+  #busineses_intro_text{
+    line-height: 54px;
+  }
+  .row{
+    margin-left: 0!important;
+    margin-right: 0 !important;
+  }
+  .portfolio-item{
+    border-right: 1px solid #D8D8D8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+  }
+   .technologies-second-row .portfolio-item:last-child{
+    border-bottom: 1px solid #D8D8D8;
+   }
+   .portfolio-item p{
+     margin-bottom: 0;
+   }
 }
 
 @media (max-width: 992px){
@@ -1909,7 +1945,7 @@ html,body{
   .back_top_grid{
     position: absolute !important;
     right: 0;
-    bottom: -18px;
+    bottom: -51px;
   }
 
   .team-paragraph{
