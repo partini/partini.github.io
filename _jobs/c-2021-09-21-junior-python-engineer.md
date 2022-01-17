@@ -11,7 +11,7 @@ employer: Incodeks
 date: 2021-11-25 00:00:00
 ---
 
-Incodeks Group L.L.C a fast-growing technology company is looking for experienced candidates with excellent soft and technical skills for the Quality Assurance Engineer position to join our great team. 
+Incodeks Group L.L.C a fast-growing technology company is looking for experienced candidates with excellent soft and technical skills for the Quality Assurance Engineer position to join our great team.
 
 ##### Job description:
 
