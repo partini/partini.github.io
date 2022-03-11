@@ -15,6 +15,17 @@ body {
 } */
 /* .all{   font-family: Heebo;} */
 
+@media (max-width: 575px){
+  .youtube_iframe_video iframe{
+    height: 200px;
+  }
+}
+
+@media (max-width: 767px){
+  .youtube_iframe_video iframe{
+    height: 300px;
+  }
+}
 
 .paragraphs {
   margin-left: 20px;
