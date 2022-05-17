@@ -9,7 +9,7 @@ short_description: Incodeks is looking for a Node JS / React Engineer to join ou
 type_of_position: Fulltime
 employer: Incodeks
 date: 2022-05-17 00:00:00
-deadline: 3 May 2022
+deadline: 30 May 2022
 ---
 
 Incodeks is looking for a Node JS / React Engineer to join our engineering team and help us develop and maintain various software products.
