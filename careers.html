@@ -86,14 +86,14 @@ permalink: /careers/
                 {% for job in site.jobs reversed %}
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-12 job_item" data-filter-item data-filter-title="{{ job.title | downcase }}">
                     <div class="all-divs-borders">
-                        <div style="display: flex;justify-content: space-evenly;align-items: center;">
+                        <div style="display: flex;justify-content: flex-start;align-items: center;">
                             <img class="d-inline" src="{{ site.baseurl }}/assets/img/logo.png" width="80" height="80" style="padding: 10px;
                             background: #5C46F9;
                             height: 80px;
                             border-radius: 100%;
                             object-fit: contain;">
-                            <div>
-                                <a class="d-inline job_title apply">{{ job.title }}</a>
+                            <div style="margin-left: 4px;text-align: center;">
+                                <a class="d-inline job_title apply text-center">{{ job.title }}</a>
                                 <p class="location"><i class="fa fa-location-arrow mr-2"></i>{{ job.location }}<br></p>
                             </div>
                         </div>                        
@@ -102,7 +102,7 @@ permalink: /careers/
                         <div class="job_footer">
                             <p class="mb-0 font-weight-bold fulltime">{{ job.type_of_position }}</p>
                             <!-- <p class="mb-0 font-weight-bold a-link">{{ job.date | date: "%B %e, %Y" }} </p> -->
-                            <p class="mb-0 font-weight-bold a-link">Deadline: 15/04/2022</p>
+                            <p class="mb-0 font-weight-bold a-link">Deadline: {{ job.deadline }}</p>
                             <a class="mb-0 font-weight-bold apply apply-small" >Apply now</a>
                         </div>
                     </div>
@@ -114,6 +114,7 @@ permalink: /careers/
                     <div class="date d-none">{{ job.date | date: "%B %e, %Y" }}</div>
                     <div class="content d-none">{{ job.content }}</div>
                     <div class="long_title d-none">{{ job.long_title }}</div>
+                    <div class="deadline d-none">{{ job.deadline }}</div>
                 </div>
                 {% endfor %}
             </div>
@@ -263,6 +264,9 @@ permalink: /careers/
 
                 <p class="mb-0 title_job">EMPLOYER</p>
                 <p class="small_title employer"></p>
+
+                <p class="mb-0 title_job">Deadline</p>
+                <p class="small_title deadline_modal"></p>
 
               </div>
 

@@ -70,13 +70,15 @@ $('.job_item').each(function(){
     var modal_date = modal.find('.date');
     var modal_position = modal.find('.position_title');
     var modal_apply = modal.find('.apply');
-    
+    var modal_deadline = modal.find('.deadline_modal');
+
     var title = $(this).find('.title').html();
     var location = $(this).find('.location_modal').html();
     var position = $(this).find('.long_title').html();
     var date = $(this).find('.date').html();
     var content = $(this).find('.content').html();
     var employ = $(this).find('.employer').html();
+    var deadline = $(this).find('.deadline').html();
 
     apply.click(function(){
         modal_name.html(title);
@@ -86,6 +88,7 @@ $('.job_item').each(function(){
         modal_employ.html(employ);
         modal_date.html(date);
         modal_position.html(position);
+        modal_deadline.html(deadline);
         modal.modal('show');
         modal_apply.attr('href', `mailto:careers@incodeks.com?subject=`+position);
     });
