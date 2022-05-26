@@ -9,6 +9,7 @@ excerpt: >-
 footer_type: footer_1_column
 featured_image: assets/posts/whatsapp.webp
 published: true
+background_position: center
 ---
 ##### Introduction
 

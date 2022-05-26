@@ -4,6 +4,7 @@ title: Cognitive Virtual Assistants
 excerpt: As many of us know, Dialogflow on June 6  2020 will stop the integration of many platforms that it had automatically, and from now on the implementation of these integrations has shifted to an open source.
 footer_type: footer_1_column
 featured_image: assets/posts/bg-post1.png
+background_position: center
 ---
 
 ##### Author

@@ -4,6 +4,7 @@ title: Incodeks’ CEO, Partin Imeri, attends the First Conference by Albanian D
 excerpt: The weekend we left behind was followed by the first conference by Albanian Developers, where we marked our participation through the Executive Director of Incodeks, Partin Imeri. 
 footer_type: footer_1_column
 featured_image: assets/posts/partin-imeri-albanian-developer-conference-photo-1-min.jpg
+background_position: top
 ---
 
 ##### Introduction

@@ -4,6 +4,7 @@ title: Incodeks mentors the “Coding Day” event hosted by Universum College
 excerpt: On March 22nd, Incodeks once again proved its commitment to the Tech Industry by offering young Computer Science students the opportunity to practice their coding skills under the mentorship of our professionals. 
 footer_type: footer_1_column
 featured_image: assets/posts/universum.jpeg
+background_position: center
 ---
 
 
