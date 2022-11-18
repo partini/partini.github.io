@@ -8,8 +8,8 @@ long_title: React Native Developer
 short_description: Incodeks is looking for a talented and ambitious React Native Developer to join our team. As React Native Developer, you utilise knowledge of below mentioned technologies...
 type_of_position: Fulltime
 employer: Incodeks
-date: 2022-06-07 00:00:00
-deadline: 15 October 2022
+date: 2022-10-15 00:00:00
+deadline: 20 December 2022
 ---
 
 Incodeks is looking for a talented and ambitious React Native Developer to join our team.  
