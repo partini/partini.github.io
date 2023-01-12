@@ -1,7 +1,4 @@
 ---
-published: true
----
----
 layout: post
 title: 5 Ways Team Augmentation Can Help Your Business Scale
 excerpt: Team augmentation is an increasingly popular way for businesses to grow and scale their operations. By outsourcing specific roles and tasks to specialized teams, businesses can achieve greater efficiency, flexibility, and scalability.
