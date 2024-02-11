@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Pros and Cons of Outsourcing Specific Team Roles
-excerpt: >-
+excerpt:
   Outsourcing specific team roles has become an increasingly popular way for
   businesses to improve efficiency, reduce costs, and stay competitive in the
   market.

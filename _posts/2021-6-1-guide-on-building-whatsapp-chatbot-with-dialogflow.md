@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A quick guide on building a WhatsAPP Chat Bot with DialogFlow
-excerpt: >-
+excerpt: 
   The purpose of this article is to set up an integration deployment to connect
   your existing Dialogflow agent with Twilio chat service platform. If you are a
   developer who uses Dialogflow to create different Dialoglow Agents who
