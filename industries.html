@@ -1,0 +1,264 @@
+---
+layout: default
+footer_type: consult
+title: Industries
+permalink: /industries/
+---
+
+<div id="services" class="w-100">
+
+    <header class="masthead" style="background-image: url('{{ site.baseurl }}/assets/industries/industries-header.jpeg'); filter: brightness(75%) contrast(128%) saturate(69%) sepia(0%); width:100%; height:800px;"">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 services-header position-relative">
+                    <p class="services-p1">Industries</p>
+                    <a class="btn btn-link go_to_provide" role="button" onclick="animateScrollAnchor($('.go_to_provide'), $('#to_provide'))">
+                      <i class="fa fa-long-arrow-down fa-2x" style="color: var(--light);"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section bg-white pb-0">
+      <div class="container">
+        <div class="row"> 
+          <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10 col-12">
+              <p class="industries-title-header">Industries</p>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div>
+                  <img style="width: 100%;" src="{{ site.baseurl }}/assets/industries/1.png" >
+                </div>
+                <div class="industry-case-tile">
+                  
+                    <h5>Finance & Banking</h5>
+                    <p>Implementing fintech solutions for enhanced customer experience, operational efficiency, and compliance.</p><br/>
+                </div>
+            </div>
+            <div class="col-md-6">
+
+                <div>
+                  <img style="width:100%;" src="{{ site.baseurl }}/assets/industries/2.png" >
+                </div>
+                <div class="industry-case-tile">
+                    <h5>Retail & E-commerce</h5>
+                    <p>Integrating digital retail solutions to optimize the supply chain, personalize shopping experiences, and expand market reach.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+
+                <div>
+                  <img style="width: 100%;" src="{{ site.baseurl }}/assets/industries/3.png" >
+                </div>
+                <div class="industry-case-tile">
+                    <h5>Manufacturing</h5>
+                    <p>Leveraging IoT, AI, and robotics to revolutionize manufacturing processes and supply chain management.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+
+                <div>
+                  <img style="width: 100%;" src="{{ site.baseurl }}/assets/industries/4.png" >
+                </div>
+                <div class="industry-case-tile">
+                    <h5>Energy & Utilities</h5>
+                    <p>Digitizing operations to improve energy efficiency, resource management, and customer engagement.</p>
+                </div>
+            </div> 
+            <div class="col-md-6">
+
+                <div>
+                  <img style="width: 100%;" src="{{ site.baseurl }}/assets/industries/5.png" >
+                </div>
+                <div class="industry-case-tile">
+                    <h5>Transportation & Logistics</h5>
+                    <p>Enhancing logistics with AI, automation, and analytics to optimize routing, reduce costs, and improve delivery times.</p><br/>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+
+                <div>
+                  <img style="width: 100%;" src="{{ site.baseurl }}/assets/industries/6.png" >
+                </div>
+                <div class="industry-case-tile">
+                    <h5>Real Estate & Construction</h5>
+                    <p>Integrating smart building technologies and project management tools to innovate construction and property management.</p>
+                </div>
+            </div>
+            <!-- Repeat for other industries -->
+        </div>
+      </div>
+      <script>
+          // Example jQuery: Add a class to tiles on click to highlight them
+          $('.industry-tile').click(function() {
+              $(this).toggleClass('highlighted');
+          });
+      </script>
+      <style>
+          /* Additional style for highlighted tile */
+          .highlighted {
+              border: 2px solid #001588;
+          }
+      </style>
+      <!--       <div class="clients-slider processes bg-black container mt-3">
+              <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+                    <div class="services-item col-md-3 col-sm-6">
+                        <h3 >Digital Transformation</h3>
+                    </div>
+                    <div class="services-item col-md-3 col-sm-6">
+                        <h3>Strategy & Consulting</h3>
+                    </div>
+                    <div class="services-item col-md-3 col-sm-6">
+                        <h3>Process Automation</h3>
+                    </div> 
+                    <div class="services-item col-md-3 col-sm-6">
+                        <h3>Digital Customer Experience</h3>
+                    </div>
+                    <div class="services-item col-md-3 col-sm-6">
+                        <h3>App Development</h3>
+                    </div>
+                    <div class="services-item col-md-3 col-sm-6">
+                        <h3>Mobile App Development</h3>
+                    </div>
+
+                    <div class="services-item col-md-3 col-sm-6">
+                        <h3>Web Applications</h3>
+                    </div>
+
+                    <div class="services-item col-md-3 col-sm-6">
+                        <h3>Enterprise Software</h3>
+                    </div>
+
+                    <div class="services-item col-md-3 col-sm-6">
+                        <h3>E-commerce Solutions</h3>
+                    </div>
+
+                    <div class="services-item col-md-3 col-sm-6">
+                        <h3>Complex IOT Systems</h3>
+                    </div>
+
+                    <div class="services-item col-md-3 col-sm-6">
+                        <h3>AI & Chatbots</h3>
+                    </div>
+                    
+                    <div class="services-item col-md-3 col-sm-6">
+                        <h3>Customer Service & Marketing (RevOps)</h3>
+                    </div>
+                    
+                    <div class="services-item col-md-3 col-sm-6">
+                        <h3>Payment Processing Solutions</h3>
+                    </div>  
+                </div> 
+
+            </div> -->
+    </section>
+
+        <section class="section bg-white testimonials-section" style="padding: 50px 0 !important;">
+            <div class="container">
+    
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" style="margin-bottom: 50px;">
+                        <p class="text-center services_clients_title">Our clients keep saying some<br>super nice stuff.</p>
+                    </div>
+                </div>
+    
+                <div class="row text-center first-service-row">
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-4">
+                        <div class="first-service-col bg-blue-light">
+                            <img src="{{ site.baseurl }}/assets/img/testimonials/ravi_kurani.jpg">
+                            <p class="text-left service-p1 mb-3 mt-2">
+                            "We have been working with Incodeks for the last 3 years. It was a great decision to work with them and we are very pleased with the results so far. The team is professional, easy to work with and flexible. They have done an excellent job in building our platform from scratch and we are very happy with it."
+                            </p>
+                            <p class="text-left d-inline service-p2">
+                            Ravi Kurani, MySutro
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-4">
+                        <div class="first-service-col bg-blue-dark">
+                                <img src="{{ site.baseurl }}/assets/img/testimonials/steven.jpg">
+                                <p class="text-left service-p1 mb-3 mt-2">
+                                    "Incodeks is a pleasure to work with.
+                                    From beginning to end they go above and beyond to see your vision through and make important and priceless contributions to your project.
+                                    They suggest things you may have never thought about and show you how certain features will allow you to scale and grow naturally over time.
+                                    The team will not stop until the project is completed to your 100% satisfaction.
+                                    We value Incodeks as a crucial extension of our company and would highly recommend them to anyone looking for a great development team who will put you first!"
+                                </p>
+                                <p class="text-left d-inline service-p2">
+                                    Steven Stanimirovic, VQ Fluux
+                                </p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-4">
+                        <div class="first-service-col bg-grey-light">
+                                <img src="{{ site.baseurl }}/assets/img/testimonials/zack.png">
+                                <p class="text-left service-p1 mb-3 mt-2">
+                                    "Working with Incodeks has been everything House Rewards needed when we were looking for a partner to build out our platform. The team at Incodeks is incredibly talented, hard-working, and very responsive at all times. Highly recommend it! 
+                                    Faster turnaround times, faster user experience."
+                                </p>
+                                <p class="text-left d-inline service-p2">
+                                    Zack Arenson, House Rewards
+                                </p>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <section id="provide" class="section">
+           <div class="pt-3 pb-3" style="background: #f9f9f9;">
+            <div class="container">
+                <div class="row" style="margin-top: 20px;">
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" style="background: #f9f9f9;">
+                        <p class="font-weight-bold" style="font-size: 40px;">What you get working with us:</p>
+                    </div>
+                </div>
+                <div class="row second-service-row mt-5 pt-3">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 pb-5">
+                        <p class="title">Project management</p>
+                        <p style="font-size: 14px; font-weight: 100">
+                            At Incodeks our environment is more Agile oriented than ever. Those seeking to deliver more value and fast prototype, we have the ability and professionalism for that. We have a team of Project Managers and engineers that will guide you through the entire process for building your product. We will carry out our knowledge transfer process to hand over the reins to your dedicated team.</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-6 col-xl-4 pb-5">
+                        <p class="title">Quality assurance<br></p>
+                        <p style="font-size: 14px; font-weight: 100">We deliver QA services for our client
+                          and we want to make sure that we
+                          deliver quality to them, also help
+                          evaluate the product’s compliance with
+                          the original requirements and give you
+                          valuable insights into end user
+                          impressions of the product. Incodeks
+                          thinks about your users and exactly how
+                          they'll interact with your application.</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 pb-5">
+                        <p class="title">Support and maintenance<br></p>
+                        <p style="font-size: 14px; font-weight: 100">Beside the development process that we
+                          do, we care about the life of products.
+                          You can rely on us to help you scale as
+                          your grow you user base. The reality on
+                          now days is that software projects have
+                          infinite life, they grow day by day. New
+                          operating systems come out, and
+                          platforms grow. Even the best of the
+                          best software products require ongoing
+                          attention, monitoring, evolution, and
+                          improvements. We offer support for all
+                          of our projects post-launch.&nbsp;</p>
+                    </div> 
+                </div>
+           </div>
+            </div>
+        </section> 
+      
+    </div>
+ 
