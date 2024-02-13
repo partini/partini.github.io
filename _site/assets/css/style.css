@@ -8,7 +8,7 @@ body {
    margin: 0px;
    min-height: 100%;
    width: 100%;
-   font-family: Heebo; 
+     /* font-family: Heebo; */
 }
 /* body{
   font-family: 'Heebo', sans-serif !important;
@@ -572,7 +572,7 @@ color: white;
 
 .services_sub_title{
   text-align: center;
-  color: black;
+  color: #fff;
   opacity: 0.8;
 }
 
@@ -859,12 +859,10 @@ header.masthead .intro-text{
 
 .services_title_homepage{
   font-weight: 400;
-  font-size: 20px;
-  color: black;
+  font-size: 40px;
+  color: white;
   margin-bottom: 80px;
-    text-align: justify;
-  text-justify: inter-word;
-/*  line-height: 80px;*/
+  line-height: 80px;
 }
 
 .slider_services .item-service .title{
@@ -917,9 +915,7 @@ header.masthead .intro-text{
 .bg-black{
   background-color: #000 !important;
 }
-.bg-inc{
-  background-color: #001588 !important;
-}
+
 .fp-viewing-0{
   background: #000 !important;
 }
@@ -1326,7 +1322,7 @@ html,body{
   font-size: 60px;
   line-height: 67px !important;
   color: white;
-/*  opacity: 0.24;*/
+  opacity: 0.24;
 }
 
 .questions_title_1{
@@ -1337,11 +1333,10 @@ html,body{
 }
 
 .clientage_title{
-  color: white;
+  color: #5C46F9;
   font-weight: 400;
   margin-top: 15px;
   font-size: 24px;
-  opacity: 0.24;
 }
 
 .portfolio-item{
@@ -1840,7 +1835,7 @@ html,body{
   }
 
   .services_title_homepage{
-    font-size: 14px !important;
+    font-size: 25px !important;
     line-height: 46px;
     margin-bottom: 0;
     text-align: center;
@@ -1858,7 +1853,6 @@ html,body{
   .clientage_title{
     text-align: center;
     margin-top: 0;
-
   }
   .section{
     height: auto;
@@ -2036,89 +2030,4 @@ html,body{
 
 .career-item-flex img{
   object-fit: contain;
-}
-
-.services-item{
-/*  flex-basis: 20%; 
-  min-width: 180px; */
-  background-color: #fff; 
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
-  border-radius: 8px; 
-  padding: 20px; 
-  text-align: center;
-  
-}
-.services-item h3{
-  font-size: 18px; color: #001588;
-}
-
-.industries-title-header{
-  font-weight: 300;
-  font-size: 60px;
-  line-height: 67px !important;
-  color: black;
-}
-
- .industry-case-tile {
-      background-color: #5c46f9;
-      color: #fff;
-      margin-bottom: 20px;
-      padding: 20px;
-      border-rad
-      border-radius: 8px;
-  }
-  .industry-case-tile h5 {
-      color: white;
-  }
-  .industry-case-tile p {
-      color: white;
-  }
-  @media (max-width: 576px) {
-/*      .industry-case-tile {*/
-/*          margin-left: 15px;*/
-/*          margin-right: 15px;*/
-/*      }*/
-  }
-
-/* Home page carousel */
-.carousel {
-    height: 700px;
-}
-.carousel-inner, .carousel-item, .carousel-item img {
-    height: 100%;
-}
-.carousel-item img {
-    object-fit: cover;
-    width: 50%; /* Image takes up half the width */
-    position: absolute;
-    left: 0;
-}
-.use-case-detail {
-/*    display: flex;
-    align-items: center;*/
-    justify-content: center;
-    height: 100%;
-    width: 50%; /* Details take up the remaining half */
-    position: absolute;
-    right: 0;
-    padding: 20px;
-    background-color: #fff; /* Background for text */
-    color: #0f0f0f; /* Text color */
-}
-.carousel-control-prev, .carousel-control-next {
-    width: 5%;
-}
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    background-image: none;
-    height: 40px;
-    width: 40px;
-    fill: #5c46f9; /* Main brand color */
-}
-.carousel-control-prev-icon svg,
-.carousel-control-next-icon svg {
-    width: 100%;
-    height: auto;
-}
-.carousel-indicators li {
-    background-color: #5c46f9; /* Main color */
 }

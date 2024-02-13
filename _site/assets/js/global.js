@@ -170,8 +170,8 @@ if (window.matchMedia("(max-width: 767px)").matches){
   var options = {'title':'',  'width':width_chart, 'height':'100%','is3D':true,};
 
   // Display the chart inside the <div> element with id="piechart"
-  // var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-  // chart.draw(data, options);
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
 }
 
 
@@ -189,6 +189,6 @@ function drawChart1() {
     var chart = new google.visualization.ColumnChart(document.getElementById('column_chart'));
     chart.draw(data, options);
  }
- // google.charts.setOnLoadCallback(drawChart1);
+ google.charts.setOnLoadCallback(drawChart1);
 
  console.clear();
