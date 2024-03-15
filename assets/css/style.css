@@ -2650,3 +2650,7 @@ html, body {
 .career-item-flex img {
     object-fit: contain;
 }
+p.inc-sutro-text {
+    color: white;
+    font-size: 25px;
+}
