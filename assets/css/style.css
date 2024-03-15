@@ -1409,10 +1409,10 @@ header.masthead .intro-text {
 
 .services_title_homepage {
     font-weight: 400;
-    font-size: 40px;
+    font-size: 22px;
     color: white;
     margin-bottom: 80px;
-    line-height: 80px;
+    /* line-height: 80px; */
 }
 
 .slider_services .item-service .title {
